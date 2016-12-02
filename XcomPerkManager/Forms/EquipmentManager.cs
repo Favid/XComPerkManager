@@ -33,7 +33,6 @@ namespace XcomPerkManager
         private void bSave_Click(object sender, EventArgs e)
         {
             ClassOverview owner = Owner as ClassOverview;
-            SavedSoldiersWriter writer = new SavedSoldiersWriter(owner.abilities);
 
             SoldierClassEquipment equipment = new SoldierClassEquipment();
             equipment.squaddieLoadout = tSquaddieLoadout.Text;
@@ -41,7 +40,15 @@ namespace XcomPerkManager
             equipment.secondaryWeapon = tSecondaryWeapon.Text;
             equipment.allowedArmors = tAllowedArmors.Text;
 
-            writer.updateClassEquipment(formerInternalName, equipment);
+            ValidationResult allowUpdate = equipment.allowUpdate();
+            if (!allowUpdate.valid)
+            {
+                MessageBox.Show(allowUpdate.message, "Cannot save", MessageBoxButtons.OK);
+                return;
+            }
+
+            SavedSoldiersManager manager = new SavedSoldiersManager();
+            manager.updateClassElement(formerInternalName, equipment, Constants.XML_EQUIPMENT);
 
             owner.updateSoldiers();
             owner.selectSoldier(formerInternalName);

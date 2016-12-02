@@ -25,7 +25,7 @@ namespace XcomPerkManager
         public const string XML_EXPERIENCE_NUM_IN_DECK = "number_in_deck";
         public const string XML_EXPERIENCE_KILL_ASSISTS_PER_KILL = "kill_assists_per_kill";
 
-        public const string XML_EQUIPMENT = "experience";
+        public const string XML_EQUIPMENT = "equipment";
         public const string XML_EQUIPMENT_SQUADDIE_LOADOUT = "squaddie_loadout";
         public const string XML_EQUIPMENT_PRIMARY_WEAPON = "primary_weapon";
         public const string XML_EQUIPMENT_SECONDARY_WEAPON = "secondary_weapon";
