@@ -53,15 +53,15 @@ namespace XcomPerkManager
             allowUpdate.message = "";
 
             ValidationResult numberInForcedDeckValid = validateInteger(numberInForcedDeck, "Number in forced deck");
-            allowUpdate.valid = allowUpdate.valid || numberInForcedDeckValid.valid;
+            allowUpdate.valid = allowUpdate.valid && numberInForcedDeckValid.valid;
             allowUpdate.message += numberInForcedDeckValid.message;
 
             ValidationResult numberInDeckValid = validateInteger(numberInDeck, "Number in deck");
-            allowUpdate.valid = allowUpdate.valid || numberInDeckValid.valid;
+            allowUpdate.valid = allowUpdate.valid && numberInDeckValid.valid;
             allowUpdate.message += numberInDeckValid.message;
 
             ValidationResult killAssistsPerKillValid = validateInteger(killAssistsPerKill, "Kill assists per kill");
-            allowUpdate.valid = allowUpdate.valid || killAssistsPerKillValid.valid;
+            allowUpdate.valid = allowUpdate.valid && killAssistsPerKillValid.valid;
             allowUpdate.message += killAssistsPerKillValid.message;
             
             return allowUpdate;

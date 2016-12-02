@@ -32,14 +32,21 @@ namespace XcomPerkManager
         private void bSave_Click(object sender, EventArgs e)
         {
             ClassOverview owner = Owner as ClassOverview;
-            SavedSoldiersWriter writer = new SavedSoldiersWriter(owner.abilities);
 
             SoldierClassExperience experience = new SoldierClassExperience();
             experience.numberInForcedDeck = Utils.parseStringToInt(tNumberInForcedDeck.Text);
             experience.numberInDeck = Utils.parseStringToInt(tNumberInDeck.Text);
             experience.killAssistsPerKill = Utils.parseStringToInt(tKillAssistsPerKill.Text);
-            
-            writer.updateClassExperience(formerInternalName, experience);
+
+            ValidationResult allowUpdate = experience.allowUpdate();
+            if (!allowUpdate.valid)
+            {
+                MessageBox.Show(allowUpdate.message, "Cannot save", MessageBoxButtons.OK);
+                return;
+            }
+
+            SavedSoldiersManager manager = new SavedSoldiersManager();
+            manager.updateClassElement(formerInternalName, experience, Constants.XML_EXPERIENCE);
 
             owner.updateSoldiers();
             owner.selectSoldier(formerInternalName);

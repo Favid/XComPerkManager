@@ -10,7 +10,7 @@ namespace XcomPerkManager
     public class SoldierClassAbility : Ability, ISoldierClassElement
     {
         public SoldierRank rank { get; set; }
-        public int slot { get; set; }
+        public int? slot { get; set; }
 
         public SoldierClassAbility() : base()
         {
