@@ -78,84 +78,75 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ability.cs" />
-    <Compile Include="AbilityManager.cs">
+    <Compile Include="DataObjects\Ability.cs" />
+    <Compile Include="Forms\AbilityManager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AbilityManager.Designer.cs">
+    <Compile Include="Forms\AbilityManager.Designer.cs">
       <DependentUpon>AbilityManager.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClassOverview.cs">
+    <Compile Include="Forms\ClassOverview.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClassOverview.Designer.cs">
+    <Compile Include="Forms\ClassOverview.Designer.cs">
       <DependentUpon>ClassOverview.cs</DependentUpon>
     </Compile>
-    <Compile Include="Enums.cs" />
-    <Compile Include="EquipmentManager.cs">
+    <Compile Include="Constants\Enums.cs" />
+    <Compile Include="Forms\EquipmentManager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EquipmentManager.Designer.cs">
+    <Compile Include="Forms\EquipmentManager.Designer.cs">
       <DependentUpon>EquipmentManager.cs</DependentUpon>
     </Compile>
-    <Compile Include="ExperienceManager.cs">
+    <Compile Include="Forms\ExperienceManager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ExperienceManager.Designer.cs">
+    <Compile Include="Forms\ExperienceManager.Designer.cs">
       <DependentUpon>ExperienceManager.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="IniFile.cs" />
-    <Compile Include="ISoldierClassElement.cs" />
-    <Compile Include="MetadataManager.cs">
+    <Compile Include="DataObjects\ISoldierClassElement.cs" />
+    <Compile Include="Forms\MetadataManager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MetadataManager.Designer.cs">
+    <Compile Include="Forms\MetadataManager.Designer.cs">
       <DependentUpon>MetadataManager.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SavedSoldiersManager.cs" />
-    <Compile Include="SavedSoldiersReader.cs" />
-    <Compile Include="SavedSoldiersWriter.cs" />
-    <Compile Include="SoldierClass.cs" />
-    <Compile Include="SoldierClassAbility.cs" />
-    <Compile Include="SoldierClassEquipment.cs" />
-    <Compile Include="SoldierClassExperience.cs" />
-    <Compile Include="SoldierClassMetadata.cs" />
-    <Compile Include="SoldierClassStat.cs" />
-    <Compile Include="SQLite.cs" />
-    <Compile Include="SQLiteAsync.cs" />
-    <Compile Include="SQLLiteModel.cs" />
-    <Compile Include="StatManager.cs">
+    <Compile Include="SaveManager\SavedSoldiersManager.cs" />
+    <Compile Include="SaveManager\SavedSoldiersReader.cs" />
+    <Compile Include="SaveManager\SavedSoldiersWriter.cs" />
+    <Compile Include="DataObjects\SoldierClass.cs" />
+    <Compile Include="DataObjects\SoldierClassAbility.cs" />
+    <Compile Include="DataObjects\SoldierClassEquipment.cs" />
+    <Compile Include="DataObjects\SoldierClassExperience.cs" />
+    <Compile Include="DataObjects\SoldierClassMetadata.cs" />
+    <Compile Include="DataObjects\SoldierClassStat.cs" />
+    <Compile Include="SQLLite\SQLite.cs" />
+    <Compile Include="SQLLite\SQLiteAsync.cs" />
+    <Compile Include="SQLLite\SQLLiteModel.cs" />
+    <Compile Include="Forms\StatManager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StatManager.Designer.cs">
+    <Compile Include="Forms\StatManager.Designer.cs">
       <DependentUpon>StatManager.cs</DependentUpon>
     </Compile>
-    <Compile Include="Utils.cs" />
-    <Compile Include="XComAbilityListReader.cs" />
-    <EmbeddedResource Include="AbilityManager.resx">
+    <Compile Include="Utils\Utils.cs" />
+    <Compile Include="AbilityManager\XComAbilityListReader.cs" />
+    <EmbeddedResource Include="Forms\AbilityManager.resx">
       <DependentUpon>AbilityManager.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ClassOverview.resx">
+    <EmbeddedResource Include="Forms\ClassOverview.resx">
       <DependentUpon>ClassOverview.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EquipmentManager.resx">
+    <EmbeddedResource Include="Forms\EquipmentManager.resx">
       <DependentUpon>EquipmentManager.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ExperienceManager.resx">
+    <EmbeddedResource Include="Forms\ExperienceManager.resx">
       <DependentUpon>ExperienceManager.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MetadataManager.resx">
+    <EmbeddedResource Include="Forms\MetadataManager.resx">
       <DependentUpon>MetadataManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -167,7 +158,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="StatManager.resx">
+    <EmbeddedResource Include="Forms\StatManager.resx">
       <DependentUpon>StatManager.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />

@@ -19,3 +19,23 @@ c:\users\david\documents\visual studio 2015\Projects\XcomPerkManager\XcomPerkMan
 c:\users\david\documents\visual studio 2015\Projects\XcomPerkManager\XcomPerkManager\obj\Debug\XcomPerkManager.application
 c:\users\david\documents\visual studio 2015\Projects\XcomPerkManager\XcomPerkManager\obj\Debug\XcomPerkManager.csprojResolveAssemblyReference.cache
 C:\Users\David\Documents\Visual Studio 2015\Projects\XcomPerkManager\XcomPerkManager\obj\Debug\XcomPerkManager.StatManager.resources
+C:\Users\David\Documents\GitHub\XComPerkManager\XcomPerkManager\bin\Debug\XcomPerkManager.exe.config
+C:\Users\David\Documents\GitHub\XComPerkManager\XcomPerkManager\obj\Debug\XcomPerkManager.exe
+C:\Users\David\Documents\GitHub\XComPerkManager\XcomPerkManager\obj\Debug\XcomPerkManager.pdb
+C:\Users\David\Documents\GitHub\XComPerkManager\XcomPerkManager\bin\Debug\XcomPerkManager.exe.manifest
+C:\Users\David\Documents\GitHub\XComPerkManager\XcomPerkManager\bin\Debug\XcomPerkManager.application
+C:\Users\David\Documents\GitHub\XComPerkManager\XcomPerkManager\bin\Debug\XcomPerkManager.exe
+C:\Users\David\Documents\GitHub\XComPerkManager\XcomPerkManager\bin\Debug\XcomPerkManager.pdb
+C:\Users\David\Documents\GitHub\XComPerkManager\XcomPerkManager\bin\Debug\EPPlus.dll
+C:\Users\David\Documents\GitHub\XComPerkManager\XcomPerkManager\bin\Debug\EPPlus.xml
+C:\Users\David\Documents\GitHub\XComPerkManager\XcomPerkManager\obj\Debug\XcomPerkManager.csprojResolveAssemblyReference.cache
+C:\Users\David\Documents\GitHub\XComPerkManager\XcomPerkManager\obj\Debug\XcomPerkManager.AbilityManager.resources
+C:\Users\David\Documents\GitHub\XComPerkManager\XcomPerkManager\obj\Debug\XcomPerkManager.ClassOverview.resources
+C:\Users\David\Documents\GitHub\XComPerkManager\XcomPerkManager\obj\Debug\XcomPerkManager.EquipmentManager.resources
+C:\Users\David\Documents\GitHub\XComPerkManager\XcomPerkManager\obj\Debug\XcomPerkManager.ExperienceManager.resources
+C:\Users\David\Documents\GitHub\XComPerkManager\XcomPerkManager\obj\Debug\XcomPerkManager.MetadataManager.resources
+C:\Users\David\Documents\GitHub\XComPerkManager\XcomPerkManager\obj\Debug\XcomPerkManager.Properties.Resources.resources
+C:\Users\David\Documents\GitHub\XComPerkManager\XcomPerkManager\obj\Debug\XcomPerkManager.StatManager.resources
+C:\Users\David\Documents\GitHub\XComPerkManager\XcomPerkManager\obj\Debug\XcomPerkManager.csproj.GenerateResource.Cache
+C:\Users\David\Documents\GitHub\XComPerkManager\XcomPerkManager\obj\Debug\XcomPerkManager.exe.manifest
+C:\Users\David\Documents\GitHub\XComPerkManager\XcomPerkManager\obj\Debug\XcomPerkManager.application

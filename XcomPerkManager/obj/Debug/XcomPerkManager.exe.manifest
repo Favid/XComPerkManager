@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="XcomPerkManager.exe" size="180736">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="XcomPerkManager.exe" size="174080">
       <assemblyIdentity name="XcomPerkManager" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>xHSEFC4I3meJT/vj6FBj9Oqqd8e45tormJEo6NMJseU=</dsig:DigestValue>
+        <dsig:DigestValue>CNMNo7jJi1QzcWt61hR+jJDXcuXejyQV++QscfBS7jU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
