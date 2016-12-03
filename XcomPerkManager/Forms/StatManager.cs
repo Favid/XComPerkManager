@@ -73,7 +73,6 @@ namespace XcomPerkManager
         private void bSave_Click(object sender, EventArgs e)
         {
             ClassOverview owner = Owner as ClassOverview;
-            SavedSoldiersWriter writer = new SavedSoldiersWriter(owner.abilities);
 
             List<SoldierClassStat> soldierStats = new List<SoldierClassStat>();
 
@@ -122,7 +121,8 @@ namespace XcomPerkManager
             soldierStats.Add(buildSoldierStatFromControl(tColonelPsi, SoldierRank.Colonel, Stat.Psi));
             soldierStats.Add(buildSoldierStatFromControl(tBrigadierPsi, SoldierRank.Brigadier, Stat.Psi));
 
-            writer.updateClassStats(formerInternalName, soldierStats);
+            SavedSoldiersManager manager = new SavedSoldiersManager();
+            manager.updateStatsElement(formerInternalName, soldierStats);
 
             owner.updateSoldiers();
             owner.selectSoldier(formerInternalName);
@@ -136,7 +136,7 @@ namespace XcomPerkManager
 
             soldierStat.rank = rank;
             soldierStat.stat = stat;
-            soldierStat.value = int.Parse(control.Text);
+            soldierStat.value = Utils.parseStringToInt(control.Text);
 
             return soldierStat;
         }

@@ -95,5 +95,41 @@ namespace XcomPerkManager
 
             return true;
         }
+
+        public bool updateStatsElement(string internalName, List<SoldierClassStat> soldierStats)
+        {
+            foreach (SoldierClassStat soldierStat in soldierStats)
+            {
+                if (!soldierStat.allowUpdate().valid)
+                {
+                    return false;
+                }
+            }
+
+            XElement documentStatsElement = getClassElement(internalName, Constants.XML_STATS);
+            List<XElement> documentStatElements = documentStatsElement.Elements(Constants.XML_STAT).ToList();
+
+            foreach (XElement documentStatElement in documentStatElements)
+            {
+                int? documentRank = Utils.parseStringToInt(documentStatElement.Element(Constants.XML_STAT_RANK).Value);
+                int? documentType = Utils.parseStringToInt(documentStatElement.Element(Constants.XML_STAT_TYPE).Value);
+
+                SoldierClassStat soldierStat = soldierStats.Where(x => (int)x.rank == documentRank && (int)x.stat == documentType).SingleOrDefault();
+
+                if (soldierStat == null)
+                {
+                    documentStatElement.Element(Constants.XML_STAT_VALUE).Value = "";
+                }
+                else
+                {
+                    XElement statElement = soldierStat.getXmlElement();
+                    documentStatElement.Element(Constants.XML_STAT_VALUE).Value = statElement.Element(Constants.XML_STAT_VALUE).Value;
+                }
+            }
+
+            document.Save(fullPath);
+
+            return true;
+        }
     }
 }
