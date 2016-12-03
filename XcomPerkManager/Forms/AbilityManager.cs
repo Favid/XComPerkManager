@@ -101,7 +101,6 @@ namespace XcomPerkManager
         private void bSave_Click(object sender, EventArgs e)
         {
             ClassOverview owner = Owner as ClassOverview;
-            SavedSoldiersWriter writer = new SavedSoldiersWriter(owner.abilities);
 
             List<SoldierClassAbility> soldierAbilities = new List<SoldierClassAbility>();
 
@@ -140,7 +139,8 @@ namespace XcomPerkManager
             soldierAbilities.Add(buildSoldierAbilityFromCombo(cBrigadier2, SoldierRank.Brigadier, 2));
             soldierAbilities.Add(buildSoldierAbilityFromCombo(cBrigadier3, SoldierRank.Brigadier, 3));
 
-            writer.updateClassAbilities(formerInternalName, soldierAbilities);
+            SavedSoldiersManager manager = new SavedSoldiersManager();
+            manager.updateAbilitiesElement(formerInternalName, soldierAbilities);
             
             owner.updateSoldiers();
             owner.selectSoldier(formerInternalName);

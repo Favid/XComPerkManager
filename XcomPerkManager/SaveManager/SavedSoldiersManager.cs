@@ -57,5 +57,43 @@ namespace XcomPerkManager
 
             return true;
         }
+
+        // TODO refactor
+
+        public bool updateAbilitiesElement(string internalName, List<SoldierClassAbility> soldierAbilities)
+        {
+            foreach(SoldierClassAbility soldierAbility in soldierAbilities)
+            {
+                if (!soldierAbility.allowUpdate().valid)
+                {
+                    return false;
+                }
+            }
+
+            XElement documentAbilitiesElement = getClassElement(internalName, Constants.XML_ABILITIES);
+            List<XElement> documentAbilityElements = documentAbilitiesElement.Elements(Constants.XML_ABILITY).ToList();
+
+            foreach(XElement documentAbilityElement in documentAbilityElements)
+            {
+                int? documentRank = Utils.parseStringToInt(documentAbilityElement.Element(Constants.XML_ABILITY_RANK).Value);
+                int? documentSlot = Utils.parseStringToInt(documentAbilityElement.Element(Constants.XML_ABILITY_SLOT).Value);
+
+                SoldierClassAbility soldierAbility = soldierAbilities.Where(x => (int)x.rank == documentRank && x.slot == documentSlot).SingleOrDefault();
+
+                if(soldierAbility == null)
+                {
+                    documentAbilityElement.Element(Constants.XML_ABILITY_INTERNAL_NAME).Value = "";
+                }
+                else
+                {
+                    XElement abilityElement = soldierAbility.getXmlElement();
+                    documentAbilityElement.Element(Constants.XML_ABILITY_INTERNAL_NAME).Value = abilityElement.Element(Constants.XML_ABILITY_INTERNAL_NAME).Value;
+                }
+            }
+
+            document.Save(fullPath);
+
+            return true;
+        }
     }
 }
