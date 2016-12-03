@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using XcomPerkManager.DataAccess;
 
 namespace XcomPerkManager
 {
@@ -47,9 +48,9 @@ namespace XcomPerkManager
                 return;
             }
 
-            SavedSoldiersManager manager = new SavedSoldiersManager();
-            manager.updateClassElement(formerInternalName, metadata, Constants.XML_METADATA);
-
+            MetadataAccess access = new MetadataAccess();
+            access.update(formerInternalName, metadata);
+            
             owner.updateSoldiers();
             owner.selectSoldier(metadata.internalName);
             

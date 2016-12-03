@@ -78,6 +78,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccess\AbstractAccess.cs" />
+    <Compile Include="DataAccess\IAccess.cs" />
+    <Compile Include="DataAccess\MetadataAccess.cs" />
+    <Compile Include="DataModels\IModel.cs" />
+    <Compile Include="DataModels\MetadataModel.cs" />
     <Compile Include="DataObjects\Ability.cs" />
     <Compile Include="Forms\AbilityManager.cs">
       <SubType>Form</SubType>
@@ -196,6 +201,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
