@@ -78,9 +78,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccess\AbilityAccess.cs" />
     <Compile Include="DataAccess\AbstractAccess.cs" />
     <Compile Include="DataAccess\IAccess.cs" />
     <Compile Include="DataAccess\MetadataAccess.cs" />
+    <Compile Include="DataModels\AbilityModel.cs" />
     <Compile Include="DataModels\IModel.cs" />
     <Compile Include="DataModels\MetadataModel.cs" />
     <Compile Include="DataObjects\Ability.cs" />
@@ -108,6 +110,12 @@
     </Compile>
     <Compile Include="Forms\ExperienceManager.Designer.cs">
       <DependentUpon>ExperienceManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="IniFile.cs" />
     <Compile Include="DataObjects\ISoldierClassElement.cs" />
@@ -150,6 +158,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ExperienceManager.resx">
       <DependentUpon>ExperienceManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MetadataManager.resx">
       <DependentUpon>MetadataManager.cs</DependentUpon>

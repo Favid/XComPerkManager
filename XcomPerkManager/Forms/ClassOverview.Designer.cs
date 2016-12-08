@@ -146,6 +146,7 @@
             this.bEditStats = new System.Windows.Forms.Button();
             this.laHelp = new System.Windows.Forms.Label();
             this.bIni = new System.Windows.Forms.Button();
+            this.bTest = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.soldierClassBindingSource)).BeginInit();
             this.gMetadata.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -1391,11 +1392,22 @@
             this.bIni.UseVisualStyleBackColor = true;
             this.bIni.Click += new System.EventHandler(this.bIni_Click);
             // 
+            // bTest
+            // 
+            this.bTest.Location = new System.Drawing.Point(917, 468);
+            this.bTest.Name = "bTest";
+            this.bTest.Size = new System.Drawing.Size(75, 23);
+            this.bTest.TabIndex = 105;
+            this.bTest.Text = "Test";
+            this.bTest.UseVisualStyleBackColor = true;
+            this.bTest.Click += new System.EventHandler(this.bTest_Click);
+            // 
             // ClassOverview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 527);
+            this.Controls.Add(this.bTest);
             this.Controls.Add(this.bIni);
             this.Controls.Add(this.laHelp);
             this.Controls.Add(this.gStats);
@@ -1545,5 +1557,6 @@
         private System.Windows.Forms.Label laHpCorporal;
         private System.Windows.Forms.Label laHelp;
         private System.Windows.Forms.Button bIni;
+        private System.Windows.Forms.Button bTest;
     }
 }

@@ -1088,7 +1088,7 @@
     </experience>
     <equipment>
       <squaddie_loadout>SquaddieBuster</squaddie_loadout>
-      <primary_weapon>battle_rifle</primary_weapon>
+      <primary_weapon>rifle</primary_weapon>
       <secondary_weapon>heavy_weapon</secondary_weapon>
       <allowed_armors>soldier</allowed_armors>
     </equipment>
@@ -1804,7 +1804,7 @@
     </experience>
     <equipment>
       <squaddie_loadout>SquaddieGrenadier</squaddie_loadout>
-      <primary_weapon>rifle</primary_weapon>
+      <primary_weapon>battle_rifle</primary_weapon>
       <secondary_weapon>grenade_launcher</secondary_weapon>
       <allowed_armors>soldier</allowed_armors>
     </equipment>
@@ -2531,12 +2531,12 @@
         <slot>1</slot>
       </ability>
       <ability>
-        <internal_name></internal_name>
+        <internal_name>Slash_LW</internal_name>
         <rank>1</rank>
         <slot>2</slot>
       </ability>
       <ability>
-        <internal_name></internal_name>
+        <internal_name>SwordSlice_LW</internal_name>
         <rank>1</rank>
         <slot>3</slot>
       </ability>
@@ -2556,7 +2556,7 @@
         <slot>6</slot>
       </ability>
       <ability>
-        <internal_name>Triage</internal_name>
+        <internal_name>F_Predator</internal_name>
         <rank>2</rank>
         <slot>1</slot>
       </ability>
@@ -2571,17 +2571,17 @@
         <slot>3</slot>
       </ability>
       <ability>
-        <internal_name>Renewal</internal_name>
+        <internal_name>F_Maim</internal_name>
         <rank>3</rank>
         <slot>1</slot>
       </ability>
       <ability>
-        <internal_name>DefensiveTreatment</internal_name>
+        <internal_name></internal_name>
         <rank>3</rank>
         <slot>2</slot>
       </ability>
       <ability>
-        <internal_name>F_Predator</internal_name>
+        <internal_name>Renewal</internal_name>
         <rank>3</rank>
         <slot>3</slot>
       </ability>
@@ -2601,12 +2601,12 @@
         <slot>3</slot>
       </ability>
       <ability>
-        <internal_name>ShadowOps_Sprint</internal_name>
+        <internal_name>EverVigilant</internal_name>
         <rank>5</rank>
         <slot>1</slot>
       </ability>
       <ability>
-        <internal_name>Savior</internal_name>
+        <internal_name>DefensiveTreatment</internal_name>
         <rank>5</rank>
         <slot>2</slot>
       </ability>
@@ -2641,7 +2641,7 @@
         <slot>2</slot>
       </ability>
       <ability>
-        <internal_name></internal_name>
+        <internal_name>Savior</internal_name>
         <rank>7</rank>
         <slot>3</slot>
       </ability>
@@ -2651,12 +2651,12 @@
         <slot>1</slot>
       </ability>
       <ability>
-        <internal_name>MusashiEvasion</internal_name>
+        <internal_name>Reaper</internal_name>
         <rank>8</rank>
         <slot>2</slot>
       </ability>
       <ability>
-        <internal_name></internal_name>
+        <internal_name>Triage</internal_name>
         <rank>8</rank>
         <slot>3</slot>
       </ability>

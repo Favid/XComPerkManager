@@ -39,3 +39,4 @@ C:\Users\David\Documents\GitHub\XComPerkManager\XcomPerkManager\obj\Debug\XcomPe
 C:\Users\David\Documents\GitHub\XComPerkManager\XcomPerkManager\obj\Debug\XcomPerkManager.csproj.GenerateResource.Cache
 C:\Users\David\Documents\GitHub\XComPerkManager\XcomPerkManager\obj\Debug\XcomPerkManager.exe.manifest
 C:\Users\David\Documents\GitHub\XComPerkManager\XcomPerkManager\obj\Debug\XcomPerkManager.application
+C:\Users\David\Documents\GitHub\XComPerkManager\XcomPerkManager\obj\Debug\XcomPerkManager.Forms.Form1.resources

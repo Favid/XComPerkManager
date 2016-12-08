@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Ini;
 using System.IO;
+using XcomPerkManager.Forms;
 
 namespace XcomPerkManager
 {
@@ -508,5 +509,11 @@ namespace XcomPerkManager
         }
 
         #endregion Stat label click events
+
+        private void bTest_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.Show();
+        }
     }
 }

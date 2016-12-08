@@ -83,6 +83,7 @@
             // 
             // cSquaddie3
             // 
+            this.cSquaddie3.AllowDrop = true;
             this.cSquaddie3.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.soldierClassAbilityBindingSource, "internalName", true));
             this.cSquaddie3.DataSource = this.soldierClassAbilityBindingSource;
             this.cSquaddie3.DisplayMember = "internalName";
@@ -94,6 +95,9 @@
             this.cSquaddie3.TabIndex = 68;
             this.cSquaddie3.ValueMember = "internalName";
             this.cSquaddie3.SelectedIndexChanged += new System.EventHandler(this.cAbility_SelectedIndexChanged);
+            this.cSquaddie3.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cSquaddie3.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cSquaddie3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // soldierClassAbilityBindingSource
             // 
@@ -101,6 +105,7 @@
             // 
             // cSquaddie2
             // 
+            this.cSquaddie2.AllowDrop = true;
             this.cSquaddie2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.soldierClassAbilityBindingSource, "internalName", true));
             this.cSquaddie2.DataSource = this.soldierClassAbilityBindingSource;
             this.cSquaddie2.DisplayMember = "internalName";
@@ -112,6 +117,9 @@
             this.cSquaddie2.TabIndex = 67;
             this.cSquaddie2.ValueMember = "internalName";
             this.cSquaddie2.SelectedIndexChanged += new System.EventHandler(this.cAbility_SelectedIndexChanged);
+            this.cSquaddie2.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cSquaddie2.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cSquaddie2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // soldierClassAbilityBindingSource4
             // 
@@ -127,6 +135,7 @@
             // 
             // cSquaddie1
             // 
+            this.cSquaddie1.AllowDrop = true;
             this.cSquaddie1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.soldierClassAbilityBindingSource, "internalName", true));
             this.cSquaddie1.DataSource = this.soldierClassAbilityBindingSource;
             this.cSquaddie1.DisplayMember = "internalName";
@@ -138,6 +147,9 @@
             this.cSquaddie1.TabIndex = 66;
             this.cSquaddie1.ValueMember = "internalName";
             this.cSquaddie1.SelectedIndexChanged += new System.EventHandler(this.cAbility_SelectedIndexChanged);
+            this.cSquaddie1.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cSquaddie1.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cSquaddie1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // laSquaddie
             // 
@@ -150,6 +162,7 @@
             // 
             // cBrigadier3
             // 
+            this.cBrigadier3.AllowDrop = true;
             this.cBrigadier3.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.soldierClassAbilityBindingSource, "internalName", true));
             this.cBrigadier3.DataSource = this.soldierClassAbilityBindingSource;
             this.cBrigadier3.DisplayMember = "internalName";
@@ -161,9 +174,13 @@
             this.cBrigadier3.TabIndex = 64;
             this.cBrigadier3.ValueMember = "internalName";
             this.cBrigadier3.SelectedIndexChanged += new System.EventHandler(this.cAbility_SelectedIndexChanged);
+            this.cBrigadier3.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cBrigadier3.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cBrigadier3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cBrigadier2
             // 
+            this.cBrigadier2.AllowDrop = true;
             this.cBrigadier2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.soldierClassAbilityBindingSource, "internalName", true));
             this.cBrigadier2.DataSource = this.soldierClassAbilityBindingSource;
             this.cBrigadier2.DisplayMember = "internalName";
@@ -175,9 +192,13 @@
             this.cBrigadier2.TabIndex = 63;
             this.cBrigadier2.ValueMember = "internalName";
             this.cBrigadier2.SelectedIndexChanged += new System.EventHandler(this.cAbility_SelectedIndexChanged);
+            this.cBrigadier2.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cBrigadier2.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cBrigadier2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cBrigadier1
             // 
+            this.cBrigadier1.AllowDrop = true;
             this.cBrigadier1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.soldierClassAbilityBindingSource, "internalName", true));
             this.cBrigadier1.DataSource = this.soldierClassAbilityBindingSource;
             this.cBrigadier1.DisplayMember = "internalName";
@@ -189,9 +210,13 @@
             this.cBrigadier1.TabIndex = 62;
             this.cBrigadier1.ValueMember = "internalName";
             this.cBrigadier1.SelectedIndexChanged += new System.EventHandler(this.cAbility_SelectedIndexChanged);
+            this.cBrigadier1.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cBrigadier1.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cBrigadier1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cColonel3
             // 
+            this.cColonel3.AllowDrop = true;
             this.cColonel3.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.soldierClassAbilityBindingSource, "internalName", true));
             this.cColonel3.DataSource = this.soldierClassAbilityBindingSource;
             this.cColonel3.DisplayMember = "internalName";
@@ -203,9 +228,13 @@
             this.cColonel3.TabIndex = 61;
             this.cColonel3.ValueMember = "internalName";
             this.cColonel3.SelectedIndexChanged += new System.EventHandler(this.cAbility_SelectedIndexChanged);
+            this.cColonel3.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cColonel3.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cColonel3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cColonel2
             // 
+            this.cColonel2.AllowDrop = true;
             this.cColonel2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.soldierClassAbilityBindingSource, "internalName", true));
             this.cColonel2.DataSource = this.soldierClassAbilityBindingSource;
             this.cColonel2.DisplayMember = "internalName";
@@ -217,9 +246,13 @@
             this.cColonel2.TabIndex = 60;
             this.cColonel2.ValueMember = "internalName";
             this.cColonel2.SelectedIndexChanged += new System.EventHandler(this.cAbility_SelectedIndexChanged);
+            this.cColonel2.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cColonel2.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cColonel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cColonel1
             // 
+            this.cColonel1.AllowDrop = true;
             this.cColonel1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.soldierClassAbilityBindingSource, "internalName", true));
             this.cColonel1.DataSource = this.soldierClassAbilityBindingSource;
             this.cColonel1.DisplayMember = "internalName";
@@ -231,9 +264,13 @@
             this.cColonel1.TabIndex = 59;
             this.cColonel1.ValueMember = "internalName";
             this.cColonel1.SelectedIndexChanged += new System.EventHandler(this.cAbility_SelectedIndexChanged);
+            this.cColonel1.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cColonel1.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cColonel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cMajor3
             // 
+            this.cMajor3.AllowDrop = true;
             this.cMajor3.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.soldierClassAbilityBindingSource, "internalName", true));
             this.cMajor3.DataSource = this.soldierClassAbilityBindingSource;
             this.cMajor3.DisplayMember = "internalName";
@@ -245,9 +282,13 @@
             this.cMajor3.TabIndex = 58;
             this.cMajor3.ValueMember = "internalName";
             this.cMajor3.SelectedIndexChanged += new System.EventHandler(this.cAbility_SelectedIndexChanged);
+            this.cMajor3.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cMajor3.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cMajor3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cMajor2
             // 
+            this.cMajor2.AllowDrop = true;
             this.cMajor2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.soldierClassAbilityBindingSource, "internalName", true));
             this.cMajor2.DataSource = this.soldierClassAbilityBindingSource;
             this.cMajor2.DisplayMember = "internalName";
@@ -259,9 +300,13 @@
             this.cMajor2.TabIndex = 57;
             this.cMajor2.ValueMember = "internalName";
             this.cMajor2.SelectedIndexChanged += new System.EventHandler(this.cAbility_SelectedIndexChanged);
+            this.cMajor2.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cMajor2.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cMajor2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cMajor1
             // 
+            this.cMajor1.AllowDrop = true;
             this.cMajor1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.soldierClassAbilityBindingSource, "internalName", true));
             this.cMajor1.DataSource = this.soldierClassAbilityBindingSource;
             this.cMajor1.DisplayMember = "internalName";
@@ -273,9 +318,13 @@
             this.cMajor1.TabIndex = 56;
             this.cMajor1.ValueMember = "internalName";
             this.cMajor1.SelectedIndexChanged += new System.EventHandler(this.cAbility_SelectedIndexChanged);
+            this.cMajor1.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cMajor1.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cMajor1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cCaptain3
             // 
+            this.cCaptain3.AllowDrop = true;
             this.cCaptain3.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.soldierClassAbilityBindingSource, "internalName", true));
             this.cCaptain3.DataSource = this.soldierClassAbilityBindingSource;
             this.cCaptain3.DisplayMember = "internalName";
@@ -287,9 +336,13 @@
             this.cCaptain3.TabIndex = 55;
             this.cCaptain3.ValueMember = "internalName";
             this.cCaptain3.SelectedIndexChanged += new System.EventHandler(this.cAbility_SelectedIndexChanged);
+            this.cCaptain3.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cCaptain3.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cCaptain3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cCaptain2
             // 
+            this.cCaptain2.AllowDrop = true;
             this.cCaptain2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.soldierClassAbilityBindingSource, "internalName", true));
             this.cCaptain2.DataSource = this.soldierClassAbilityBindingSource;
             this.cCaptain2.DisplayMember = "internalName";
@@ -301,9 +354,13 @@
             this.cCaptain2.TabIndex = 54;
             this.cCaptain2.ValueMember = "internalName";
             this.cCaptain2.SelectedIndexChanged += new System.EventHandler(this.cAbility_SelectedIndexChanged);
+            this.cCaptain2.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cCaptain2.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cCaptain2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cCaptain1
             // 
+            this.cCaptain1.AllowDrop = true;
             this.cCaptain1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.soldierClassAbilityBindingSource, "internalName", true));
             this.cCaptain1.DataSource = this.soldierClassAbilityBindingSource;
             this.cCaptain1.DisplayMember = "internalName";
@@ -315,9 +372,13 @@
             this.cCaptain1.TabIndex = 53;
             this.cCaptain1.ValueMember = "internalName";
             this.cCaptain1.SelectedIndexChanged += new System.EventHandler(this.cAbility_SelectedIndexChanged);
+            this.cCaptain1.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cCaptain1.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cCaptain1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cLieutenant3
             // 
+            this.cLieutenant3.AllowDrop = true;
             this.cLieutenant3.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.soldierClassAbilityBindingSource, "internalName", true));
             this.cLieutenant3.DataSource = this.soldierClassAbilityBindingSource;
             this.cLieutenant3.DisplayMember = "internalName";
@@ -329,9 +390,13 @@
             this.cLieutenant3.TabIndex = 52;
             this.cLieutenant3.ValueMember = "internalName";
             this.cLieutenant3.SelectedIndexChanged += new System.EventHandler(this.cAbility_SelectedIndexChanged);
+            this.cLieutenant3.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cLieutenant3.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cLieutenant3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cLieutenant2
             // 
+            this.cLieutenant2.AllowDrop = true;
             this.cLieutenant2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.soldierClassAbilityBindingSource, "internalName", true));
             this.cLieutenant2.DataSource = this.soldierClassAbilityBindingSource;
             this.cLieutenant2.DisplayMember = "internalName";
@@ -343,9 +408,13 @@
             this.cLieutenant2.TabIndex = 51;
             this.cLieutenant2.ValueMember = "internalName";
             this.cLieutenant2.SelectedIndexChanged += new System.EventHandler(this.cAbility_SelectedIndexChanged);
+            this.cLieutenant2.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cLieutenant2.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cLieutenant2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cLieutenant1
             // 
+            this.cLieutenant1.AllowDrop = true;
             this.cLieutenant1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.soldierClassAbilityBindingSource, "internalName", true));
             this.cLieutenant1.DataSource = this.soldierClassAbilityBindingSource;
             this.cLieutenant1.DisplayMember = "internalName";
@@ -357,9 +426,13 @@
             this.cLieutenant1.TabIndex = 50;
             this.cLieutenant1.ValueMember = "internalName";
             this.cLieutenant1.SelectedIndexChanged += new System.EventHandler(this.cAbility_SelectedIndexChanged);
+            this.cLieutenant1.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cLieutenant1.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cLieutenant1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cSergeant3
             // 
+            this.cSergeant3.AllowDrop = true;
             this.cSergeant3.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.soldierClassAbilityBindingSource, "internalName", true));
             this.cSergeant3.DataSource = this.soldierClassAbilityBindingSource;
             this.cSergeant3.DisplayMember = "internalName";
@@ -371,9 +444,13 @@
             this.cSergeant3.TabIndex = 49;
             this.cSergeant3.ValueMember = "internalName";
             this.cSergeant3.SelectedIndexChanged += new System.EventHandler(this.cAbility_SelectedIndexChanged);
+            this.cSergeant3.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cSergeant3.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cSergeant3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cSergeant2
             // 
+            this.cSergeant2.AllowDrop = true;
             this.cSergeant2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.soldierClassAbilityBindingSource, "internalName", true));
             this.cSergeant2.DataSource = this.soldierClassAbilityBindingSource;
             this.cSergeant2.DisplayMember = "internalName";
@@ -385,9 +462,13 @@
             this.cSergeant2.TabIndex = 48;
             this.cSergeant2.ValueMember = "internalName";
             this.cSergeant2.SelectedIndexChanged += new System.EventHandler(this.cAbility_SelectedIndexChanged);
+            this.cSergeant2.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cSergeant2.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cSergeant2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cSergeant1
             // 
+            this.cSergeant1.AllowDrop = true;
             this.cSergeant1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.soldierClassAbilityBindingSource, "internalName", true));
             this.cSergeant1.DataSource = this.soldierClassAbilityBindingSource;
             this.cSergeant1.DisplayMember = "internalName";
@@ -399,9 +480,13 @@
             this.cSergeant1.TabIndex = 47;
             this.cSergeant1.ValueMember = "internalName";
             this.cSergeant1.SelectedIndexChanged += new System.EventHandler(this.cAbility_SelectedIndexChanged);
+            this.cSergeant1.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cSergeant1.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cSergeant1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cCorporal3
             // 
+            this.cCorporal3.AllowDrop = true;
             this.cCorporal3.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.soldierClassAbilityBindingSource, "internalName", true));
             this.cCorporal3.DataSource = this.soldierClassAbilityBindingSource;
             this.cCorporal3.DisplayMember = "internalName";
@@ -413,9 +498,13 @@
             this.cCorporal3.TabIndex = 46;
             this.cCorporal3.ValueMember = "internalName";
             this.cCorporal3.SelectedIndexChanged += new System.EventHandler(this.cAbility_SelectedIndexChanged);
+            this.cCorporal3.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cCorporal3.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cCorporal3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cCorporal2
             // 
+            this.cCorporal2.AllowDrop = true;
             this.cCorporal2.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.soldierClassAbilityBindingSource, "internalName", true));
             this.cCorporal2.DataSource = this.soldierClassAbilityBindingSource;
             this.cCorporal2.DisplayMember = "internalName";
@@ -427,9 +516,13 @@
             this.cCorporal2.TabIndex = 45;
             this.cCorporal2.ValueMember = "internalName";
             this.cCorporal2.SelectedIndexChanged += new System.EventHandler(this.cAbility_SelectedIndexChanged);
+            this.cCorporal2.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cCorporal2.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cCorporal2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cCorporal1
             // 
+            this.cCorporal1.AllowDrop = true;
             this.cCorporal1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.soldierClassAbilityBindingSource, "internalName", true));
             this.cCorporal1.DataSource = this.soldierClassAbilityBindingSource;
             this.cCorporal1.DisplayMember = "internalName";
@@ -441,6 +534,9 @@
             this.cCorporal1.TabIndex = 44;
             this.cCorporal1.ValueMember = "internalName";
             this.cCorporal1.SelectedIndexChanged += new System.EventHandler(this.cAbility_SelectedIndexChanged);
+            this.cCorporal1.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cCorporal1.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cCorporal1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // laBrigadier
             // 
@@ -516,6 +612,7 @@
             // 
             // cSquaddie6
             // 
+            this.cSquaddie6.AllowDrop = true;
             this.cSquaddie6.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.soldierClassAbilityBindingSource, "internalName", true));
             this.cSquaddie6.DataSource = this.soldierClassAbilityBindingSource;
             this.cSquaddie6.DisplayMember = "internalName";
@@ -527,9 +624,13 @@
             this.cSquaddie6.TabIndex = 71;
             this.cSquaddie6.ValueMember = "internalName";
             this.cSquaddie6.SelectedIndexChanged += new System.EventHandler(this.cAbility_SelectedIndexChanged);
+            this.cSquaddie6.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cSquaddie6.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cSquaddie6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cSquaddie5
             // 
+            this.cSquaddie5.AllowDrop = true;
             this.cSquaddie5.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.soldierClassAbilityBindingSource, "internalName", true));
             this.cSquaddie5.DataSource = this.soldierClassAbilityBindingSource;
             this.cSquaddie5.DisplayMember = "internalName";
@@ -541,9 +642,13 @@
             this.cSquaddie5.TabIndex = 70;
             this.cSquaddie5.ValueMember = "internalName";
             this.cSquaddie5.SelectedIndexChanged += new System.EventHandler(this.cAbility_SelectedIndexChanged);
+            this.cSquaddie5.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cSquaddie5.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cSquaddie5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cSquaddie4
             // 
+            this.cSquaddie4.AllowDrop = true;
             this.cSquaddie4.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.soldierClassAbilityBindingSource, "internalName", true));
             this.cSquaddie4.DataSource = this.soldierClassAbilityBindingSource;
             this.cSquaddie4.DisplayMember = "internalName";
@@ -555,6 +660,9 @@
             this.cSquaddie4.TabIndex = 69;
             this.cSquaddie4.ValueMember = "internalName";
             this.cSquaddie4.SelectedIndexChanged += new System.EventHandler(this.cAbility_SelectedIndexChanged);
+            this.cSquaddie4.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cSquaddie4.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cSquaddie4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // checkBox1
             // 
