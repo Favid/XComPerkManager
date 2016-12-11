@@ -84,18 +84,18 @@ namespace XcomPerkManager
             combo.SelectedIndex = combo.Items.IndexOf(getAbilityForCombo(rank, slot));
         }
 
-        private Ability getAbilityForCombo(string abilityInternalName)
+        private Ability getAbility(string abilityInternalName)
         {
             ClassOverview owner = Owner as ClassOverview;
 
-            SoldierClassAbility soldierAbility = owner.currentSoldier.soldierAbilities.Where(x => x.internalName == abilityInternalName).FirstOrDefault();
+            Ability soldierAbility = owner.abilities.Where(x => x.internalName == abilityInternalName).FirstOrDefault();
 
-            if (soldierAbility != null)
+            if(soldierAbility == null)
             {
-                return soldierAbility.getAbility();
+                return new Ability();
             }
 
-            return new Ability();
+            return soldierAbility;
         }
 
         private Ability getAbilityForCombo(SoldierRank rank, int slot)
@@ -205,8 +205,12 @@ namespace XcomPerkManager
         {
             //cSquaddie1.DoDragDrop(cSquaddie1.Text, DragDropEffects.Copy);
 
-            ComboBox comboSender = sender as ComboBox;
-            comboSender.DoDragDrop(comboSender, DragDropEffects.Copy);
+            if(chDragAndDrop.Checked)
+            {
+                ComboBox comboSender = sender as ComboBox;
+                comboSender.DoDragDrop(comboSender, DragDropEffects.Copy);
+            }
+            
         }
 
         private void cAbility_DragEnter(object sender, DragEventArgs e)
@@ -229,9 +233,9 @@ namespace XcomPerkManager
 
             string temp = comboSender.Text;
             //comboSender.Text = comboDragged.Text;
-            comboSender.SelectedIndex = comboSender.Items.IndexOf(getAbilityForCombo(comboDragged.Text));
+            comboSender.SelectedIndex = comboSender.Items.IndexOf(getAbility(comboDragged.Text));
             //comboDragged.Text = temp;
-            comboDragged.SelectedIndex = comboSender.Items.IndexOf(getAbilityForCombo(temp));
+            comboDragged.SelectedIndex = comboSender.Items.IndexOf(getAbility(temp));
         }
     }
 }

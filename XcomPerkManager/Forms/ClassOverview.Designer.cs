@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.laClass = new System.Windows.Forms.Label();
-            this.cClass = new System.Windows.Forms.ComboBox();
             this.soldierClassBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gMetadata = new System.Windows.Forms.GroupBox();
             this.bEditMetadata = new System.Windows.Forms.Button();
@@ -147,6 +145,8 @@
             this.laHelp = new System.Windows.Forms.Label();
             this.bIni = new System.Windows.Forms.Button();
             this.bTest = new System.Windows.Forms.Button();
+            this.cClass = new System.Windows.Forms.ComboBox();
+            this.laClass = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.soldierClassBindingSource)).BeginInit();
             this.gMetadata.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -154,29 +154,6 @@
             this.gAbilities.SuspendLayout();
             this.gStats.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // laClass
-            // 
-            this.laClass.AutoSize = true;
-            this.laClass.Location = new System.Drawing.Point(12, 9);
-            this.laClass.Name = "laClass";
-            this.laClass.Size = new System.Drawing.Size(32, 13);
-            this.laClass.TabIndex = 3;
-            this.laClass.Text = "Class";
-            // 
-            // cClass
-            // 
-            this.cClass.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.soldierClassBindingSource, "metadata", true));
-            this.cClass.DataSource = this.soldierClassBindingSource;
-            this.cClass.DisplayMember = "metadata";
-            this.cClass.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cClass.FormattingEnabled = true;
-            this.cClass.Location = new System.Drawing.Point(12, 25);
-            this.cClass.Name = "cClass";
-            this.cClass.Size = new System.Drawing.Size(323, 21);
-            this.cClass.TabIndex = 2;
-            this.cClass.ValueMember = "metadata";
-            this.cClass.SelectedIndexChanged += new System.EventHandler(this.cClass_SelectedIndexChanged);
             // 
             // soldierClassBindingSource
             // 
@@ -1402,6 +1379,29 @@
             this.bTest.UseVisualStyleBackColor = true;
             this.bTest.Click += new System.EventHandler(this.bTest_Click);
             // 
+            // cClass
+            // 
+            this.cClass.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.soldierClassBindingSource, "metadata", true));
+            this.cClass.DataSource = this.soldierClassBindingSource;
+            this.cClass.DisplayMember = "metadata";
+            this.cClass.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cClass.FormattingEnabled = true;
+            this.cClass.Location = new System.Drawing.Point(12, 25);
+            this.cClass.Name = "cClass";
+            this.cClass.Size = new System.Drawing.Size(323, 21);
+            this.cClass.TabIndex = 2;
+            this.cClass.ValueMember = "metadata";
+            this.cClass.SelectedIndexChanged += new System.EventHandler(this.cClass_SelectedIndexChanged);
+            // 
+            // laClass
+            // 
+            this.laClass.AutoSize = true;
+            this.laClass.Location = new System.Drawing.Point(12, 9);
+            this.laClass.Name = "laClass";
+            this.laClass.Size = new System.Drawing.Size(32, 13);
+            this.laClass.TabIndex = 3;
+            this.laClass.Text = "Class";
+            // 
             // ClassOverview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1439,9 +1439,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label laClass;
-        private System.Windows.Forms.ComboBox cClass;
         private System.Windows.Forms.GroupBox gMetadata;
         private System.Windows.Forms.Label laMetadataDescription;
         private System.Windows.Forms.Label laMetadataDisplayName;
@@ -1558,5 +1555,7 @@
         private System.Windows.Forms.Label laHelp;
         private System.Windows.Forms.Button bIni;
         private System.Windows.Forms.Button bTest;
+        private System.Windows.Forms.ComboBox cClass;
+        private System.Windows.Forms.Label laClass;
     }
 }

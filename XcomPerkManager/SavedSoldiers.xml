@@ -50,7 +50,7 @@
         <slot>6</slot>
       </ability>
       <ability>
-        <internal_name>Aggression</internal_name>
+        <internal_name>LightningReflexes_LW</internal_name>
         <rank>2</rank>
         <slot>1</slot>
       </ability>
@@ -60,7 +60,7 @@
         <slot>2</slot>
       </ability>
       <ability>
-        <internal_name>LightningReflexes_LW</internal_name>
+        <internal_name>ShadowOps_Breach</internal_name>
         <rank>2</rank>
         <slot>3</slot>
       </ability>
@@ -70,7 +70,7 @@
         <slot>1</slot>
       </ability>
       <ability>
-        <internal_name>ShadowOps_Magnum</internal_name>
+        <internal_name>CloseCombatSpecialist</internal_name>
         <rank>3</rank>
         <slot>2</slot>
       </ability>
@@ -85,7 +85,7 @@
         <slot>1</slot>
       </ability>
       <ability>
-        <internal_name>Faceoff</internal_name>
+        <internal_name>ShadowOps_Magnum</internal_name>
         <rank>4</rank>
         <slot>2</slot>
       </ability>
@@ -95,32 +95,32 @@
         <slot>3</slot>
       </ability>
       <ability>
-        <internal_name>CloseEncounters</internal_name>
+        <internal_name>WilltoSurvive</internal_name>
         <rank>5</rank>
         <slot>1</slot>
       </ability>
       <ability>
-        <internal_name>ShadowOps_CoupDeGrace</internal_name>
+        <internal_name>Aggression</internal_name>
         <rank>5</rank>
-        <slot>2</slot>
-      </ability>
-      <ability>
-        <internal_name>RapidFire</internal_name>
-        <rank>5</rank>
-        <slot>3</slot>
-      </ability>
-      <ability>
-        <internal_name>HardTarget</internal_name>
-        <rank>6</rank>
-        <slot>1</slot>
-      </ability>
-      <ability>
-        <internal_name>ClutchShot</internal_name>
-        <rank>6</rank>
         <slot>2</slot>
       </ability>
       <ability>
         <internal_name>ExtraConditioning</internal_name>
+        <rank>5</rank>
+        <slot>3</slot>
+      </ability>
+      <ability>
+        <internal_name>CloseEncounters</internal_name>
+        <rank>6</rank>
+        <slot>1</slot>
+      </ability>
+      <ability>
+        <internal_name>ShadowOps_CoupDeGrace</internal_name>
+        <rank>6</rank>
+        <slot>2</slot>
+      </ability>
+      <ability>
+        <internal_name>RapidFire</internal_name>
         <rank>6</rank>
         <slot>3</slot>
       </ability>
@@ -145,12 +145,12 @@
         <slot>1</slot>
       </ability>
       <ability>
-        <internal_name>Gunslinger</internal_name>
+        <internal_name>ShadowOps_ZoneOfControl</internal_name>
         <rank>8</rank>
         <slot>2</slot>
       </ability>
       <ability>
-        <internal_name>ShadowOps_SlamFire</internal_name>
+        <internal_name></internal_name>
         <rank>8</rank>
         <slot>3</slot>
       </ability>
@@ -383,7 +383,7 @@
         <slot>1</slot>
       </ability>
       <ability>
-        <internal_name>F_PoweredShot</internal_name>
+        <internal_name>F_SO_StandardShot</internal_name>
         <rank>1</rank>
         <slot>2</slot>
       </ability>
@@ -408,77 +408,77 @@
         <slot>6</slot>
       </ability>
       <ability>
+        <internal_name>ShadowOps_FirstStrike</internal_name>
+        <rank>2</rank>
+        <slot>1</slot>
+      </ability>
+      <ability>
+        <internal_name>LowProfile</internal_name>
+        <rank>2</rank>
+        <slot>2</slot>
+      </ability>
+      <ability>
+        <internal_name>Covert</internal_name>
+        <rank>2</rank>
+        <slot>3</slot>
+      </ability>
+      <ability>
+        <internal_name>Shadowstrike_LW</internal_name>
+        <rank>3</rank>
+        <slot>1</slot>
+      </ability>
+      <ability>
+        <internal_name>F_SO_Fireworks</internal_name>
+        <rank>3</rank>
+        <slot>2</slot>
+      </ability>
+      <ability>
         <internal_name>ReconMarkTargets</internal_name>
-        <rank>2</rank>
-        <slot>1</slot>
-      </ability>
-      <ability>
-        <internal_name>F_Foresight</internal_name>
-        <rank>2</rank>
-        <slot>2</slot>
-      </ability>
-      <ability>
-        <internal_name></internal_name>
-        <rank>2</rank>
-        <slot>3</slot>
-      </ability>
-      <ability>
-        <internal_name>DepthPerception</internal_name>
-        <rank>3</rank>
-        <slot>1</slot>
-      </ability>
-      <ability>
-        <internal_name>F_Fireworks</internal_name>
-        <rank>3</rank>
-        <slot>2</slot>
-      </ability>
-      <ability>
-        <internal_name></internal_name>
         <rank>3</rank>
         <slot>3</slot>
-      </ability>
-      <ability>
-        <internal_name>ShadowOps_SensorOverlays</internal_name>
-        <rank>4</rank>
-        <slot>1</slot>
-      </ability>
-      <ability>
-        <internal_name>ShadowOps_Fade</internal_name>
-        <rank>4</rank>
-        <slot>2</slot>
       </ability>
       <ability>
         <internal_name>F_Concentration</internal_name>
         <rank>4</rank>
-        <slot>3</slot>
-      </ability>
-      <ability>
-        <internal_name>MusashiAmbush</internal_name>
-        <rank>5</rank>
         <slot>1</slot>
       </ability>
       <ability>
-        <internal_name>ReconConcealedShot</internal_name>
-        <rank>5</rank>
+        <internal_name>F_SO_FastHands</internal_name>
+        <rank>4</rank>
         <slot>2</slot>
       </ability>
       <ability>
         <internal_name>ReconPinpointAccuracyShot</internal_name>
+        <rank>4</rank>
+        <slot>3</slot>
+      </ability>
+      <ability>
+        <internal_name>F_InTheZone</internal_name>
+        <rank>5</rank>
+        <slot>1</slot>
+      </ability>
+      <ability>
+        <internal_name>HitandRun</internal_name>
+        <rank>5</rank>
+        <slot>2</slot>
+      </ability>
+      <ability>
+        <internal_name>Stealth</internal_name>
         <rank>5</rank>
         <slot>3</slot>
       </ability>
       <ability>
-        <internal_name>MusashiEvasion</internal_name>
+        <internal_name>MusashiAmbush</internal_name>
         <rank>6</rank>
         <slot>1</slot>
       </ability>
       <ability>
-        <internal_name></internal_name>
+        <internal_name>ShadowOps_Tracking</internal_name>
         <rank>6</rank>
         <slot>2</slot>
       </ability>
       <ability>
-        <internal_name>HitandRun</internal_name>
+        <internal_name>F_QuickFeet</internal_name>
         <rank>6</rank>
         <slot>3</slot>
       </ability>
@@ -488,12 +488,12 @@
         <slot>1</slot>
       </ability>
       <ability>
-        <internal_name></internal_name>
+        <internal_name>BulletTime</internal_name>
         <rank>7</rank>
         <slot>2</slot>
       </ability>
       <ability>
-        <internal_name></internal_name>
+        <internal_name>F_ExposeWeakness</internal_name>
         <rank>7</rank>
         <slot>3</slot>
       </ability>
@@ -503,7 +503,7 @@
         <slot>1</slot>
       </ability>
       <ability>
-        <internal_name></internal_name>
+        <internal_name>F_SO_BothBarrels</internal_name>
         <rank>8</rank>
         <slot>2</slot>
       </ability>
@@ -746,7 +746,7 @@
         <slot>2</slot>
       </ability>
       <ability>
-        <internal_name></internal_name>
+        <internal_name>F_MP_StandardShot</internal_name>
         <rank>1</rank>
         <slot>3</slot>
       </ability>
@@ -771,7 +771,7 @@
         <slot>1</slot>
       </ability>
       <ability>
-        <internal_name>ShadowOps_Precision</internal_name>
+        <internal_name>DeathFromAbove</internal_name>
         <rank>2</rank>
         <slot>2</slot>
       </ability>
@@ -781,52 +781,52 @@
         <slot>3</slot>
       </ability>
       <ability>
-        <internal_name>SteadyWeapon</internal_name>
+        <internal_name>ShadowOps_Precision</internal_name>
         <rank>3</rank>
         <slot>1</slot>
       </ability>
       <ability>
-        <internal_name>ShadowOps_SensorOverlays</internal_name>
+        <internal_name>DamnGoodGround</internal_name>
         <rank>3</rank>
         <slot>2</slot>
       </ability>
       <ability>
-        <internal_name></internal_name>
+        <internal_name>Executioner</internal_name>
         <rank>3</rank>
         <slot>3</slot>
+      </ability>
+      <ability>
+        <internal_name>F_MP_Flurry</internal_name>
+        <rank>4</rank>
+        <slot>1</slot>
       </ability>
       <ability>
         <internal_name>PrecisionShot</internal_name>
         <rank>4</rank>
-        <slot>1</slot>
-      </ability>
-      <ability>
-        <internal_name>DeathFromAbove</internal_name>
-        <rank>4</rank>
         <slot>2</slot>
       </ability>
       <ability>
-        <internal_name></internal_name>
+        <internal_name>ShadowOps_Fade</internal_name>
         <rank>4</rank>
+        <slot>3</slot>
+      </ability>
+      <ability>
+        <internal_name>LightningHands</internal_name>
+        <rank>5</rank>
+        <slot>1</slot>
+      </ability>
+      <ability>
+        <internal_name></internal_name>
+        <rank>5</rank>
+        <slot>2</slot>
+      </ability>
+      <ability>
+        <internal_name>ShadowOps_Bullseye</internal_name>
+        <rank>5</rank>
         <slot>3</slot>
       </ability>
       <ability>
         <internal_name>KillZone</internal_name>
-        <rank>5</rank>
-        <slot>1</slot>
-      </ability>
-      <ability>
-        <internal_name>F_DisablingShot</internal_name>
-        <rank>5</rank>
-        <slot>2</slot>
-      </ability>
-      <ability>
-        <internal_name></internal_name>
-        <rank>5</rank>
-        <slot>3</slot>
-      </ability>
-      <ability>
-        <internal_name>DamnGoodGround</internal_name>
         <rank>6</rank>
         <slot>1</slot>
       </ability>
@@ -841,7 +841,7 @@
         <slot>3</slot>
       </ability>
       <ability>
-        <internal_name>Deadeye</internal_name>
+        <internal_name>F_MP_ArmorPiercer</internal_name>
         <rank>7</rank>
         <slot>1</slot>
       </ability>
@@ -866,7 +866,7 @@
         <slot>2</slot>
       </ability>
       <ability>
-        <internal_name></internal_name>
+        <internal_name>ShadowOps_Assassin</internal_name>
         <rank>8</rank>
         <slot>3</slot>
       </ability>
@@ -1094,7 +1094,7 @@
     </equipment>
     <abilities>
       <ability>
-        <internal_name>LightEmUp</internal_name>
+        <internal_name>Suppression_LW</internal_name>
         <rank>1</rank>
         <slot>1</slot>
       </ability>
@@ -1104,7 +1104,7 @@
         <slot>2</slot>
       </ability>
       <ability>
-        <internal_name></internal_name>
+        <internal_name>F_HW_Payload</internal_name>
         <rank>1</rank>
         <slot>3</slot>
       </ability>
@@ -1124,12 +1124,12 @@
         <slot>6</slot>
       </ability>
       <ability>
-        <internal_name>ShadowOps_Breach</internal_name>
+        <internal_name>CoveringFire</internal_name>
         <rank>2</rank>
         <slot>1</slot>
       </ability>
       <ability>
-        <internal_name>ShadowOps_HeavyArmor</internal_name>
+        <internal_name>F_ChipAway</internal_name>
         <rank>2</rank>
         <slot>2</slot>
       </ability>
@@ -1139,72 +1139,72 @@
         <slot>3</slot>
       </ability>
       <ability>
+        <internal_name>WilltoSurvive</internal_name>
+        <rank>3</rank>
+        <slot>1</slot>
+      </ability>
+      <ability>
         <internal_name>F_SaltInTheWound</internal_name>
         <rank>3</rank>
-        <slot>1</slot>
-      </ability>
-      <ability>
-        <internal_name>TankLWShockAbsorbantArmor</internal_name>
-        <rank>3</rank>
         <slot>2</slot>
       </ability>
       <ability>
-        <internal_name>GrazingFire</internal_name>
+        <internal_name></internal_name>
         <rank>3</rank>
         <slot>3</slot>
       </ability>
       <ability>
-        <internal_name>ShadowOps_Rocketeer</internal_name>
+        <internal_name>CoolUnderPressure</internal_name>
         <rank>4</rank>
         <slot>1</slot>
       </ability>
       <ability>
-        <internal_name>WilltoSurvive</internal_name>
+        <internal_name>ShadowOps_ImprovedSuppression</internal_name>
         <rank>4</rank>
-        <slot>2</slot>
-      </ability>
-      <ability>
-        <internal_name>F_TheBiggerTheyAre</internal_name>
-        <rank>4</rank>
-        <slot>3</slot>
-      </ability>
-      <ability>
-        <internal_name>F_RuptureWarheads</internal_name>
-        <rank>5</rank>
-        <slot>1</slot>
-      </ability>
-      <ability>
-        <internal_name>ShadowOps_Evasive</internal_name>
-        <rank>5</rank>
         <slot>2</slot>
       </ability>
       <ability>
         <internal_name>TankLWSurvivalTraining</internal_name>
-        <rank>5</rank>
-        <slot>3</slot>
-      </ability>
-      <ability>
-        <internal_name></internal_name>
-        <rank>6</rank>
-        <slot>1</slot>
-      </ability>
-      <ability>
-        <internal_name></internal_name>
-        <rank>6</rank>
-        <slot>2</slot>
-      </ability>
-      <ability>
-        <internal_name>F_Imposition</internal_name>
-        <rank>6</rank>
+        <rank>4</rank>
         <slot>3</slot>
       </ability>
       <ability>
         <internal_name>Salvo</internal_name>
+        <rank>5</rank>
+        <slot>1</slot>
+      </ability>
+      <ability>
+        <internal_name>Rainmaker</internal_name>
+        <rank>5</rank>
+        <slot>2</slot>
+      </ability>
+      <ability>
+        <internal_name>ShadowOps_Rocketeer</internal_name>
+        <rank>5</rank>
+        <slot>3</slot>
+      </ability>
+      <ability>
+        <internal_name>EverVigilant</internal_name>
+        <rank>6</rank>
+        <slot>1</slot>
+      </ability>
+      <ability>
+        <internal_name>F_HW_RuptureWarheads</internal_name>
+        <rank>6</rank>
+        <slot>2</slot>
+      </ability>
+      <ability>
+        <internal_name>DeepCover</internal_name>
+        <rank>6</rank>
+        <slot>3</slot>
+      </ability>
+      <ability>
+        <internal_name>Sentinel_LW</internal_name>
         <rank>7</rank>
         <slot>1</slot>
       </ability>
       <ability>
-        <internal_name>JuggDisorientationField</internal_name>
+        <internal_name>Lockdown</internal_name>
         <rank>7</rank>
         <slot>2</slot>
       </ability>
@@ -1214,17 +1214,17 @@
         <slot>3</slot>
       </ability>
       <ability>
-        <internal_name>Rainmaker</internal_name>
+        <internal_name>F_ShockWarheads</internal_name>
         <rank>8</rank>
         <slot>1</slot>
       </ability>
       <ability>
-        <internal_name>Sacrifice</internal_name>
+        <internal_name>ShadowOps_HeatAmmo</internal_name>
         <rank>8</rank>
         <slot>2</slot>
       </ability>
       <ability>
-        <internal_name>Lethal</internal_name>
+        <internal_name>ShadowOps_Airstrike</internal_name>
         <rank>8</rank>
         <slot>3</slot>
       </ability>
@@ -1452,7 +1452,7 @@
     </equipment>
     <abilities>
       <ability>
-        <internal_name>AreaSuppression</internal_name>
+        <internal_name>HaywireProtocol</internal_name>
         <rank>1</rank>
         <slot>1</slot>
       </ability>
@@ -1482,107 +1482,107 @@
         <slot>6</slot>
       </ability>
       <ability>
-        <internal_name>F_Mayhem</internal_name>
+        <internal_name>ShadowOps_HeavyArmor</internal_name>
         <rank>2</rank>
         <slot>1</slot>
       </ability>
       <ability>
-        <internal_name></internal_name>
+        <internal_name>HoloTargeting</internal_name>
         <rank>2</rank>
         <slot>2</slot>
       </ability>
       <ability>
-        <internal_name>ShadowOps_Aegis</internal_name>
+        <internal_name>Shredder</internal_name>
         <rank>2</rank>
         <slot>3</slot>
       </ability>
       <ability>
-        <internal_name>ShadowOps_ImprovedSuppression</internal_name>
+        <internal_name>ShadowOps_RestorationProtocol</internal_name>
         <rank>3</rank>
         <slot>1</slot>
-      </ability>
-      <ability>
-        <internal_name></internal_name>
-        <rank>3</rank>
-        <slot>2</slot>
       </ability>
       <ability>
         <internal_name>ShadowOps_AdvancedShieldProtocol</internal_name>
         <rank>3</rank>
+        <slot>2</slot>
+      </ability>
+      <ability>
+        <internal_name>ScanningProtocol</internal_name>
+        <rank>3</rank>
         <slot>3</slot>
       </ability>
       <ability>
-        <internal_name>Lockdown</internal_name>
+        <internal_name>ShadowOps_BurstFire</internal_name>
         <rank>4</rank>
         <slot>1</slot>
       </ability>
       <ability>
-        <internal_name></internal_name>
+        <internal_name>ChainShot</internal_name>
         <rank>4</rank>
         <slot>2</slot>
       </ability>
       <ability>
-        <internal_name>ShadowOps_RestorationProtocol</internal_name>
+        <internal_name>ShadowOps_StealthProtocol</internal_name>
         <rank>4</rank>
         <slot>3</slot>
-      </ability>
-      <ability>
-        <internal_name>DangerZone</internal_name>
-        <rank>5</rank>
-        <slot>1</slot>
-      </ability>
-      <ability>
-        <internal_name></internal_name>
-        <rank>5</rank>
-        <slot>2</slot>
       </ability>
       <ability>
         <internal_name>ShadowOps_ShieldsUp</internal_name>
         <rank>5</rank>
+        <slot>1</slot>
+      </ability>
+      <ability>
+        <internal_name>ShadowOps_SensorOverlays</internal_name>
+        <rank>5</rank>
+        <slot>2</slot>
+      </ability>
+      <ability>
+        <internal_name>Airdrop</internal_name>
+        <rank>5</rank>
         <slot>3</slot>
       </ability>
       <ability>
-        <internal_name>ShadowOps_Fortify</internal_name>
+        <internal_name>ShadowOps_Aegis</internal_name>
         <rank>6</rank>
         <slot>1</slot>
       </ability>
       <ability>
-        <internal_name></internal_name>
+        <internal_name>IronCurtain</internal_name>
         <rank>6</rank>
         <slot>2</slot>
+      </ability>
+      <ability>
+        <internal_name>CapacitorDischarge</internal_name>
+        <rank>6</rank>
+        <slot>3</slot>
+      </ability>
+      <ability>
+        <internal_name>F_Resupply</internal_name>
+        <rank>7</rank>
+        <slot>1</slot>
+      </ability>
+      <ability>
+        <internal_name>DamageControl</internal_name>
+        <rank>7</rank>
+        <slot>2</slot>
+      </ability>
+      <ability>
+        <internal_name>F_TheBiggerTheyAre</internal_name>
+        <rank>7</rank>
+        <slot>3</slot>
       </ability>
       <ability>
         <internal_name>ShadowOps_StasisField</internal_name>
-        <rank>6</rank>
-        <slot>3</slot>
-      </ability>
-      <ability>
-        <internal_name></internal_name>
-        <rank>7</rank>
+        <rank>8</rank>
         <slot>1</slot>
-      </ability>
-      <ability>
-        <internal_name></internal_name>
-        <rank>7</rank>
-        <slot>2</slot>
       </ability>
       <ability>
         <internal_name>ShadowOps_Supercharge</internal_name>
-        <rank>7</rank>
-        <slot>3</slot>
-      </ability>
-      <ability>
-        <internal_name></internal_name>
-        <rank>8</rank>
-        <slot>1</slot>
-      </ability>
-      <ability>
-        <internal_name></internal_name>
         <rank>8</rank>
         <slot>2</slot>
       </ability>
       <ability>
-        <internal_name></internal_name>
+        <internal_name>SaturationFire</internal_name>
         <rank>8</rank>
         <slot>3</slot>
       </ability>
@@ -1840,17 +1840,17 @@
         <slot>6</slot>
       </ability>
       <ability>
-        <internal_name>ShadowOps_Fastball</internal_name>
+        <internal_name>ShadowOps_Tactician</internal_name>
         <rank>2</rank>
         <slot>1</slot>
       </ability>
       <ability>
-        <internal_name>RapidDeployment</internal_name>
+        <internal_name>ShadowOps_ReadyForAnything</internal_name>
         <rank>2</rank>
         <slot>2</slot>
       </ability>
       <ability>
-        <internal_name>CoolUnderPressure</internal_name>
+        <internal_name>ShadowOps_HitAndRun</internal_name>
         <rank>2</rank>
         <slot>3</slot>
       </ability>
@@ -1860,12 +1860,12 @@
         <slot>1</slot>
       </ability>
       <ability>
-        <internal_name>HeavyOrdnance</internal_name>
+        <internal_name>F_TheBiggerTheyAre</internal_name>
         <rank>3</rank>
         <slot>2</slot>
       </ability>
       <ability>
-        <internal_name>CoveringFire</internal_name>
+        <internal_name>Flashbanger</internal_name>
         <rank>3</rank>
         <slot>3</slot>
       </ability>
@@ -1875,72 +1875,72 @@
         <slot>1</slot>
       </ability>
       <ability>
+        <internal_name>BlastPadding</internal_name>
+        <rank>4</rank>
+        <slot>2</slot>
+      </ability>
+      <ability>
+        <internal_name>DenseSmoke</internal_name>
+        <rank>4</rank>
+        <slot>3</slot>
+      </ability>
+      <ability>
         <internal_name>BiggestBooms</internal_name>
-        <rank>4</rank>
-        <slot>2</slot>
-      </ability>
-      <ability>
-        <internal_name></internal_name>
-        <rank>4</rank>
-        <slot>3</slot>
-      </ability>
-      <ability>
-        <internal_name>VolatileMix</internal_name>
         <rank>5</rank>
         <slot>1</slot>
       </ability>
       <ability>
-        <internal_name>ShadowOps_ChainReaction</internal_name>
+        <internal_name>ShadowOps_Fortify</internal_name>
         <rank>5</rank>
         <slot>2</slot>
       </ability>
       <ability>
-        <internal_name></internal_name>
+        <internal_name>HeavyOrdnance</internal_name>
         <rank>5</rank>
         <slot>3</slot>
       </ability>
       <ability>
-        <internal_name>Flashbanger</internal_name>
+        <internal_name>F_ExtraShred</internal_name>
         <rank>6</rank>
         <slot>1</slot>
       </ability>
       <ability>
-        <internal_name>ShadowOps_Pyromaniac</internal_name>
+        <internal_name></internal_name>
         <rank>6</rank>
         <slot>2</slot>
       </ability>
       <ability>
-        <internal_name></internal_name>
+        <internal_name>ShadowOps_CombatDrugs</internal_name>
         <rank>6</rank>
         <slot>3</slot>
+      </ability>
+      <ability>
+        <internal_name>ShadowOps_HeatAmmo</internal_name>
+        <rank>7</rank>
+        <slot>1</slot>
+      </ability>
+      <ability>
+        <internal_name></internal_name>
+        <rank>7</rank>
+        <slot>2</slot>
       </ability>
       <ability>
         <internal_name>StingGrenades</internal_name>
         <rank>7</rank>
-        <slot>1</slot>
-      </ability>
-      <ability>
-        <internal_name>DenseSmoke</internal_name>
-        <rank>7</rank>
-        <slot>2</slot>
-      </ability>
-      <ability>
-        <internal_name>EverVigilant</internal_name>
-        <rank>7</rank>
         <slot>3</slot>
       </ability>
       <ability>
-        <internal_name>FullKit</internal_name>
+        <internal_name>ShadowOps_DangerZone</internal_name>
         <rank>8</rank>
         <slot>1</slot>
       </ability>
       <ability>
-        <internal_name>ShadowOps_CombatDrugs</internal_name>
+        <internal_name>RapidReaction</internal_name>
         <rank>8</rank>
         <slot>2</slot>
       </ability>
       <ability>
-        <internal_name>RapidReaction</internal_name>
+        <internal_name>FullKit</internal_name>
         <rank>8</rank>
         <slot>3</slot>
       </ability>
@@ -2168,12 +2168,12 @@
     </equipment>
     <abilities>
       <ability>
-        <internal_name>IntrusionProtocol</internal_name>
+        <internal_name>MindMerge</internal_name>
         <rank>1</rank>
         <slot>1</slot>
       </ability>
       <ability>
-        <internal_name>ShadowOps_ShieldProtocol</internal_name>
+        <internal_name></internal_name>
         <rank>1</rank>
         <slot>2</slot>
       </ability>
@@ -2198,17 +2198,17 @@
         <slot>6</slot>
       </ability>
       <ability>
-        <internal_name></internal_name>
+        <internal_name>Insanity</internal_name>
         <rank>2</rank>
         <slot>1</slot>
       </ability>
       <ability>
-        <internal_name>CoolUnderPressure</internal_name>
+        <internal_name></internal_name>
         <rank>2</rank>
         <slot>2</slot>
       </ability>
       <ability>
-        <internal_name></internal_name>
+        <internal_name>Inspire</internal_name>
         <rank>2</rank>
         <slot>3</slot>
       </ability>
@@ -2218,32 +2218,32 @@
         <slot>1</slot>
       </ability>
       <ability>
-        <internal_name>ShadowOps_ReadyForAnything</internal_name>
-        <rank>3</rank>
-        <slot>2</slot>
-      </ability>
-      <ability>
         <internal_name></internal_name>
         <rank>3</rank>
+        <slot>2</slot>
+      </ability>
+      <ability>
+        <internal_name>SoulMerge</internal_name>
+        <rank>3</rank>
         <slot>3</slot>
       </ability>
       <ability>
-        <internal_name></internal_name>
+        <internal_name>Soulfire</internal_name>
         <rank>4</rank>
         <slot>1</slot>
       </ability>
       <ability>
-        <internal_name></internal_name>
+        <internal_name>Fortress</internal_name>
         <rank>4</rank>
         <slot>2</slot>
       </ability>
       <ability>
-        <internal_name></internal_name>
+        <internal_name>Solace</internal_name>
         <rank>4</rank>
         <slot>3</slot>
       </ability>
       <ability>
-        <internal_name></internal_name>
+        <internal_name>Stasis</internal_name>
         <rank>5</rank>
         <slot>1</slot>
       </ability>
@@ -2253,7 +2253,7 @@
         <slot>2</slot>
       </ability>
       <ability>
-        <internal_name></internal_name>
+        <internal_name>Renewal</internal_name>
         <rank>5</rank>
         <slot>3</slot>
       </ability>
@@ -2263,7 +2263,7 @@
         <slot>1</slot>
       </ability>
       <ability>
-        <internal_name></internal_name>
+        <internal_name>Sustain</internal_name>
         <rank>6</rank>
         <slot>2</slot>
       </ability>
@@ -2273,7 +2273,7 @@
         <slot>3</slot>
       </ability>
       <ability>
-        <internal_name></internal_name>
+        <internal_name>Fuse</internal_name>
         <rank>7</rank>
         <slot>1</slot>
       </ability>
@@ -2283,22 +2283,22 @@
         <slot>2</slot>
       </ability>
       <ability>
-        <internal_name></internal_name>
+        <internal_name>JuggDistortionField</internal_name>
         <rank>7</rank>
         <slot>3</slot>
       </ability>
       <ability>
-        <internal_name></internal_name>
+        <internal_name>VoidRift</internal_name>
         <rank>8</rank>
         <slot>1</slot>
       </ability>
       <ability>
-        <internal_name>Sentinel_LW</internal_name>
+        <internal_name>NullLance</internal_name>
         <rank>8</rank>
         <slot>2</slot>
       </ability>
       <ability>
-        <internal_name></internal_name>
+        <internal_name>Domination</internal_name>
         <rank>8</rank>
         <slot>3</slot>
       </ability>
@@ -2561,82 +2561,82 @@
         <slot>1</slot>
       </ability>
       <ability>
-        <internal_name>EmergencyLifeSupport</internal_name>
+        <internal_name>Blademaster</internal_name>
         <rank>2</rank>
-        <slot>2</slot>
-      </ability>
-      <ability>
-        <internal_name>ShadowOps_Packmaster</internal_name>
-        <rank>2</rank>
-        <slot>3</slot>
-      </ability>
-      <ability>
-        <internal_name>F_Maim</internal_name>
-        <rank>3</rank>
-        <slot>1</slot>
-      </ability>
-      <ability>
-        <internal_name></internal_name>
-        <rank>3</rank>
-        <slot>2</slot>
-      </ability>
-      <ability>
-        <internal_name>Renewal</internal_name>
-        <rank>3</rank>
-        <slot>3</slot>
-      </ability>
-      <ability>
-        <internal_name>Aptitude</internal_name>
-        <rank>4</rank>
-        <slot>1</slot>
-      </ability>
-      <ability>
-        <internal_name>SprayAndPrey</internal_name>
-        <rank>4</rank>
-        <slot>2</slot>
-      </ability>
-      <ability>
-        <internal_name>HitandRun</internal_name>
-        <rank>4</rank>
-        <slot>3</slot>
-      </ability>
-      <ability>
-        <internal_name>EverVigilant</internal_name>
-        <rank>5</rank>
-        <slot>1</slot>
-      </ability>
-      <ability>
-        <internal_name>DefensiveTreatment</internal_name>
-        <rank>5</rank>
-        <slot>2</slot>
-      </ability>
-      <ability>
-        <internal_name>ShadowOps_SecondWind</internal_name>
-        <rank>5</rank>
-        <slot>3</slot>
-      </ability>
-      <ability>
-        <internal_name>F_Maim</internal_name>
-        <rank>6</rank>
-        <slot>1</slot>
-      </ability>
-      <ability>
-        <internal_name>JuggDistortionField</internal_name>
-        <rank>6</rank>
         <slot>2</slot>
       </ability>
       <ability>
         <internal_name>TankLWSteadfast</internal_name>
+        <rank>2</rank>
+        <slot>3</slot>
+      </ability>
+      <ability>
+        <internal_name>F_Maim</internal_name>
+        <rank>3</rank>
+        <slot>1</slot>
+      </ability>
+      <ability>
+        <internal_name>CloseAndPersonal</internal_name>
+        <rank>3</rank>
+        <slot>2</slot>
+      </ability>
+      <ability>
+        <internal_name>Aptitude</internal_name>
+        <rank>3</rank>
+        <slot>3</slot>
+      </ability>
+      <ability>
+        <internal_name>ShadowOps_Fracture</internal_name>
+        <rank>4</rank>
+        <slot>1</slot>
+      </ability>
+      <ability>
+        <internal_name>F_SlashAndDash</internal_name>
+        <rank>4</rank>
+        <slot>2</slot>
+      </ability>
+      <ability>
+        <internal_name>Dedication</internal_name>
+        <rank>4</rank>
+        <slot>3</slot>
+      </ability>
+      <ability>
+        <internal_name></internal_name>
+        <rank>5</rank>
+        <slot>1</slot>
+      </ability>
+      <ability>
+        <internal_name>Cutthroat</internal_name>
+        <rank>5</rank>
+        <slot>2</slot>
+      </ability>
+      <ability>
+        <internal_name></internal_name>
+        <rank>5</rank>
+        <slot>3</slot>
+      </ability>
+      <ability>
+        <internal_name>DefensiveTreatment</internal_name>
+        <rank>6</rank>
+        <slot>1</slot>
+      </ability>
+      <ability>
+        <internal_name>Bladestorm</internal_name>
+        <rank>6</rank>
+        <slot>2</slot>
+      </ability>
+      <ability>
+        <internal_name>ShadowOps_SecondWind</internal_name>
         <rank>6</rank>
         <slot>3</slot>
       </ability>
       <ability>
-        <internal_name>F_Momentum</internal_name>
+        <internal_name>HuntersInstinct</internal_name>
         <rank>7</rank>
         <slot>1</slot>
       </ability>
       <ability>
-        <internal_name>HuntersInstinct</internal_name>
+        <internal_name>Triage</internal_name>
         <rank>7</rank>
         <slot>2</slot>
       </ability>
@@ -2656,7 +2656,7 @@
         <slot>2</slot>
       </ability>
       <ability>
-        <internal_name>Triage</internal_name>
+        <internal_name>Renewal</internal_name>
         <rank>8</rank>
         <slot>3</slot>
       </ability>

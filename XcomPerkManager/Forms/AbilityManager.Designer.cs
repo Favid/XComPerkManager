@@ -74,6 +74,7 @@
             this.bSave = new System.Windows.Forms.Button();
             this.soldierClassAbilityBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.laHelp = new System.Windows.Forms.Label();
+            this.chDragAndDrop = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.soldierClassAbilityBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.soldierClassAbilityBindingSource4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.soldierClassAbilityBindingSource1)).BeginInit();
@@ -707,11 +708,22 @@
             this.laHelp.Text = "A close quarters specialist that excels at dealing high critical damage and takin" +
     "g hits. Not very effective at longer ranges.";
             // 
+            // chDragAndDrop
+            // 
+            this.chDragAndDrop.AutoSize = true;
+            this.chDragAndDrop.Location = new System.Drawing.Point(159, 35);
+            this.chDragAndDrop.Name = "chDragAndDrop";
+            this.chDragAndDrop.Size = new System.Drawing.Size(96, 17);
+            this.chDragAndDrop.TabIndex = 76;
+            this.chDragAndDrop.Text = "Drag and Drop";
+            this.chDragAndDrop.UseVisualStyleBackColor = true;
+            // 
             // AbilityManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(537, 463);
+            this.Controls.Add(this.chDragAndDrop);
             this.Controls.Add(this.laHelp);
             this.Controls.Add(this.bSave);
             this.Controls.Add(this.bCancel);
@@ -812,5 +824,6 @@
         private System.Windows.Forms.BindingSource soldierClassAbilityBindingSource4;
         private System.Windows.Forms.BindingSource soldierClassAbilityBindingSource3;
         private System.Windows.Forms.Label laHelp;
+        private System.Windows.Forms.CheckBox chDragAndDrop;
     }
 }
