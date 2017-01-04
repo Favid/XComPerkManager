@@ -3235,7 +3235,7 @@
       <kill_assists_per_kill>5</kill_assists_per_kill>
     </experience>
     <equipment>
-      <squaddie_loadout>SquaddieF_S_Assault</squaddie_loadout>
+      <squaddie_loadout>SquaddieF_R_Assault</squaddie_loadout>
       <primary_weapon>shotgun</primary_weapon>
       <secondary_weapon>sword</secondary_weapon>
       <allowed_armors>soldier</allowed_armors>
@@ -3585,15 +3585,15 @@
       <internal_name>F_R_Scout</internal_name>
       <display_name>Scout</display_name>
       <description>The Scout serves as our primary scouting unit, using a sword to deliver stealthy close-range attacks.</description>
-      <icon_string>img:///UILibrary_Common.class_ranger</icon_string>
+      <icon_string>img:///UILibrary_LW_PerkPack.Class_Shinobi</icon_string>
     </metadata>
     <experience>
-      <number_in_forced_deck>2</number_in_forced_deck>
+      <number_in_forced_deck>1</number_in_forced_deck>
       <number_in_deck>4</number_in_deck>
-      <kill_assists_per_kill>5</kill_assists_per_kill>
+      <kill_assists_per_kill>4</kill_assists_per_kill>
     </experience>
     <equipment>
-      <squaddie_loadout>SquaddieF_S_Scout</squaddie_loadout>
+      <squaddie_loadout>SquaddieF_R_Scout</squaddie_loadout>
       <primary_weapon>rifle</primary_weapon>
       <secondary_weapon>pistol</secondary_weapon>
       <allowed_armors>soldier</allowed_armors>
@@ -3738,37 +3738,37 @@
     <stats>
       <stat>
         <type>0</type>
-        <value>5</value>
+        <value>1</value>
         <rank>1</rank>
       </stat>
       <stat>
         <type>0</type>
-        <value>5</value>
+        <value>1</value>
         <rank>2</rank>
       </stat>
       <stat>
         <type>0</type>
-        <value>5</value>
+        <value>1</value>
         <rank>3</rank>
       </stat>
       <stat>
         <type>0</type>
-        <value>5</value>
+        <value>1</value>
         <rank>4</rank>
       </stat>
       <stat>
         <type>0</type>
-        <value>5</value>
+        <value>0</value>
         <rank>5</rank>
       </stat>
       <stat>
         <type>0</type>
-        <value>5</value>
+        <value>1</value>
         <rank>6</rank>
       </stat>
       <stat>
         <type>0</type>
-        <value>5</value>
+        <value>0</value>
         <rank>7</rank>
       </stat>
       <stat>
@@ -3778,102 +3778,102 @@
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>4</value>
         <rank>1</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>4</value>
         <rank>2</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>3</value>
         <rank>3</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>3</value>
         <rank>4</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>2</value>
         <rank>5</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>2</value>
         <rank>6</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>2</value>
         <rank>7</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>2</value>
         <rank>8</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>1</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>2</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>3</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>4</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>5</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>6</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>7</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>8</rank>
       </stat>
       <stat>
         <type>3</type>
-        <value>5</value>
+        <value>0</value>
         <rank>1</rank>
       </stat>
       <stat>
         <type>3</type>
-        <value>5</value>
+        <value>0</value>
         <rank>2</rank>
       </stat>
       <stat>
         <type>3</type>
-        <value>5</value>
+        <value>0</value>
         <rank>3</rank>
       </stat>
       <stat>
         <type>3</type>
-        <value>5</value>
+        <value>0</value>
         <rank>4</rank>
       </stat>
       <stat>
@@ -3883,7 +3883,7 @@
       </stat>
       <stat>
         <type>3</type>
-        <value>5</value>
+        <value>0</value>
         <rank>6</rank>
       </stat>
       <stat>
@@ -3898,42 +3898,42 @@
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>1</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>2</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>3</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>4</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>5</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>6</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>7</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>8</rank>
       </stat>
     </stats>
@@ -3942,16 +3942,16 @@
     <metadata>
       <internal_name>F_R_Specialist</internal_name>
       <display_name>Specialist</display_name>
-      <description></description>
+      <description>Operating some of our most advanced equipment, Specialists deploy robotic drones on the battlefield that can be outfitted for combat or field medic duty.</description>
       <icon_string>img:///UILibrary_Common.class_specialist</icon_string>
     </metadata>
     <experience>
-      <number_in_forced_deck>2</number_in_forced_deck>
+      <number_in_forced_deck>1</number_in_forced_deck>
       <number_in_deck>4</number_in_deck>
-      <kill_assists_per_kill>5</kill_assists_per_kill>
+      <kill_assists_per_kill>3</kill_assists_per_kill>
     </experience>
     <equipment>
-      <squaddie_loadout>SquaddieF_S_Assault</squaddie_loadout>
+      <squaddie_loadout>SquaddieF_R_Specialist</squaddie_loadout>
       <primary_weapon>rifle</primary_weapon>
       <secondary_weapon>gremlin</secondary_weapon>
       <allowed_armors>soldier</allowed_armors>
@@ -4096,127 +4096,127 @@
     <stats>
       <stat>
         <type>0</type>
-        <value>5</value>
+        <value>1</value>
         <rank>1</rank>
       </stat>
       <stat>
         <type>0</type>
-        <value>5</value>
+        <value>0</value>
         <rank>2</rank>
-      </stat>
-      <stat>
-        <type>0</type>
-        <value>5</value>
-        <rank>3</rank>
-      </stat>
-      <stat>
-        <type>0</type>
-        <value>5</value>
-        <rank>4</rank>
-      </stat>
-      <stat>
-        <type>0</type>
-        <value>5</value>
-        <rank>5</rank>
-      </stat>
-      <stat>
-        <type>0</type>
-        <value>5</value>
-        <rank>6</rank>
-      </stat>
-      <stat>
-        <type>0</type>
-        <value>5</value>
-        <rank>7</rank>
       </stat>
       <stat>
         <type>0</type>
         <value>1</value>
+        <rank>3</rank>
+      </stat>
+      <stat>
+        <type>0</type>
+        <value>0</value>
+        <rank>4</rank>
+      </stat>
+      <stat>
+        <type>0</type>
+        <value>1</value>
+        <rank>5</rank>
+      </stat>
+      <stat>
+        <type>0</type>
+        <value>0</value>
+        <rank>6</rank>
+      </stat>
+      <stat>
+        <type>0</type>
+        <value>1</value>
+        <rank>7</rank>
+      </stat>
+      <stat>
+        <type>0</type>
+        <value>0</value>
         <rank>8</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>4</value>
         <rank>1</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>3</value>
         <rank>2</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>3</value>
         <rank>3</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>3</value>
         <rank>4</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>2</value>
         <rank>5</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>2</value>
         <rank>6</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>1</value>
         <rank>7</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>1</value>
         <rank>8</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>1</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>2</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>3</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>4</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>5</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>6</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>7</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>8</rank>
       </stat>
       <stat>
         <type>3</type>
-        <value>5</value>
+        <value>45</value>
         <rank>1</rank>
       </stat>
       <stat>
@@ -4256,42 +4256,42 @@
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>1</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>2</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>3</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>4</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>5</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>6</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>7</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>8</rank>
       </stat>
     </stats>
@@ -4299,17 +4299,17 @@
   <soldier>
     <metadata>
       <internal_name>F_R_Grenadier</internal_name>
-      <display_name>Specialist</display_name>
-      <description></description>
-      <icon_string>img:///UILibrary_Common.class_ranger</icon_string>
+      <display_name>Grenadier</display_name>
+      <description>Serving as our demolitions experts, the Grenadiers provide heavy ordnance delivery whenever and wherever we need it. They may also specialize in support grenades to protect our troops and disable our enemies.</description>
+      <icon_string>img:///UILibrary_Common.class_grenadier</icon_string>
     </metadata>
     <experience>
-      <number_in_forced_deck>2</number_in_forced_deck>
+      <number_in_forced_deck>1</number_in_forced_deck>
       <number_in_deck>4</number_in_deck>
-      <kill_assists_per_kill>5</kill_assists_per_kill>
+      <kill_assists_per_kill>4</kill_assists_per_kill>
     </experience>
     <equipment>
-      <squaddie_loadout>SquaddieF_S_Assault</squaddie_loadout>
+      <squaddie_loadout>SquaddieF_R_Grenadier</squaddie_loadout>
       <primary_weapon>shotgun</primary_weapon>
       <secondary_weapon>grenadelauncher</secondary_weapon>
       <allowed_armors>soldier</allowed_armors>
@@ -4454,142 +4454,142 @@
     <stats>
       <stat>
         <type>0</type>
-        <value>5</value>
+        <value>1</value>
         <rank>1</rank>
-      </stat>
-      <stat>
-        <type>0</type>
-        <value>5</value>
-        <rank>2</rank>
-      </stat>
-      <stat>
-        <type>0</type>
-        <value>5</value>
-        <rank>3</rank>
-      </stat>
-      <stat>
-        <type>0</type>
-        <value>5</value>
-        <rank>4</rank>
-      </stat>
-      <stat>
-        <type>0</type>
-        <value>5</value>
-        <rank>5</rank>
-      </stat>
-      <stat>
-        <type>0</type>
-        <value>5</value>
-        <rank>6</rank>
-      </stat>
-      <stat>
-        <type>0</type>
-        <value>5</value>
-        <rank>7</rank>
       </stat>
       <stat>
         <type>0</type>
         <value>1</value>
+        <rank>2</rank>
+      </stat>
+      <stat>
+        <type>0</type>
+        <value>1</value>
+        <rank>3</rank>
+      </stat>
+      <stat>
+        <type>0</type>
+        <value>0</value>
+        <rank>4</rank>
+      </stat>
+      <stat>
+        <type>0</type>
+        <value>1</value>
+        <rank>5</rank>
+      </stat>
+      <stat>
+        <type>0</type>
+        <value>0</value>
+        <rank>6</rank>
+      </stat>
+      <stat>
+        <type>0</type>
+        <value>1</value>
+        <rank>7</rank>
+      </stat>
+      <stat>
+        <type>0</type>
+        <value>0</value>
         <rank>8</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>3</value>
         <rank>1</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>3</value>
         <rank>2</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>3</value>
         <rank>3</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>2</value>
         <rank>4</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>2</value>
         <rank>5</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>2</value>
         <rank>6</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>2</value>
         <rank>7</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>2</value>
         <rank>8</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>1</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>2</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>3</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>4</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>5</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>6</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>7</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>8</rank>
       </stat>
       <stat>
         <type>3</type>
-        <value>5</value>
+        <value>0</value>
         <rank>1</rank>
       </stat>
       <stat>
         <type>3</type>
-        <value>5</value>
+        <value>0</value>
         <rank>2</rank>
       </stat>
       <stat>
         <type>3</type>
-        <value>5</value>
+        <value>0</value>
         <rank>3</rank>
       </stat>
       <stat>
         <type>3</type>
-        <value>5</value>
+        <value>0</value>
         <rank>4</rank>
       </stat>
       <stat>
@@ -4599,7 +4599,7 @@
       </stat>
       <stat>
         <type>3</type>
-        <value>5</value>
+        <value>0</value>
         <rank>6</rank>
       </stat>
       <stat>
@@ -4614,42 +4614,42 @@
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>1</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>2</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>3</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>4</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>5</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>6</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>7</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>8</rank>
       </stat>
     </stats>
@@ -4657,17 +4657,17 @@
   <soldier>
     <metadata>
       <internal_name>F_R_Infantry</internal_name>
-      <display_name>Specialist</display_name>
-      <description></description>
+      <display_name>Infantry</display_name>
+      <description>An expert at mid-range combat, capable of taking down targets with multiple volleys, and keeping itself alive. A solid infantryman with few surprises.</description>
       <icon_string>img:///UILibrary_Common.class_ranger</icon_string>
     </metadata>
     <experience>
-      <number_in_forced_deck>2</number_in_forced_deck>
+      <number_in_forced_deck>1</number_in_forced_deck>
       <number_in_deck>4</number_in_deck>
-      <kill_assists_per_kill>5</kill_assists_per_kill>
+      <kill_assists_per_kill>4</kill_assists_per_kill>
     </experience>
     <equipment>
-      <squaddie_loadout>SquaddieF_S_Assault</squaddie_loadout>
+      <squaddie_loadout>SquaddieF_R_Infantry</squaddie_loadout>
       <primary_weapon>rifle</primary_weapon>
       <secondary_weapon>pistol</secondary_weapon>
       <allowed_armors>soldier</allowed_armors>
@@ -4812,142 +4812,142 @@
     <stats>
       <stat>
         <type>0</type>
-        <value>5</value>
+        <value>1</value>
         <rank>1</rank>
       </stat>
       <stat>
         <type>0</type>
-        <value>5</value>
+        <value>0</value>
         <rank>2</rank>
-      </stat>
-      <stat>
-        <type>0</type>
-        <value>5</value>
-        <rank>3</rank>
-      </stat>
-      <stat>
-        <type>0</type>
-        <value>5</value>
-        <rank>4</rank>
-      </stat>
-      <stat>
-        <type>0</type>
-        <value>5</value>
-        <rank>5</rank>
-      </stat>
-      <stat>
-        <type>0</type>
-        <value>5</value>
-        <rank>6</rank>
-      </stat>
-      <stat>
-        <type>0</type>
-        <value>5</value>
-        <rank>7</rank>
       </stat>
       <stat>
         <type>0</type>
         <value>1</value>
+        <rank>3</rank>
+      </stat>
+      <stat>
+        <type>0</type>
+        <value>0</value>
+        <rank>4</rank>
+      </stat>
+      <stat>
+        <type>0</type>
+        <value>1</value>
+        <rank>5</rank>
+      </stat>
+      <stat>
+        <type>0</type>
+        <value>0</value>
+        <rank>6</rank>
+      </stat>
+      <stat>
+        <type>0</type>
+        <value>1</value>
+        <rank>7</rank>
+      </stat>
+      <stat>
+        <type>0</type>
+        <value>0</value>
         <rank>8</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>4</value>
         <rank>1</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>3</value>
         <rank>2</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>3</value>
         <rank>3</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>3</value>
         <rank>4</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>2</value>
         <rank>5</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>2</value>
         <rank>6</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>2</value>
         <rank>7</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>2</value>
         <rank>8</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>1</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>2</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>3</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>4</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>5</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>6</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>7</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>8</rank>
       </stat>
       <stat>
         <type>3</type>
-        <value>5</value>
+        <value>0</value>
         <rank>1</rank>
       </stat>
       <stat>
         <type>3</type>
-        <value>5</value>
+        <value>0</value>
         <rank>2</rank>
       </stat>
       <stat>
         <type>3</type>
-        <value>5</value>
+        <value>0</value>
         <rank>3</rank>
       </stat>
       <stat>
         <type>3</type>
-        <value>5</value>
+        <value>0</value>
         <rank>4</rank>
       </stat>
       <stat>
@@ -4957,7 +4957,7 @@
       </stat>
       <stat>
         <type>3</type>
-        <value>5</value>
+        <value>0</value>
         <rank>6</rank>
       </stat>
       <stat>
@@ -4972,42 +4972,42 @@
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>1</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>2</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>3</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>4</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>5</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>6</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>7</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>8</rank>
       </stat>
     </stats>
@@ -5015,17 +5015,17 @@
   <soldier>
     <metadata>
       <internal_name>F_R_Gunner</internal_name>
-      <display_name>Specialist</display_name>
-      <description></description>
-      <icon_string>img:///UILibrary_Common.class_ranger</icon_string>
+      <display_name>Gunner</display_name>
+      <description>The Gunner is trained to use heavy automatic weapons, throwing a great mass of firepower at the enemy.</description>
+      <icon_string>img:///UILibrary_LW_PerkPack.Class_Gunner</icon_string>
     </metadata>
     <experience>
-      <number_in_forced_deck>2</number_in_forced_deck>
+      <number_in_forced_deck>1</number_in_forced_deck>
       <number_in_deck>4</number_in_deck>
-      <kill_assists_per_kill>5</kill_assists_per_kill>
+      <kill_assists_per_kill>4</kill_assists_per_kill>
     </experience>
     <equipment>
-      <squaddie_loadout>SquaddieF_S_Assault</squaddie_loadout>
+      <squaddie_loadout>SquaddieF_R_Gunner</squaddie_loadout>
       <primary_weapon>cannon</primary_weapon>
       <secondary_weapon>pistol</secondary_weapon>
       <allowed_armors>soldier</allowed_armors>
@@ -5127,7 +5127,7 @@
         <slot>1</slot>
       </ability>
       <ability>
-        <internal_name>Gunslinger</internal_name>
+        <internal_name>GrazingFire</internal_name>
         <rank>6</rank>
         <slot>2</slot>
       </ability>
@@ -5170,142 +5170,142 @@
     <stats>
       <stat>
         <type>0</type>
-        <value>5</value>
+        <value>1</value>
         <rank>1</rank>
-      </stat>
-      <stat>
-        <type>0</type>
-        <value>5</value>
-        <rank>2</rank>
-      </stat>
-      <stat>
-        <type>0</type>
-        <value>5</value>
-        <rank>3</rank>
-      </stat>
-      <stat>
-        <type>0</type>
-        <value>5</value>
-        <rank>4</rank>
-      </stat>
-      <stat>
-        <type>0</type>
-        <value>5</value>
-        <rank>5</rank>
-      </stat>
-      <stat>
-        <type>0</type>
-        <value>5</value>
-        <rank>6</rank>
-      </stat>
-      <stat>
-        <type>0</type>
-        <value>5</value>
-        <rank>7</rank>
       </stat>
       <stat>
         <type>0</type>
         <value>1</value>
+        <rank>2</rank>
+      </stat>
+      <stat>
+        <type>0</type>
+        <value>1</value>
+        <rank>3</rank>
+      </stat>
+      <stat>
+        <type>0</type>
+        <value>0</value>
+        <rank>4</rank>
+      </stat>
+      <stat>
+        <type>0</type>
+        <value>1</value>
+        <rank>5</rank>
+      </stat>
+      <stat>
+        <type>0</type>
+        <value>1</value>
+        <rank>6</rank>
+      </stat>
+      <stat>
+        <type>0</type>
+        <value>1</value>
+        <rank>7</rank>
+      </stat>
+      <stat>
+        <type>0</type>
+        <value>0</value>
         <rank>8</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>3</value>
         <rank>1</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>3</value>
         <rank>2</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>3</value>
         <rank>3</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>2</value>
         <rank>4</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>2</value>
         <rank>5</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>1</value>
         <rank>6</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>1</value>
         <rank>7</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>1</value>
         <rank>8</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>1</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>2</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>3</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>4</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>5</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>6</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>7</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>8</rank>
       </stat>
       <stat>
         <type>3</type>
-        <value>5</value>
+        <value>0</value>
         <rank>1</rank>
       </stat>
       <stat>
         <type>3</type>
-        <value>5</value>
+        <value>0</value>
         <rank>2</rank>
       </stat>
       <stat>
         <type>3</type>
-        <value>5</value>
+        <value>0</value>
         <rank>3</rank>
       </stat>
       <stat>
         <type>3</type>
-        <value>5</value>
+        <value>0</value>
         <rank>4</rank>
       </stat>
       <stat>
@@ -5315,7 +5315,7 @@
       </stat>
       <stat>
         <type>3</type>
-        <value>5</value>
+        <value>0</value>
         <rank>6</rank>
       </stat>
       <stat>
@@ -5330,42 +5330,42 @@
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>1</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>2</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>3</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>4</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>5</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>6</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>7</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>8</rank>
       </stat>
     </stats>
@@ -5373,17 +5373,17 @@
   <soldier>
     <metadata>
       <internal_name>F_R_Sharpshooter</internal_name>
-      <display_name>Specialist</display_name>
-      <description></description>
-      <icon_string>img:///UILibrary_Common.class_ranger</icon_string>
+      <display_name>Sharpshooter</display_name>
+      <description>Our sharpshooters engage enemy targets with pinpoint accuracy from extreme range. They may also be trained as designated marksmen, forgoing long-range capabilities for mobility.</description>
+      <icon_string>img:///UILibrary_Common.class_sharpshooter</icon_string>
     </metadata>
     <experience>
-      <number_in_forced_deck>2</number_in_forced_deck>
+      <number_in_forced_deck>1</number_in_forced_deck>
       <number_in_deck>4</number_in_deck>
-      <kill_assists_per_kill>5</kill_assists_per_kill>
+      <kill_assists_per_kill>4</kill_assists_per_kill>
     </experience>
     <equipment>
-      <squaddie_loadout>SquaddieF_S_Assault</squaddie_loadout>
+      <squaddie_loadout>SquaddieF_R_Specialist</squaddie_loadout>
       <primary_weapon>sniper</primary_weapon>
       <secondary_weapon>pistol</secondary_weapon>
       <allowed_armors>soldier</allowed_armors>
@@ -5475,7 +5475,7 @@
         <slot>2</slot>
       </ability>
       <ability>
-        <internal_name>PrecisionShot</internal_name>
+        <internal_name>F_DisablingShot</internal_name>
         <rank>5</rank>
         <slot>3</slot>
       </ability>
@@ -5528,142 +5528,142 @@
     <stats>
       <stat>
         <type>0</type>
-        <value>5</value>
+        <value>1</value>
         <rank>1</rank>
       </stat>
       <stat>
         <type>0</type>
-        <value>5</value>
+        <value>0</value>
         <rank>2</rank>
-      </stat>
-      <stat>
-        <type>0</type>
-        <value>5</value>
-        <rank>3</rank>
-      </stat>
-      <stat>
-        <type>0</type>
-        <value>5</value>
-        <rank>4</rank>
-      </stat>
-      <stat>
-        <type>0</type>
-        <value>5</value>
-        <rank>5</rank>
-      </stat>
-      <stat>
-        <type>0</type>
-        <value>5</value>
-        <rank>6</rank>
-      </stat>
-      <stat>
-        <type>0</type>
-        <value>5</value>
-        <rank>7</rank>
       </stat>
       <stat>
         <type>0</type>
         <value>1</value>
+        <rank>3</rank>
+      </stat>
+      <stat>
+        <type>0</type>
+        <value>0</value>
+        <rank>4</rank>
+      </stat>
+      <stat>
+        <type>0</type>
+        <value>1</value>
+        <rank>5</rank>
+      </stat>
+      <stat>
+        <type>0</type>
+        <value>0</value>
+        <rank>6</rank>
+      </stat>
+      <stat>
+        <type>0</type>
+        <value>0</value>
+        <rank>7</rank>
+      </stat>
+      <stat>
+        <type>0</type>
+        <value>0</value>
         <rank>8</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>10</value>
         <rank>1</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>4</value>
         <rank>2</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>3</value>
         <rank>3</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>3</value>
         <rank>4</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>2</value>
         <rank>5</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>2</value>
         <rank>6</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>2</value>
         <rank>7</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>2</value>
         <rank>8</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>1</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>2</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>3</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>4</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>5</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>6</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>7</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>8</rank>
       </stat>
       <stat>
         <type>3</type>
-        <value>5</value>
+        <value>0</value>
         <rank>1</rank>
       </stat>
       <stat>
         <type>3</type>
-        <value>5</value>
+        <value>0</value>
         <rank>2</rank>
       </stat>
       <stat>
         <type>3</type>
-        <value>5</value>
+        <value>0</value>
         <rank>3</rank>
       </stat>
       <stat>
         <type>3</type>
-        <value>5</value>
+        <value>0</value>
         <rank>4</rank>
       </stat>
       <stat>
@@ -5673,7 +5673,7 @@
       </stat>
       <stat>
         <type>3</type>
-        <value>5</value>
+        <value>0</value>
         <rank>6</rank>
       </stat>
       <stat>
@@ -5688,42 +5688,42 @@
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>1</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>2</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>3</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>4</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>5</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>6</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>7</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>0</value>
         <rank>8</rank>
       </stat>
     </stats>
@@ -5732,16 +5732,16 @@
     <metadata>
       <internal_name>F_R_Psionic</internal_name>
       <display_name>Psionic</display_name>
-      <description>Psionic</description>
-      <icon_string>img:///UILibrary_Common.class_grenadier</icon_string>
+      <description>A mysterious new branch of study for XCOM, the Psionic Operative utilizes their mental abilities to great effect to boost their allies and cripple the will of enemies.</description>
+      <icon_string>img:///UILibrary_Common.class_psiop</icon_string>
     </metadata>
     <experience>
-      <number_in_forced_deck>2</number_in_forced_deck>
+      <number_in_forced_deck>1</number_in_forced_deck>
       <number_in_deck>4</number_in_deck>
-      <kill_assists_per_kill>5</kill_assists_per_kill>
+      <kill_assists_per_kill>4</kill_assists_per_kill>
     </experience>
     <equipment>
-      <squaddie_loadout>SquaddiePsionic</squaddie_loadout>
+      <squaddie_loadout>SquaddieF_R_Psionic</squaddie_loadout>
       <primary_weapon>rifle</primary_weapon>
       <secondary_weapon>psiamp</secondary_weapon>
       <allowed_armors>soldier</allowed_armors>
@@ -5886,142 +5886,142 @@
     <stats>
       <stat>
         <type>0</type>
-        <value>5</value>
+        <value>1</value>
         <rank>1</rank>
       </stat>
       <stat>
         <type>0</type>
-        <value>5</value>
+        <value>0</value>
         <rank>2</rank>
-      </stat>
-      <stat>
-        <type>0</type>
-        <value>5</value>
-        <rank>3</rank>
-      </stat>
-      <stat>
-        <type>0</type>
-        <value>5</value>
-        <rank>4</rank>
-      </stat>
-      <stat>
-        <type>0</type>
-        <value>5</value>
-        <rank>5</rank>
-      </stat>
-      <stat>
-        <type>0</type>
-        <value>5</value>
-        <rank>6</rank>
-      </stat>
-      <stat>
-        <type>0</type>
-        <value>5</value>
-        <rank>7</rank>
       </stat>
       <stat>
         <type>0</type>
         <value>1</value>
+        <rank>3</rank>
+      </stat>
+      <stat>
+        <type>0</type>
+        <value>0</value>
+        <rank>4</rank>
+      </stat>
+      <stat>
+        <type>0</type>
+        <value>1</value>
+        <rank>5</rank>
+      </stat>
+      <stat>
+        <type>0</type>
+        <value>0</value>
+        <rank>6</rank>
+      </stat>
+      <stat>
+        <type>0</type>
+        <value>1</value>
+        <rank>7</rank>
+      </stat>
+      <stat>
+        <type>0</type>
+        <value>0</value>
         <rank>8</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>3</value>
         <rank>1</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>3</value>
         <rank>2</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>3</value>
         <rank>3</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>2</value>
         <rank>4</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>2</value>
         <rank>5</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>1</value>
         <rank>6</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>1</value>
         <rank>7</rank>
       </stat>
       <stat>
         <type>1</type>
-        <value>5</value>
+        <value>1</value>
         <rank>8</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>1</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>2</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>3</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>4</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>5</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>6</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>7</rank>
       </stat>
       <stat>
         <type>2</type>
-        <value>5</value>
+        <value>0</value>
         <rank>8</rank>
       </stat>
       <stat>
         <type>3</type>
-        <value>5</value>
+        <value>0</value>
         <rank>1</rank>
       </stat>
       <stat>
         <type>3</type>
-        <value>5</value>
+        <value>0</value>
         <rank>2</rank>
       </stat>
       <stat>
         <type>3</type>
-        <value>5</value>
+        <value>0</value>
         <rank>3</rank>
       </stat>
       <stat>
         <type>3</type>
-        <value>5</value>
+        <value>0</value>
         <rank>4</rank>
       </stat>
       <stat>
@@ -6031,7 +6031,7 @@
       </stat>
       <stat>
         <type>3</type>
-        <value>5</value>
+        <value>0</value>
         <rank>6</rank>
       </stat>
       <stat>
@@ -6046,42 +6046,42 @@
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>50</value>
         <rank>1</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>7</value>
         <rank>2</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>8</value>
         <rank>3</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>7</value>
         <rank>4</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>7</value>
         <rank>5</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>7</value>
         <rank>6</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>7</value>
         <rank>7</rank>
       </stat>
       <stat>
         <type>4</type>
-        <value>5</value>
+        <value>7</value>
         <rank>8</rank>
       </stat>
     </stats>

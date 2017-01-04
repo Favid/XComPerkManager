@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Ini;
 using System.IO;
 using XcomPerkManager.Forms;
+using XcomPerkManager.Import;
 
 namespace XcomPerkManager
 {
@@ -230,6 +231,31 @@ namespace XcomPerkManager
 
         private void bIni_Click(object sender, EventArgs e)
         {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+
+            DialogResult result = openFileDialog.ShowDialog(); // Show the dialog.
+            if (result == DialogResult.OK) // Test result.
+            {
+
+                List<string> namesToInclude = new List<string>();
+                namesToInclude.Add("F_R_Assault");
+                namesToInclude.Add("F_R_Scout");
+                namesToInclude.Add("F_R_Specialist");
+                namesToInclude.Add("F_R_Grenadier");
+                namesToInclude.Add("F_R_Infantry");
+                namesToInclude.Add("F_R_Gunner");
+                namesToInclude.Add("F_R_Sharpshooter");
+                namesToInclude.Add("F_R_Psionic");
+
+                List<SoldierClass> soldiersToInclude = soldiers.Where(x => namesToInclude.Contains(x.metadata.internalName)).ToList();
+
+                SoldierClassExporter exporter = new SoldierClassExporter(openFileDialog.FileName, soldiersToInclude);
+                exporter.export();
+            }
+        }
+
+        private void oldExportCode()
+        {
             string currentDir = Environment.CurrentDirectory;
             DirectoryInfo directory = new DirectoryInfo(currentDir);
             DirectoryInfo root = directory.Parent.Parent;
@@ -267,16 +293,27 @@ namespace XcomPerkManager
 
             currentSoldier.soldierAbilities = currentSoldier.soldierAbilities.OrderBy(x => x.rank).ThenBy(x => x.slot).ToList();
 
-            // squaddie
+            iniFile.IniWriteValue(classSection, "+SoldierRanks", getRankString(SoldierRank.Squaddie));
+            iniFile.IniWriteValue(classSection, "+SoldierRanks", getRankString(SoldierRank.Corporal));
+            iniFile.IniWriteValue(classSection, "+SoldierRanks", getRankString(SoldierRank.Sergeant));
+            iniFile.IniWriteValue(classSection, "+SoldierRanks", getRankString(SoldierRank.Lieutenant));
+            iniFile.IniWriteValue(classSection, "+SoldierRanks", getRankString(SoldierRank.Captain));
+            iniFile.IniWriteValue(classSection, "+SoldierRanks", getRankString(SoldierRank.Major));
+            iniFile.IniWriteValue(classSection, "+SoldierRanks", getRankString(SoldierRank.Colonel));
+            iniFile.IniWriteValue(classSection, "+SoldierRanks", getRankString(SoldierRank.Brigadier));
+        }
+
+        private string getRankString(SoldierRank rank)
+        {
             string soldierRankSquaddie = "( aAbilityTree=(";
 
-            List<SoldierClassAbility> squaddieAbilities = currentSoldier.soldierAbilities.Where(x => x.rank == SoldierRank.Squaddie).OrderBy(x => x.slot).ToList();
+            List<SoldierClassAbility> squaddieAbilities = currentSoldier.soldierAbilities.Where(x => x.rank == rank).OrderBy(x => x.slot).ToList();
 
             string fullAbility = "";
 
-            foreach(SoldierClassAbility squaddieAbility in squaddieAbilities)
+            foreach (SoldierClassAbility squaddieAbility in squaddieAbilities)
             {
-                if(!string.IsNullOrEmpty(squaddieAbility.internalName))
+                if (!string.IsNullOrEmpty(squaddieAbility.internalName))
                 {
                     string thisAbility = "";
                     if (!string.IsNullOrEmpty(fullAbility))
@@ -293,9 +330,9 @@ namespace XcomPerkManager
 
             string fullStat = "";
 
-            foreach(SoldierClassStat squaddieStat in squaddieStats)
+            foreach (SoldierClassStat squaddieStat in squaddieStats)
             {
-                if(squaddieStat.value > 0)
+                if (squaddieStat.value > 0)
                 {
                     string thisStat = "";
                     if (!string.IsNullOrEmpty(fullStat))
@@ -313,9 +350,7 @@ namespace XcomPerkManager
 
             soldierRankSquaddie += fullAbility + "), " + fullStat + ")";
 
-            iniFile.IniWriteValue(classSection, "+SoldierRanks", soldierRankSquaddie); 
-
-
+            return soldierRankSquaddie;
         }
 
         private string getIniWeaponSlot(WeaponSlot weaponSlot)
@@ -515,6 +550,43 @@ namespace XcomPerkManager
         {
             Form1 form1 = new Form1();
             form1.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+
+            DialogResult result = openFileDialog.ShowDialog(); // Show the dialog.
+            if (result == DialogResult.OK) // Test result.
+            {
+                SoldierClassImporter importer = new SoldierClassImporter(openFileDialog.FileName);
+                importer.import();
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+
+            DialogResult result = openFileDialog.ShowDialog(); // Show the dialog.
+            if (result == DialogResult.OK) // Test result.
+            {
+
+                List<string> namesToInclude = new List<string>();
+                namesToInclude.Add("F_R_Assault");
+                namesToInclude.Add("F_R_Scout");
+                namesToInclude.Add("F_R_Specialist");
+                namesToInclude.Add("F_R_Grenadier");
+                namesToInclude.Add("F_R_Infantry");
+                namesToInclude.Add("F_R_Gunner");
+                namesToInclude.Add("F_R_Sharpshooter");
+                namesToInclude.Add("F_R_Psionic");
+
+                List<SoldierClass> soldiersToInclude = soldiers.Where(x => namesToInclude.Contains(x.metadata.internalName)).ToList();
+
+                SoldierClassExporter exporter = new SoldierClassExporter(openFileDialog.FileName, soldiersToInclude);
+                exporter.exportInt();
+            }
         }
     }
 }

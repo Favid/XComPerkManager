@@ -118,6 +118,8 @@
     <Compile Include="Forms\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Import\SoldierClassExporter.cs" />
+    <Compile Include="Import\SoldierClassImporter.cs" />
     <Compile Include="IniFile.cs" />
     <Compile Include="DataObjects\ISoldierClassElement.cs" />
     <Compile Include="Forms\MetadataManager.cs">
