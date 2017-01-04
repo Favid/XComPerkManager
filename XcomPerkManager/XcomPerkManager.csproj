@@ -86,6 +86,7 @@
     <Compile Include="DataModels\IModel.cs" />
     <Compile Include="DataModels\MetadataModel.cs" />
     <Compile Include="DataObjects\Ability.cs" />
+    <Compile Include="DataObjects\Weapon.cs" />
     <Compile Include="Forms\AbilityManager.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +181,7 @@
     <None Include="packages.config" />
     <None Include="Properties\DataSources\SoldierClass.datasource" />
     <None Include="Properties\DataSources\SoldierClassAbility.datasource" />
+    <None Include="Properties\DataSources\XcomPerkManager.DataObjects.Weapon.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

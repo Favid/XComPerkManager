@@ -56,6 +56,7 @@ namespace XcomPerkManager
             
 
             MetadataManager manager = new MetadataManager();
+            manager.newClass = true;
             manager.Show(this);
         }
 

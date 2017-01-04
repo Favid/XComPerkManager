@@ -14,10 +14,12 @@ namespace XcomPerkManager
     public partial class MetadataManager : Form
     {
         private string formerInternalName;
+        public bool newClass { get; set; }
 
         public MetadataManager()
         {
             InitializeComponent();
+            newClass = false;
         }
 
         private void MetadataManager_Load(object sender, EventArgs e)

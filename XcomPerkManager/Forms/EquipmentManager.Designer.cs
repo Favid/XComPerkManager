@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.bSave = new System.Windows.Forms.Button();
             this.bCancel = new System.Windows.Forms.Button();
             this.laSecondaryWeapon = new System.Windows.Forms.Label();
@@ -38,6 +39,12 @@
             this.tSquaddieLoadout = new System.Windows.Forms.TextBox();
             this.laAllowedArmors = new System.Windows.Forms.Label();
             this.tAllowedArmors = new System.Windows.Forms.TextBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.weaponBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.button1 = new System.Windows.Forms.Button();
+            this.weaponBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.weaponBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weaponBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // bSave
@@ -124,11 +131,43 @@
             this.tAllowedArmors.Size = new System.Drawing.Size(244, 20);
             this.tAllowedArmors.TabIndex = 87;
             // 
+            // listBox1
+            // 
+            this.listBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.weaponBindingSource, "weaponName", true));
+            this.listBox1.DataSource = this.weaponBindingSource1;
+            this.listBox1.DisplayMember = "weaponName";
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(15, 197);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(267, 186);
+            this.listBox1.TabIndex = 89;
+            this.listBox1.ValueMember = "weaponName";
+            // 
+            // weaponBindingSource
+            // 
+            this.weaponBindingSource.DataSource = typeof(XcomPerkManager.DataObjects.Weapon);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(288, 197);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 90;
+            this.button1.Text = "Text";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // weaponBindingSource1
+            // 
+            this.weaponBindingSource1.DataSource = typeof(XcomPerkManager.DataObjects.Weapon);
+            // 
             // EquipmentManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(388, 152);
+            this.ClientSize = new System.Drawing.Size(388, 406);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.laAllowedArmors);
             this.Controls.Add(this.tAllowedArmors);
             this.Controls.Add(this.bSave);
@@ -142,6 +181,8 @@
             this.Name = "EquipmentManager";
             this.Text = "EquipmentManager";
             this.Load += new System.EventHandler(this.EquipmentManager_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.weaponBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.weaponBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -159,5 +200,9 @@
         private System.Windows.Forms.TextBox tSquaddieLoadout;
         private System.Windows.Forms.Label laAllowedArmors;
         private System.Windows.Forms.TextBox tAllowedArmors;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.BindingSource weaponBindingSource;
+        private System.Windows.Forms.BindingSource weaponBindingSource1;
     }
 }
