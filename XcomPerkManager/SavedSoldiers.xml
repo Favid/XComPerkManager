@@ -3590,7 +3590,7 @@
     <experience>
       <number_in_forced_deck>1</number_in_forced_deck>
       <number_in_deck>4</number_in_deck>
-      <kill_assists_per_kill>4</kill_assists_per_kill>
+      <kill_assists_per_kill>3</kill_assists_per_kill>
     </experience>
     <equipment>
       <squaddie_loadout>SquaddieF_R_Scout</squaddie_loadout>
@@ -3605,7 +3605,7 @@
         <slot>1</slot>
       </ability>
       <ability>
-        <internal_name></internal_name>
+        <internal_name>PistolStandardShot</internal_name>
         <rank>1</rank>
         <slot>2</slot>
       </ability>
@@ -4311,7 +4311,7 @@
     <equipment>
       <squaddie_loadout>SquaddieF_R_Grenadier</squaddie_loadout>
       <primary_weapon>shotgun</primary_weapon>
-      <secondary_weapon>grenadelauncher</secondary_weapon>
+      <secondary_weapon>grenade_launcher</secondary_weapon>
       <allowed_armors>soldier</allowed_armors>
     </equipment>
     <abilities>
@@ -4659,7 +4659,7 @@
       <internal_name>F_R_Infantry</internal_name>
       <display_name>Infantry</display_name>
       <description>An expert at mid-range combat, capable of taking down targets with multiple volleys, and keeping itself alive. A solid infantryman with few surprises.</description>
-      <icon_string>img:///UILibrary_Common.class_ranger</icon_string>
+      <icon_string>img:///UILibrary_SOInfantry.class_infantry</icon_string>
     </metadata>
     <experience>
       <number_in_forced_deck>1</number_in_forced_deck>
@@ -4684,7 +4684,7 @@
         <slot>2</slot>
       </ability>
       <ability>
-        <internal_name></internal_name>
+        <internal_name>PistolStandardShot</internal_name>
         <rank>1</rank>
         <slot>3</slot>
       </ability>
@@ -5383,8 +5383,8 @@
       <kill_assists_per_kill>4</kill_assists_per_kill>
     </experience>
     <equipment>
-      <squaddie_loadout>SquaddieF_R_Specialist</squaddie_loadout>
-      <primary_weapon>sniper</primary_weapon>
+      <squaddie_loadout>SquaddieF_R_Sharpshooter</squaddie_loadout>
+      <primary_weapon>sniper_rifle</primary_weapon>
       <secondary_weapon>pistol</secondary_weapon>
       <allowed_armors>soldier</allowed_armors>
     </equipment>
@@ -5460,7 +5460,7 @@
         <slot>2</slot>
       </ability>
       <ability>
-        <internal_name>LongWatch</internal_name>
+        <internal_name>HitWhereItHurts</internal_name>
         <rank>4</rank>
         <slot>3</slot>
       </ability>

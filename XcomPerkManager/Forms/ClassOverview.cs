@@ -588,5 +588,45 @@ namespace XcomPerkManager
                 exporter.exportInt();
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            List<SoldierClass> soldiersToInclude = getSoldiersToInclude();
+
+            List<string> requiredMods = new List<string>();
+
+            foreach(SoldierClass soldier in soldiersToInclude)
+            {
+                foreach(SoldierClassAbility soldierAbility in soldier.soldierAbilities)
+                {
+                    if(!requiredMods.Contains(soldierAbility.requiredMod))
+                    {
+                        requiredMods.Add(soldierAbility.requiredMod);
+                    }
+                }
+            }
+
+            foreach(string requiredMod in requiredMods)
+            {
+                Console.WriteLine(requiredMod);
+            }
+        }
+
+        private List<SoldierClass> getSoldiersToInclude()
+        {
+            List<string> namesToInclude = new List<string>();
+            namesToInclude.Add("F_R_Assault");
+            namesToInclude.Add("F_R_Scout");
+            namesToInclude.Add("F_R_Specialist");
+            namesToInclude.Add("F_R_Grenadier");
+            namesToInclude.Add("F_R_Infantry");
+            namesToInclude.Add("F_R_Gunner");
+            namesToInclude.Add("F_R_Sharpshooter");
+            namesToInclude.Add("F_R_Psionic");
+
+            List<SoldierClass> soldiersToInclude = soldiers.Where(x => namesToInclude.Contains(x.metadata.internalName)).ToList();
+
+            return soldiersToInclude;
+        }
     }
 }

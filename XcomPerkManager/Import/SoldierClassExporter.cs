@@ -46,7 +46,7 @@ namespace XcomPerkManager.Import
             lines.Add("[XComGame.X2SoldierClass_DefaultClasses]");
             foreach (SoldierClass soldier in soldiers)
             {
-                lines.Add("+" + soldier.metadata.internalName);
+                lines.Add("+SoldierClasses=" + soldier.metadata.internalName);
             }
 
             lines.Add("");
@@ -150,7 +150,7 @@ namespace XcomPerkManager.Import
                         thisStat = ",";
                     }
 
-                    thisStat += "(StatType=" + squaddieStat.stat + ",StatAmount=" + squaddieStat.value.ToString() + ")";
+                    thisStat += "(StatType=" + getIniStat(squaddieStat.stat) + ",StatAmount=" + squaddieStat.value.ToString() + ")";
                     fullStat += thisStat;
                 }
             }
@@ -175,6 +175,29 @@ namespace XcomPerkManager.Import
 
                 case WeaponSlot.None:
                     return "";
+            }
+
+            return "";
+        }
+
+        private string getIniStat(Stat stat)
+        {
+            switch (stat)
+            {
+                case Stat.HP:
+                    return "eStat_HP";
+
+                case Stat.Aim:
+                    return "eStat_Offense";
+
+                case Stat.Strength:
+                    return "eStat_Strength";
+
+                case Stat.Hacking:
+                    return "eStat_Hacking";
+
+                case Stat.Psi:
+                    return "eStat_PsiOffense";
             }
 
             return "";
