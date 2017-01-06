@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using XcomPerkManager.DataObjects;
 
@@ -14,7 +9,7 @@ namespace XcomPerkManager
     public partial class EquipmentManager : Form
     {
         private string formerInternalName;
-        private List<Weapon> ws;
+        private List<Weapon> soldiersWeapons;
         private BindingList<Weapon> weapons;
 
         public EquipmentManager()
@@ -32,24 +27,40 @@ namespace XcomPerkManager
 
             formerInternalName = owner.currentSoldier.metadata.internalName;
 
-            ws = new List<Weapon>();
+            soldiersWeapons = new List<Weapon>(); // TODO will be owner.currentSoldier.equipment.weapons
 
-            Weapon w = new Weapon();
-            w.weaponName = "test";
-            w.weaponSlot = "primary";
-            ws.Add(w);
+            weapons = new BindingList<Weapon>(soldiersWeapons);
+            lWeapons.DataSource = weapons;
 
-            Weapon w2 = new Weapon();
-            w2.weaponName = "test2";
-            w2.weaponSlot = "primary";
-            ws.Add(w2);
+            setControlsInitialState();
+        }
 
-            weapons = new BindingList<Weapon>();
-            weapons.Add(w);
-            weapons.Add(w2);
+        private void setControlsInitialState()
+        {
+            tWeaponSlot.Enabled = false;
+            tWeaponName.Enabled = false;
 
-            //listBox1.DataSource = ws;
-            listBox1.DataSource = weapons;
+            bSaveWeapon.Visible = false;
+            bCancelWeapon.Visible = false;
+
+            lWeapons.Enabled = true;
+
+            bAdd.Enabled = true;
+            bDelete.Enabled = true;
+        }
+
+        private void setControlsEditingWeapon()
+        {
+            tWeaponSlot.Enabled = true;
+            tWeaponName.Enabled = true;
+
+            bSaveWeapon.Visible = true;
+            bCancelWeapon.Visible = true;
+
+            lWeapons.Enabled = false;
+
+            bAdd.Enabled = false;
+            bDelete.Enabled = false;
         }
 
         private void bSave_Click(object sender, EventArgs e)
@@ -83,16 +94,59 @@ namespace XcomPerkManager
             Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void bEdit_Click(object sender, EventArgs e)
         {
-            Weapon w2 = new Weapon();
-            w2.weaponName = "test3";
-            w2.weaponSlot = "primary";
-            weapons.Add(w2);
+            Weapon weaponToEdit = lWeapons.SelectedItem as Weapon;
+
+            if (weaponToEdit != null)
+            {
+                setControlsEditingWeapon();
+
+                tWeaponSlot.Text = weaponToEdit.weaponSlot;
+                tWeaponName.Text = weaponToEdit.weaponName;
+            }
+        }
+
+        private void bAdd_Click(object sender, EventArgs e)
+        {
             
-            listBox1.DataSource = weapons;
+            Weapon weapon = new Weapon();
+            weapon.weaponName = "new";
+            weapon.weaponSlot = "primary";
+            weapons.Add(weapon);
 
+            lWeapons.DataSource = weapons;
+        }
 
+        private void bDelete_Click(object sender, EventArgs e)
+        {
+            Weapon weaponToRemove = lWeapons.SelectedItem as Weapon;
+
+            if(weaponToRemove != null)
+            {
+                weapons.Remove(weaponToRemove);
+                lWeapons.DataSource = weapons;
+            }
+        }
+
+        private void bCancelWeapon_Click(object sender, EventArgs e)
+        {
+            tWeaponSlot.Text = "";
+            tWeaponName.Text = "";
+
+            setControlsInitialState();
+        }
+
+        private void bSaveWeapon_Click(object sender, EventArgs e)
+        {
+            Weapon weaponToEdit = lWeapons.SelectedItem as Weapon;
+            weaponToEdit.weaponSlot = tWeaponSlot.Text;
+            weaponToEdit.weaponName = tWeaponName.Text;
+            weapons[lWeapons.SelectedIndex] = weaponToEdit;
+            
+            lWeapons.DataSource = weapons;
+
+            setControlsInitialState();
         }
     }
 }
