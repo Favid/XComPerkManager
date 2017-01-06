@@ -11,6 +11,7 @@ using Ini;
 using System.IO;
 using XcomPerkManager.Forms;
 using XcomPerkManager.Import;
+using XcomPerkManager.DataAccess;
 
 namespace XcomPerkManager
 {
@@ -51,14 +52,16 @@ namespace XcomPerkManager
 
         private void bAdd_Click(object sender, EventArgs e)
         {
-            SoldierClass soldierClass = new SoldierClass();
-            soldierClass.metadata.internalName = "Test";
+            SoldierClassAccess access = new SoldierClassAccess();
+            access.create("Testing");
 
-            
+            updateSoldiers();
 
-            MetadataManager manager = new MetadataManager();
-            manager.newClass = true;
-            manager.Show(this);
+            //SoldierClass soldierClass = new SoldierClass();
+            //soldierClass.metadata.internalName = "Test";
+            //MetadataManager manager = new MetadataManager();
+            //manager.newClass = true;
+            //manager.Show(this);
         }
 
         private void ClassOverview_Load(object sender, EventArgs e)
@@ -627,6 +630,14 @@ namespace XcomPerkManager
             List<SoldierClass> soldiersToInclude = soldiers.Where(x => namesToInclude.Contains(x.metadata.internalName)).ToList();
 
             return soldiersToInclude;
+        }
+
+        private void bDelete_Click(object sender, EventArgs e)
+        {
+            SoldierClassAccess access = new SoldierClassAccess();
+            access.delete(currentSoldier.metadata.internalName);
+
+            updateSoldiers();
         }
     }
 }

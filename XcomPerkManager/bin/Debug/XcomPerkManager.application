@@ -7,14 +7,14 @@
     <framework targetVersion="4.5.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="XcomPerkManager.exe.manifest" size="4596">
+    <dependentAssembly dependencyType="install" codebase="XcomPerkManager.exe.manifest" size="5018">
       <assemblyIdentity name="XcomPerkManager.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Pxmp9fAL93NW7Z8rgKswOKxsby+dfJ8CgyTlAk1sxgk=</dsig:DigestValue>
+        <dsig:DigestValue>GYsNWPv7XoXJDoUhx4xpyQN8N7mKNiM91XA/1aj01v0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

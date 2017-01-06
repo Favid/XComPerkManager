@@ -757,6 +757,7 @@
             this.bDelete.TabIndex = 12;
             this.bDelete.Text = "Delete";
             this.bDelete.UseVisualStyleBackColor = true;
+            this.bDelete.Click += new System.EventHandler(this.bDelete_Click);
             // 
             // gStats
             // 

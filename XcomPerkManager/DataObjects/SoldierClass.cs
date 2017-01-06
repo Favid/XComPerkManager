@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace XcomPerkManager
 {
@@ -21,6 +22,11 @@ namespace XcomPerkManager
             equipment = new SoldierClassEquipment();
             soldierAbilities = new List<SoldierClassAbility>();
             stats = new List<SoldierClassStat>();
+        }
+
+        public XElement createNewSoldierClass()
+        {
+            throw new NotImplementedException();
         }
     }
 }
