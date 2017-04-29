@@ -192,7 +192,9 @@
     <EmbeddedResource Include="Forms\StatManager.resx">
       <DependentUpon>StatManager.cs</DependentUpon>
     </EmbeddedResource>
-    <Content Include="NewClass.xml" />
+    <Content Include="NewClass.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\SoldierClass.datasource" />
     <None Include="Properties\DataSources\SoldierClassAbility.datasource" />
