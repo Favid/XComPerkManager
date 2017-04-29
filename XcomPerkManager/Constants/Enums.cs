@@ -31,6 +31,11 @@ namespace XcomPerkManager
         public const string XML_EQUIPMENT_SECONDARY_WEAPON = "secondary_weapon";
         public const string XML_EQUIPMENT_ALLOWED_ARMORS = "allowed_armors";
 
+        public const string XML_EQUIPMENT_WEAPONS = "weapons";
+        public const string XML_EQUIPMENT_WEAPON = "weapon";
+        public const string XML_EQUIPMENT_WEAPON_NAME = "internal_name";
+        public const string XML_EQUIPMENT_WEAPON_SLOT = "slot";
+        
         public const string XML_ABILITIES = "abilities";
         public const string XML_ABILITY = "ability";
         public const string XML_ABILITY_INTERNAL_NAME = "internal_name";
