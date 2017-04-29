@@ -11,6 +11,26 @@ namespace XcomPerkManagerTests
     public class ConvertDriverToXml
     {
         [TestMethod]
+        public void convertMetadata()
+        {
+            SoldierClassMetadata metadata = new SoldierClassMetadata();
+            metadata.internalName = "InternalTest";
+            metadata.displayName = "Internal Test";
+            metadata.description = "This is a test";
+            metadata.iconString = "Here.jpg";
+
+            XElement actual = XcomPerkManager.Conversion.Convert.toXmlMetadata(metadata);
+
+            XElement expected = new XElement(Constants.XML_METADATA);
+            expected.Add(new XElement(Constants.XML_METADATA_INTERNAL_NAME, "InternalTest"));
+            expected.Add(new XElement(Constants.XML_METADATA_DISPLAY_NAME, "Internal Test"));
+            expected.Add(new XElement(Constants.XML_METADATA_DESCRIPTION, "This is a test"));
+            expected.Add(new XElement(Constants.XML_METADATA_ICON_STRING, "Here.jpg"));
+
+            Assert.IsTrue(XNode.DeepEquals(expected, actual), "Expected: " + expected.ToString() + "\nActual: " + actual.ToString());
+        }
+
+        [TestMethod]
         public void convertEquipment()
         {
             SoldierClassEquipment equipment = new SoldierClassEquipment();

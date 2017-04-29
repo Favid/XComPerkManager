@@ -10,6 +10,17 @@ namespace XcomPerkManager.Conversion
 {
     public static class Convert
     {
+        public static SoldierClassMetadata toDriverMetadata(XElement xmlMetadata)
+        {
+            SoldierClassMetadata metadata = new SoldierClassMetadata();
+            metadata.internalName = xmlMetadata.Element(Constants.XML_METADATA_INTERNAL_NAME).Value;
+            metadata.displayName = xmlMetadata.Element(Constants.XML_METADATA_DISPLAY_NAME).Value;
+            metadata.description = xmlMetadata.Element(Constants.XML_METADATA_DESCRIPTION).Value;
+            metadata.iconString = xmlMetadata.Element(Constants.XML_METADATA_ICON_STRING).Value;
+
+            return metadata;
+        }
+
         public static SoldierClassEquipment toDriverEquipment(XElement xmlEquipment)
         {
             SoldierClassEquipment equipment = new SoldierClassEquipment();
@@ -39,6 +50,17 @@ namespace XcomPerkManager.Conversion
             weapon.weaponSlot = xmlWeapon.Element(Constants.XML_EQUIPMENT_WEAPON_SLOT).Value;
 
             return weapon;
+        }
+
+        public static XElement toXmlMetadata(SoldierClassMetadata metadata)
+        {
+            XElement xmlMetadata = new XElement(Constants.XML_METADATA);
+            addBaseChild(xmlMetadata, Constants.XML_METADATA_INTERNAL_NAME, metadata.internalName);
+            addBaseChild(xmlMetadata, Constants.XML_METADATA_DISPLAY_NAME, metadata.displayName);
+            addBaseChild(xmlMetadata, Constants.XML_METADATA_DESCRIPTION, metadata.description);
+            addBaseChild(xmlMetadata, Constants.XML_METADATA_ICON_STRING, metadata.iconString);
+            
+            return xmlMetadata;
         }
 
         public static XElement toXmlEquipment(SoldierClassEquipment equipment)

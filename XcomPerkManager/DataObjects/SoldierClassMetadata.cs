@@ -79,5 +79,41 @@ namespace XcomPerkManager
         {
             return internalName;
         }
+
+        public override bool Equals(object obj)
+        {
+            SoldierClassMetadata other = obj as SoldierClassMetadata;
+            if (other == null)
+            {
+                return false;
+            }
+
+            if (!String.Equals(internalName, other.internalName))
+            {
+                return false;
+            }
+
+            if (!String.Equals(displayName, other.displayName))
+            {
+                return false;
+            }
+
+            if (!String.Equals(description, other.description))
+            {
+                return false;
+            }
+
+            if (!String.Equals(iconString, other.iconString))
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
     }
 }
