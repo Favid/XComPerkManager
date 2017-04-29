@@ -78,6 +78,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Conversion\Convert.cs" />
     <Compile Include="DataAccess\AbilityAccess.cs" />
     <Compile Include="DataAccess\AbstractAccess.cs" />
     <Compile Include="DataAccess\IAccess.cs" />

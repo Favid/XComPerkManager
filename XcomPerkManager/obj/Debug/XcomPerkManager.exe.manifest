@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="XcomPerkManager.exe" size="205312">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="XcomPerkManager.exe" size="206336">
       <assemblyIdentity name="XcomPerkManager" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>pGbqhxqQgbKSZ+vD/geC6EzldK5HVmNPCXBiFCxMCxQ=</dsig:DigestValue>
+        <dsig:DigestValue>F7YLQWryz/bLsEmX/6ZuTGw+QPA9v9O+kWt5UyA8b9I=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -74,13 +74,13 @@
       <dsig:DigestValue>imamalJGmGEAIna99UH3kIq7otQYDl0SWCVcrVyRTlI=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="SavedSoldiers.xml" size="293128" writeableType="applicationData">
+  <file name="SavedSoldiers.xml" size="293115" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>HtvT/YxSqz63e1eYY7LuYXsVSHxOk2LsqD5UHbIgUHk=</dsig:DigestValue>
+      <dsig:DigestValue>8HovFBEMTgr8Mkjz4oPPLMAzvSA2hsDj1+LRLQmUVl8=</dsig:DigestValue>
     </hash>
   </file>
   <file name="XcomPerkManager.exe.config" size="189">

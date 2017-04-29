@@ -1,0 +1,10 @@
+C:\Users\David\Documents\GitHub\XComPerkManager\XcomPerkManagerTests\obj\Debug\XcomPerkManagerTests.csprojResolveAssemblyReference.cache
+C:\Users\David\Documents\GitHub\XComPerkManager\XcomPerkManagerTests\bin\Debug\XcomPerkManagerTests.dll
+C:\Users\David\Documents\GitHub\XComPerkManager\XcomPerkManagerTests\bin\Debug\XcomPerkManagerTests.pdb
+C:\Users\David\Documents\GitHub\XComPerkManager\XcomPerkManagerTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\David\Documents\GitHub\XComPerkManager\XcomPerkManagerTests\bin\Debug\XcomPerkManager.exe
+C:\Users\David\Documents\GitHub\XComPerkManager\XcomPerkManagerTests\bin\Debug\EPPlus.dll
+C:\Users\David\Documents\GitHub\XComPerkManager\XcomPerkManagerTests\bin\Debug\XcomPerkManager.pdb
+C:\Users\David\Documents\GitHub\XComPerkManager\XcomPerkManagerTests\bin\Debug\EPPlus.xml
+C:\Users\David\Documents\GitHub\XComPerkManager\XcomPerkManagerTests\obj\Debug\XcomPerkManagerTests.dll
+C:\Users\David\Documents\GitHub\XComPerkManager\XcomPerkManagerTests\obj\Debug\XcomPerkManagerTests.pdb
