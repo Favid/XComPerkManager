@@ -10,6 +10,88 @@ namespace XcomPerkManagerTests
     [TestClass]
     public class ConvertDriverToXml
     {
+        [Ignore]
+        [TestMethod]
+        public void convertSoldierClass()
+        {
+            SoldierClassMetadata metadata = new SoldierClassMetadata();
+            metadata.internalName = "InternalTest";
+            metadata.displayName = "Internal Test";
+            metadata.description = "This is a test";
+            metadata.iconString = "Here.jpg";
+
+            SoldierClassExperience experience = new SoldierClassExperience();
+            experience.numberInForcedDeck = 1;
+            experience.numberInDeck = 2;
+            experience.killAssistsPerKill = 3;
+
+            SoldierClassEquipment equipment = new SoldierClassEquipment();
+            equipment.squaddieLoadout = "Squaddie_TestClass";
+            equipment.allowedArmors = "squaddie";
+
+            List<Weapon> weapons = new List<Weapon>();
+
+            Weapon weaponA = new Weapon();
+            weaponA.weaponName = "shotgun";
+            weaponA.weaponSlot = "primary";        // TODO verify if it should be primary or eInv_PrimaryWeapon
+            weapons.Add(weaponA);
+
+            Weapon weaponB = new Weapon();
+            weaponB.weaponName = "sword";
+            weaponB.weaponSlot = "secondary";        // TODO verify if it should be primary or eInv_PrimaryWeapon
+            weapons.Add(weaponB);
+
+            equipment.weapons = weapons;
+
+            List<SoldierClassAbility> abilities = new List<SoldierClassAbility>();
+
+            SoldierClassAbility abilityA = new SoldierClassAbility();
+            abilityA.internalName = "TestAbility";
+            abilityA.displayName = "Test Ability";
+            abilityA.description = "Hello";
+            abilityA.requiredMod = "My Mod";
+            abilityA.rank = SoldierRank.Corporal;
+            abilityA.slot = 3;
+            abilityA.weaponSlot = WeaponSlot.Primary;
+            abilities.Add(abilityA);
+
+            SoldierClassAbility abilityB = new SoldierClassAbility();
+            abilityB.internalName = "TestAbility2";
+            abilityB.displayName = "Test Ability2";
+            abilityB.description = "Hello2";
+            abilityB.requiredMod = "My Mod2";
+            abilityB.rank = SoldierRank.Lieutenant;
+            abilityB.slot = 1;
+            abilityB.weaponSlot = WeaponSlot.Secondary;
+            abilities.Add(abilityB);
+
+            List<SoldierClassStat> stats = new List<SoldierClassStat>();
+
+            SoldierClassStat statA = new SoldierClassStat();
+            statA.stat = Stat.Strength;
+            statA.value = 2;
+            statA.rank = SoldierRank.Sergeant;
+            stats.Add(statA);
+
+            SoldierClassStat statB = new SoldierClassStat();
+            statB.stat = Stat.Aim;
+            statB.value = 0;
+            statB.rank = SoldierRank.Squaddie;
+            stats.Add(statB);
+            
+            SoldierClass soldierClass = new SoldierClass();
+            soldierClass.metadata = metadata;
+            soldierClass.experience = experience;
+            soldierClass.equipment = equipment;
+            soldierClass.soldierAbilities = abilities;
+            soldierClass.stats = stats;
+
+            XElement actual = XcomPerkManager.Conversion.Convert.toXmlSoldierClass(soldierClass);
+
+            XElement expected = new XElement(Constants.XML_CLASS);
+
+        }
+
         [TestMethod]
         public void convertMetadata()
         {

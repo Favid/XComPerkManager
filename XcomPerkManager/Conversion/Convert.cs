@@ -24,6 +24,18 @@ namespace XcomPerkManager.Conversion
             return allAbilities.Where(x => x.internalName.Equals(internalName)).SingleOrDefault();
         }
 
+        public static SoldierClass toDriverSoldierClass(XElement xmlClass)
+        {
+            SoldierClass soldierClass = new SoldierClass();
+            soldierClass.metadata = toDriverMetadata(xmlClass.Element(Constants.XML_METADATA));
+            soldierClass.experience = toDriverExperience(xmlClass.Element(Constants.XML_EXPERIENCE));
+            soldierClass.equipment = toDriverEquipment(xmlClass.Element(Constants.XML_EQUIPMENT));
+            soldierClass.soldierAbilities = toDriverAbilities(xmlClass.Element(Constants.XML_ABILITIES));
+            soldierClass.stats = toDriverStats(xmlClass.Element(Constants.XML_STATS));
+
+            return soldierClass;
+        }
+
         public static SoldierClassMetadata toDriverMetadata(XElement xmlMetadata)
         {
             SoldierClassMetadata metadata = new SoldierClassMetadata();
@@ -128,6 +140,18 @@ namespace XcomPerkManager.Conversion
             stat.rank = (SoldierRank)int.Parse(xmlStat.Element(Constants.XML_STAT_RANK).Value);
             
             return stat;
+        }
+
+        public static XElement toXmlSoldierClass(SoldierClass soldierClass)
+        {
+            XElement xmlSoldierClass = new XElement(Constants.XML_CLASS);
+            addXmlChild(xmlSoldierClass, toXmlMetadata(soldierClass.metadata));
+            addXmlChild(xmlSoldierClass, toXmlExperience(soldierClass.experience));
+            addXmlChild(xmlSoldierClass, toXmlEquipment(soldierClass.equipment));
+            addXmlChild(xmlSoldierClass, toXmlAbilities(soldierClass.soldierAbilities));
+            addXmlChild(xmlSoldierClass, toXmlStats(soldierClass.stats));
+
+            return xmlSoldierClass;
         }
 
         public static XElement toXmlMetadata(SoldierClassMetadata metadata)
