@@ -87,5 +87,36 @@ namespace XcomPerkManager
 
             return validationResult;
         }
+
+        public override bool Equals(object obj)
+        {
+            SoldierClassExperience other = obj as SoldierClassExperience;
+            if (other == null)
+            {
+                return false;
+            }
+
+            if (numberInForcedDeck != other.numberInForcedDeck)
+            {
+                return false;
+            }
+
+            if (numberInDeck != other.numberInDeck)
+            {
+                return false;
+            }
+
+            if (killAssistsPerKill != other.killAssistsPerKill)
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
     }
 }

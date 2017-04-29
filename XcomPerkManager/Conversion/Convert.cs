@@ -21,6 +21,16 @@ namespace XcomPerkManager.Conversion
             return metadata;
         }
 
+        public static SoldierClassExperience toDriverExperience(XElement xmlExperience)
+        {
+            SoldierClassExperience experience = new SoldierClassExperience();
+            experience.numberInForcedDeck = int.Parse(xmlExperience.Element(Constants.XML_EXPERIENCE_NUM_IN_FORCED_DECK).Value);
+            experience.numberInDeck = int.Parse(xmlExperience.Element(Constants.XML_EXPERIENCE_NUM_IN_DECK).Value);
+            experience.killAssistsPerKill = int.Parse(xmlExperience.Element(Constants.XML_EXPERIENCE_KILL_ASSISTS_PER_KILL).Value);
+
+            return experience;
+        }
+                               
         public static SoldierClassEquipment toDriverEquipment(XElement xmlEquipment)
         {
             SoldierClassEquipment equipment = new SoldierClassEquipment();
@@ -61,6 +71,16 @@ namespace XcomPerkManager.Conversion
             addBaseChild(xmlMetadata, Constants.XML_METADATA_ICON_STRING, metadata.iconString);
             
             return xmlMetadata;
+        }
+
+        public static XElement toXmlExperience(SoldierClassExperience experience)
+        {
+            XElement xmlExperience = new XElement(Constants.XML_EXPERIENCE);
+            addBaseChild(xmlExperience, Constants.XML_EXPERIENCE_NUM_IN_FORCED_DECK, experience.numberInForcedDeck.ToString());
+            addBaseChild(xmlExperience, Constants.XML_EXPERIENCE_NUM_IN_DECK, experience.numberInDeck.ToString());
+            addBaseChild(xmlExperience, Constants.XML_EXPERIENCE_KILL_ASSISTS_PER_KILL, experience.killAssistsPerKill.ToString());
+
+            return xmlExperience;
         }
 
         public static XElement toXmlEquipment(SoldierClassEquipment equipment)

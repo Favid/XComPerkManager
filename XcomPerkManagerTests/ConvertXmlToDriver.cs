@@ -32,6 +32,24 @@ namespace XcomPerkManagerTests
         }
 
         [TestMethod]
+        public void convertExperience()
+        {
+            XElement xmlExperience = new XElement(Constants.XML_EXPERIENCE);
+            xmlExperience.Add(new XElement(Constants.XML_EXPERIENCE_NUM_IN_FORCED_DECK, "1"));
+            xmlExperience.Add(new XElement(Constants.XML_EXPERIENCE_NUM_IN_DECK, "2"));
+            xmlExperience.Add(new XElement(Constants.XML_EXPERIENCE_KILL_ASSISTS_PER_KILL, "3"));
+
+            SoldierClassExperience actual = XcomPerkManager.Conversion.Convert.toDriverExperience(xmlExperience);
+
+            SoldierClassExperience expected = new SoldierClassExperience();
+            expected.numberInForcedDeck = 1;
+            expected.numberInDeck = 2;
+            expected.killAssistsPerKill = 3;
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
         public void convertEquipment()
         {
             XElement xmlWeapons = new XElement(Constants.XML_EQUIPMENT_WEAPONS);

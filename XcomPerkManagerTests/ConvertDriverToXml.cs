@@ -29,6 +29,24 @@ namespace XcomPerkManagerTests
 
             Assert.IsTrue(XNode.DeepEquals(expected, actual), "Expected: " + expected.ToString() + "\nActual: " + actual.ToString());
         }
+        
+        [TestMethod]
+        public void convertExperience()
+        {
+            SoldierClassExperience experience = new SoldierClassExperience();
+            experience.numberInForcedDeck = 1;
+            experience.numberInDeck = 2;
+            experience.killAssistsPerKill = 3;
+
+            XElement actual = XcomPerkManager.Conversion.Convert.toXmlExperience(experience);
+
+            XElement expected = new XElement(Constants.XML_EXPERIENCE);
+            expected.Add(new XElement(Constants.XML_EXPERIENCE_NUM_IN_FORCED_DECK, "1"));
+            expected.Add(new XElement(Constants.XML_EXPERIENCE_NUM_IN_DECK, "2"));
+            expected.Add(new XElement(Constants.XML_EXPERIENCE_KILL_ASSISTS_PER_KILL, "3"));
+
+            Assert.IsTrue(XNode.DeepEquals(expected, actual), "Expected: " + expected.ToString() + "\nActual: " + actual.ToString());
+        }
 
         [TestMethod]
         public void convertEquipment()
