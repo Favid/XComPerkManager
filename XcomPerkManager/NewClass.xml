@@ -14,9 +14,17 @@
     </experience>
     <equipment>
       <squaddie_loadout>SquaddieRanger</squaddie_loadout>
-      <primary_weapon>rifle</primary_weapon>
-      <secondary_weapon>pistol</secondary_weapon>
       <allowed_armors>soldier</allowed_armors>
+      <weapons>
+        <weapon>
+          <weapon_type>2</weapon_type>
+          <weapon_name>rifle</weapon_name>
+        </weapon>
+        <weapon>
+          <weapon_type>3</weapon_type>
+          <weapon_name>pistol</weapon_name>
+        </weapon>
+      </weapons>
     </equipment>
     <abilities>
       <ability>

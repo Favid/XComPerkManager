@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using XcomPerkManager.DataObjects;
 
 namespace XcomPerkManager
 {
@@ -13,6 +14,7 @@ namespace XcomPerkManager
         public string primaryWeapon { get; set; }
         public string secondaryWeapon { get; set; }
         public string allowedArmors { get; set; }
+        public List<Weapon> weapons { get; set; }
 
         public SoldierClassEquipment() : base()
         {
@@ -20,6 +22,8 @@ namespace XcomPerkManager
             primaryWeapon = "";
             secondaryWeapon = "";
             allowedArmors = "soldier";
+
+            weapons = new List<Weapon>();
         }
 
         public XElement getXmlElement()

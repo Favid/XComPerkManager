@@ -71,8 +71,8 @@ namespace XcomPerkManager
         {
             SoldierClassEquipment equipment = new SoldierClassEquipment();
             equipment.squaddieLoadout = equipmentElement.Element("squaddie_loadout").Value;
-            equipment.primaryWeapon = equipmentElement.Element("primary_weapon").Value;
-            equipment.secondaryWeapon = equipmentElement.Element("secondary_weapon").Value;
+            //equipment.primaryWeapon = equipmentElement.Element("primary_weapon").Value;
+            //equipment.secondaryWeapon = equipmentElement.Element("secondary_weapon").Value;
             equipment.allowedArmors = equipmentElement.Element("allowed_armors").Value;
 
             return equipment;

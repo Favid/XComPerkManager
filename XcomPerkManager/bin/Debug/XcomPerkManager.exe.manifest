@@ -54,33 +54,33 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="XcomPerkManager.exe" size="203776">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="XcomPerkManager.exe" size="205312">
       <assemblyIdentity name="XcomPerkManager" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>d2awxmUP7WVtYGnDT0qfuPWqfjyxzT+QR7K2YfxvF1c=</dsig:DigestValue>
+        <dsig:DigestValue>pGbqhxqQgbKSZ+vD/geC6EzldK5HVmNPCXBiFCxMCxQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="NewClass.xml" size="8348" writeableType="applicationData">
+  <file name="NewClass.xml" size="8529" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Qf1rjVyHIc1gNhtDG2OadgEB0SpHR0k9L5OIBVeePsE=</dsig:DigestValue>
+      <dsig:DigestValue>imamalJGmGEAIna99UH3kIq7otQYDl0SWCVcrVyRTlI=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="SavedSoldiers.xml" size="155190" writeableType="applicationData">
+  <file name="SavedSoldiers.xml" size="293128" writeableType="applicationData">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>KgdE0ScKqhlxwsKEuI5H9TMyq1BUR0OtBY+LBrEVXfI=</dsig:DigestValue>
+      <dsig:DigestValue>HtvT/YxSqz63e1eYY7LuYXsVSHxOk2LsqD5UHbIgUHk=</dsig:DigestValue>
     </hash>
   </file>
   <file name="XcomPerkManager.exe.config" size="189">

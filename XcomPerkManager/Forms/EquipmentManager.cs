@@ -21,8 +21,8 @@ namespace XcomPerkManager
         {
             ClassOverview owner = Owner as ClassOverview;
             tSquaddieLoadout.Text = owner.currentSoldier.equipment.squaddieLoadout;
-            tPrimaryWeapon.Text = owner.currentSoldier.equipment.primaryWeapon;
-            tSecondaryWeapon.Text = owner.currentSoldier.equipment.secondaryWeapon;
+            //tPrimaryWeapon.Text = owner.currentSoldier.equipment.primaryWeapon;
+            //tSecondaryWeapon.Text = owner.currentSoldier.equipment.secondaryWeapon;
             tAllowedArmors.Text = owner.currentSoldier.equipment.allowedArmors;
 
             formerInternalName = owner.currentSoldier.metadata.internalName;
@@ -37,8 +37,11 @@ namespace XcomPerkManager
 
         private void setControlsInitialState()
         {
-            tWeaponSlot.Enabled = false;
-            tWeaponName.Enabled = false;
+            lWeaponSlot.Visible = false;
+            lWeaponName.Visible = false;
+
+            tWeaponSlot.Visible = false;
+            tWeaponName.Visible = false;
 
             bSaveWeapon.Visible = false;
             bCancelWeapon.Visible = false;
@@ -47,12 +50,18 @@ namespace XcomPerkManager
 
             bAdd.Enabled = true;
             bDelete.Enabled = true;
+            bEdit.Enabled = true;
+
+            bSave.Enabled = true;
         }
 
         private void setControlsEditingWeapon()
         {
-            tWeaponSlot.Enabled = true;
-            tWeaponName.Enabled = true;
+            lWeaponSlot.Visible = true;
+            lWeaponName.Visible = true;
+
+            tWeaponSlot.Visible = true;
+            tWeaponName.Visible = true;
 
             bSaveWeapon.Visible = true;
             bCancelWeapon.Visible = true;
@@ -61,6 +70,9 @@ namespace XcomPerkManager
 
             bAdd.Enabled = false;
             bDelete.Enabled = false;
+            bEdit.Enabled = false;
+
+            bSave.Enabled = false;
         }
 
         private void bSave_Click(object sender, EventArgs e)
@@ -69,8 +81,8 @@ namespace XcomPerkManager
 
             SoldierClassEquipment equipment = new SoldierClassEquipment();
             equipment.squaddieLoadout = tSquaddieLoadout.Text;
-            equipment.primaryWeapon = tPrimaryWeapon.Text;
-            equipment.secondaryWeapon = tSecondaryWeapon.Text;
+            //equipment.primaryWeapon = tPrimaryWeapon.Text;
+            //equipment.secondaryWeapon = tSecondaryWeapon.Text;
             equipment.allowedArmors = tAllowedArmors.Text;
 
             ValidationResult allowUpdate = equipment.allowUpdate();
