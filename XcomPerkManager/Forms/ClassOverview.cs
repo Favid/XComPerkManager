@@ -74,8 +74,11 @@ namespace XcomPerkManager
 
         public void updateSoldiers()
         {
-            SavedSoldiersReader xmlReader = new SavedSoldiersReader(abilities);
-            soldiers = xmlReader.read();
+            //SavedSoldiersReader xmlReader = new SavedSoldiersReader(abilities);
+            //soldiers = xmlReader.read();
+
+            SavedSoldiersManager manager = new SavedSoldiersManager();
+            soldiers = manager.loadAllSoldierClasses();
 
             cClass.DataSource = soldiers;
         }

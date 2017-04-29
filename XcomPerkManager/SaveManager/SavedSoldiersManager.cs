@@ -23,12 +23,18 @@ namespace XcomPerkManager
             document = XDocument.Load(fullPath);
         }
 
+        public List<SoldierClass> loadAllSoldierClasses()
+        {
+            XElement xmlSoldierClasses = document.Element(Constants.XML_CLASSES);
+            return Conversion.Convert.toDriverSoldierClasses(xmlSoldierClasses);
+        }
+
         public bool saveEquipment(string internalName, SoldierClassEquipment equipment)
         {
             XElement xmlEquipment = getClassElement(internalName, Constants.XML_EQUIPMENT);
-            xmlEquipment = Conversion.Convert.toXmlEquipment(equipment);
+            XElement newXmlEquipment = new XElement(Conversion.Convert.toXmlEquipment(equipment));
+            xmlEquipment.ReplaceWith(newXmlEquipment);
             document.Save(fullPath);
-
             return true;
         }
 

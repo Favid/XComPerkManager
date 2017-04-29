@@ -24,6 +24,18 @@ namespace XcomPerkManager.Conversion
             return allAbilities.Where(x => x.internalName.Equals(internalName)).SingleOrDefault();
         }
 
+        public static List<SoldierClass> toDriverSoldierClasses(XElement xmlSoldierClasses)
+        {
+            List<SoldierClass> soldierClasses = new List<SoldierClass>();
+
+            foreach (XElement xmlSoldierClass in xmlSoldierClasses.Elements())
+            {
+                soldierClasses.Add(toDriverSoldierClass(xmlSoldierClass));
+            }
+
+            return soldierClasses;
+        }
+
         public static SoldierClass toDriverSoldierClass(XElement xmlClass)
         {
             SoldierClass soldierClass = new SoldierClass();
@@ -60,9 +72,22 @@ namespace XcomPerkManager.Conversion
         public static SoldierClassEquipment toDriverEquipment(XElement xmlEquipment)
         {
             SoldierClassEquipment equipment = new SoldierClassEquipment();
-            equipment.squaddieLoadout = xmlEquipment.Element(Constants.XML_EQUIPMENT_SQUADDIE_LOADOUT).Value;
-            equipment.allowedArmors = xmlEquipment.Element(Constants.XML_EQUIPMENT_ALLOWED_ARMORS).Value;
-            equipment.weapons = toDriverWeapons(xmlEquipment.Element(Constants.XML_EQUIPMENT_WEAPONS));
+
+            if (xmlEquipment.Element(Constants.XML_EQUIPMENT_SQUADDIE_LOADOUT) != null)
+            {
+                equipment.squaddieLoadout = xmlEquipment.Element(Constants.XML_EQUIPMENT_SQUADDIE_LOADOUT).Value;
+            }
+
+            if (xmlEquipment.Element(Constants.XML_EQUIPMENT_ALLOWED_ARMORS) != null)
+            {
+                equipment.allowedArmors = xmlEquipment.Element(Constants.XML_EQUIPMENT_ALLOWED_ARMORS).Value;
+            }
+
+            if (xmlEquipment.Element(Constants.XML_EQUIPMENT_WEAPONS) != null)
+            {
+                equipment.weapons = toDriverWeapons(xmlEquipment.Element(Constants.XML_EQUIPMENT_WEAPONS));
+            }
+            
 
             return equipment;
         }
