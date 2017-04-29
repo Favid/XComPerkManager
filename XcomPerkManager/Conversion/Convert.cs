@@ -44,7 +44,7 @@ namespace XcomPerkManager.Conversion
 
             return experience;
         }
-                               
+        
         public static SoldierClassEquipment toDriverEquipment(XElement xmlEquipment)
         {
             SoldierClassEquipment equipment = new SoldierClassEquipment();
@@ -106,6 +106,28 @@ namespace XcomPerkManager.Conversion
             }
 
             return ability;
+        }
+
+        public static List<SoldierClassStat> toDriverStats(XElement xmlStats)
+        {
+            List<SoldierClassStat> stats = new List<SoldierClassStat>();
+
+            foreach (XElement xmlStat in xmlStats.Elements())
+            {
+                stats.Add(toDriverStat(xmlStat));
+            }
+
+            return stats;
+        }
+
+        public static SoldierClassStat toDriverStat(XElement xmlStat)
+        {
+            SoldierClassStat stat = new SoldierClassStat();
+            stat.stat = (Stat)int.Parse(xmlStat.Element(Constants.XML_STAT_TYPE).Value);
+            stat.value = int.Parse(xmlStat.Element(Constants.XML_STAT_VALUE).Value);
+            stat.rank = (SoldierRank)int.Parse(xmlStat.Element(Constants.XML_STAT_RANK).Value);
+            
+            return stat;
         }
 
         public static XElement toXmlMetadata(SoldierClassMetadata metadata)
@@ -183,6 +205,29 @@ namespace XcomPerkManager.Conversion
             addBaseChild(xmlAbility, Constants.XML_ABILITY_SLOT, ability.slot.ToString());
 
             return xmlAbility;
+        }
+
+        public static XElement toXmlStats(List<SoldierClassStat> stats)
+        {
+            XElement xmlStats = new XElement(Constants.XML_STATS);
+
+            foreach (SoldierClassStat stat in stats)
+            {
+                addXmlChild(xmlStats, toXmlStat(stat));
+            }
+
+            return xmlStats;
+        }
+
+        public static XElement toXmlStat(SoldierClassStat stat)
+        {
+            XElement xmlStat = new XElement(Constants.XML_STAT);
+
+            addBaseChild(xmlStat, Constants.XML_STAT_TYPE, ((int?)stat.stat).ToString());
+            addBaseChild(xmlStat, Constants.XML_STAT_VALUE, stat.value.ToString());
+            addBaseChild(xmlStat, Constants.XML_STAT_RANK, ((int?)stat.rank).ToString());
+
+            return xmlStat;
         }
 
         private static void addXmlChild(XElement xmlParent, XElement xmlChild)

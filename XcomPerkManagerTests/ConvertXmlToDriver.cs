@@ -203,5 +203,59 @@ namespace XcomPerkManagerTests
 
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void convertStats()
+        {
+            XElement xmlStats = new XElement(Constants.XML_STATS);
+
+            XElement xmlStatA = new XElement(Constants.XML_ABILITY);
+            xmlStatA.Add(new XElement(Constants.XML_STAT_TYPE, "2"));
+            xmlStatA.Add(new XElement(Constants.XML_STAT_VALUE, "2"));
+            xmlStatA.Add(new XElement(Constants.XML_STAT_RANK, "3"));
+            xmlStats.Add(xmlStatA);
+
+            XElement xmlStatB = new XElement(Constants.XML_ABILITY);
+            xmlStatB.Add(new XElement(Constants.XML_STAT_TYPE, "1"));
+            xmlStatB.Add(new XElement(Constants.XML_STAT_VALUE, "0"));
+            xmlStatB.Add(new XElement(Constants.XML_STAT_RANK, "1"));
+            xmlStats.Add(xmlStatB);
+
+            List<SoldierClassStat> actual = XcomPerkManager.Conversion.Convert.toDriverStats(xmlStats);
+
+            List<SoldierClassStat> expected = new List<SoldierClassStat>();
+
+            SoldierClassStat expectedStatA = new SoldierClassStat();
+            expectedStatA.stat = Stat.Strength;
+            expectedStatA.value = 2;
+            expectedStatA.rank = SoldierRank.Sergeant;
+            expected.Add(expectedStatA);
+
+            SoldierClassStat expectedStatB = new SoldierClassStat();
+            expectedStatB.stat = Stat.Aim;
+            expectedStatB.value = 0;
+            expectedStatB.rank = SoldierRank.Squaddie;
+            expected.Add(expectedStatB);
+
+            Assert.IsTrue(expected.SequenceEqual(actual), "Expected: " + expected.ToString() + "\nActual: " + actual.ToString());
+        }
+
+        [TestMethod]
+        public void convertStat()
+        {
+            XElement xmlStat = new XElement(Constants.XML_STAT);
+            xmlStat.Add(new XElement(Constants.XML_STAT_TYPE, "2"));
+            xmlStat.Add(new XElement(Constants.XML_STAT_VALUE, "2"));
+            xmlStat.Add(new XElement(Constants.XML_STAT_RANK, "3"));
+
+            SoldierClassStat actual = XcomPerkManager.Conversion.Convert.toDriverStat(xmlStat);
+
+            SoldierClassStat expected = new SoldierClassStat();
+            expected.stat = Stat.Strength;
+            expected.value = 2;
+            expected.rank = SoldierRank.Sergeant;
+            
+            Assert.AreEqual(expected, actual, "Expected: " + expected.ToString() + "\nActual: " + actual.ToString());
+        }
     }
 }

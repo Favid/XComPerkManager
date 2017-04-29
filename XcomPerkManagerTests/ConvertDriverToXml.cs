@@ -205,5 +205,59 @@ namespace XcomPerkManagerTests
 
             Assert.IsTrue(XNode.DeepEquals(expected, actual), "Expected: " + expected.ToString() + "\nActual: " + actual.ToString());
         }
+
+        [TestMethod]
+        public void convertStats()
+        {
+            List<SoldierClassStat> stats = new List<SoldierClassStat>();
+
+            SoldierClassStat statA = new SoldierClassStat();
+            statA.stat = Stat.Strength;
+            statA.value = 2;
+            statA.rank = SoldierRank.Sergeant;
+            stats.Add(statA);
+
+            SoldierClassStat statB = new SoldierClassStat();
+            statB.stat = Stat.Aim;
+            statB.value = 0;
+            statB.rank = SoldierRank.Squaddie;
+            stats.Add(statB);
+
+            XElement actual = XcomPerkManager.Conversion.Convert.toXmlStats(stats);
+
+            XElement expected = new XElement(Constants.XML_STATS);
+
+            XElement expectedStatA = new XElement(Constants.XML_STAT);
+            expectedStatA.Add(new XElement(Constants.XML_STAT_TYPE, "2"));
+            expectedStatA.Add(new XElement(Constants.XML_STAT_VALUE, "2"));
+            expectedStatA.Add(new XElement(Constants.XML_STAT_RANK, "3"));
+            expected.Add(expectedStatA);
+
+            XElement expectedStatB = new XElement(Constants.XML_STAT);
+            expectedStatB.Add(new XElement(Constants.XML_STAT_TYPE, "1"));
+            expectedStatB.Add(new XElement(Constants.XML_STAT_VALUE, "0"));
+            expectedStatB.Add(new XElement(Constants.XML_STAT_RANK, "1"));
+            expected.Add(expectedStatB);
+
+            Assert.IsTrue(XNode.DeepEquals(expected, actual), "Expected: " + expected.ToString() + "\nActual: " + actual.ToString());
+        }
+
+        [TestMethod]
+        public void convertStat()
+        {
+            SoldierClassStat stat = new SoldierClassStat();
+            stat.stat = Stat.Strength;
+            stat.value = 2;
+            stat.rank = SoldierRank.Sergeant;
+
+            XElement actual = XcomPerkManager.Conversion.Convert.toXmlStat(stat);
+
+            XElement expected = new XElement(Constants.XML_STAT);
+            expected.Add(new XElement(Constants.XML_STAT_TYPE, "2"));
+            expected.Add(new XElement(Constants.XML_STAT_VALUE, "2"));
+            expected.Add(new XElement(Constants.XML_STAT_RANK, "3"));
+
+            Assert.IsTrue(XNode.DeepEquals(expected, actual));
+        }
     }
 }
