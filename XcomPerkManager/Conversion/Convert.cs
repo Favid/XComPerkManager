@@ -10,6 +10,20 @@ namespace XcomPerkManager.Conversion
 {
     public static class Convert
     {
+        // TODO should probably be elsewhere
+        private static List<Ability> allAbilities = null;
+
+        private static Ability getAbility(string internalName)
+        {
+            if(allAbilities == null)
+            {
+                XComAbilityListReader reader = new XComAbilityListReader();
+                allAbilities = reader.read();
+            }
+
+            return allAbilities.Where(x => x.internalName.Equals(internalName)).SingleOrDefault();
+        }
+
         public static SoldierClassMetadata toDriverMetadata(XElement xmlMetadata)
         {
             SoldierClassMetadata metadata = new SoldierClassMetadata();
@@ -60,6 +74,25 @@ namespace XcomPerkManager.Conversion
             weapon.weaponSlot = xmlWeapon.Element(Constants.XML_EQUIPMENT_WEAPON_SLOT).Value;
 
             return weapon;
+        }
+
+        public static SoldierClassAbility toDriverAbility(XElement xmlAbility)
+        {
+            SoldierClassAbility ability = new SoldierClassAbility();
+            ability.internalName = xmlAbility.Element(Constants.XML_ABILITY_INTERNAL_NAME).Value;
+            ability.rank = (SoldierRank)int.Parse(xmlAbility.Element(Constants.XML_ABILITY_RANK).Value);
+            ability.slot = int.Parse(xmlAbility.Element(Constants.XML_ABILITY_SLOT).Value);
+
+            Ability abilityDefinition = getAbility(ability.internalName);
+
+            if(abilityDefinition != null)
+            {
+                ability.displayName = abilityDefinition.displayName;
+                ability.description = abilityDefinition.description;
+                ability.requiredMod = abilityDefinition.requiredMod;
+            }
+
+            return ability;
         }
 
         public static XElement toXmlMetadata(SoldierClassMetadata metadata)
@@ -116,11 +149,22 @@ namespace XcomPerkManager.Conversion
             return xmlWeapon;
         }
 
+        public static XElement toXmlAbility(SoldierClassAbility ability)
+        {
+            XElement xmlAbility = new XElement(Constants.XML_ABILITY);
+
+            addBaseChild(xmlAbility, Constants.XML_ABILITY_INTERNAL_NAME, ability.internalName);
+            addBaseChild(xmlAbility, Constants.XML_ABILITY_RANK, ((int?)ability.rank).ToString());
+            addBaseChild(xmlAbility, Constants.XML_ABILITY_SLOT, ability.slot.ToString());
+
+            return xmlAbility;
+        }
+
         private static void addXmlChild(XElement xmlParent, XElement xmlChild)
         {
             xmlParent.Add(xmlChild);
         }
-
+        
         private static void addBaseChild(XElement xmlParent, string childContent, string childValue)
         {
             xmlParent.Add(new XElement(childContent));

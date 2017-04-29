@@ -24,7 +24,7 @@ namespace XcomPerkManager
         {
             string currentDir = Environment.CurrentDirectory;
             DirectoryInfo directory = new DirectoryInfo(currentDir);
-            DirectoryInfo root = directory.Parent.Parent;
+            DirectoryInfo root = directory.Parent.Parent; // TODO make this read same file as tool instead of a copy
             FileInfo excelFile = new FileInfo(Path.Combine(root.FullName, "XComAbilityList.xlsx"));
 
             package = new ExcelPackage(excelFile);

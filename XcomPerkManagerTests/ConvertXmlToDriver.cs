@@ -138,5 +138,26 @@ namespace XcomPerkManagerTests
             
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void convertAbility()
+        {
+            XElement xmlAbility = new XElement(Constants.XML_ABILITY);
+            xmlAbility.Add(new XElement(Constants.XML_ABILITY_INTERNAL_NAME, "Squadsight"));
+            xmlAbility.Add(new XElement(Constants.XML_ABILITY_RANK, "2"));
+            xmlAbility.Add(new XElement(Constants.XML_ABILITY_SLOT, "3"));
+
+            SoldierClassAbility actual = XcomPerkManager.Conversion.Convert.toDriverAbility(xmlAbility);
+            SoldierClassAbility expected = new SoldierClassAbility();
+            expected.internalName = "Squadsight";
+            expected.displayName = "Squadsight";
+            expected.description = "You can target enemies within squadmates' sight, provided there is line of sight to the target.";
+            expected.requiredMod = "None";
+            expected.rank = SoldierRank.Corporal;
+            expected.slot = 3;
+            expected.weaponSlot = WeaponSlot.None;
+
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

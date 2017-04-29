@@ -55,3 +55,4 @@ XcomPerkManagerTests/obj/Debug/XcomPerkManagerTests.csproj.FileListAbsolute.txt
 *.manifest
 XcomPerkManager/bin/Debug/XcomPerkManager.vshost.application
 XcomPerkManager/obj/Debug/DesignTimeResolveAssemblyReferences.cache
+XcomPerkManagerTests/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache

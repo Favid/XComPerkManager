@@ -139,5 +139,27 @@ namespace XcomPerkManagerTests
 
             Assert.IsTrue(XNode.DeepEquals(expected, actual));
         }
+
+        [TestMethod]
+        public void convertAbility()
+        {
+            SoldierClassAbility ability = new SoldierClassAbility();
+            ability.internalName = "TestAbility";
+            ability.displayName = "Test Ability";
+            ability.description = "Hello";
+            ability.requiredMod = "My Mod";
+            ability.rank = SoldierRank.Corporal;
+            ability.slot = 3;
+            ability.weaponSlot = WeaponSlot.Primary;
+
+            XElement actual = XcomPerkManager.Conversion.Convert.toXmlAbility(ability);
+
+            XElement expected = new XElement(Constants.XML_ABILITY);
+            expected.Add(new XElement(Constants.XML_ABILITY_INTERNAL_NAME, "TestAbility"));
+            expected.Add(new XElement(Constants.XML_ABILITY_RANK, "2"));
+            expected.Add(new XElement(Constants.XML_ABILITY_SLOT, "3"));
+
+            Assert.IsTrue(XNode.DeepEquals(expected, actual), "Expected: " + expected.ToString() + "\nActual: " + actual.ToString());
+        }
     }
 }
