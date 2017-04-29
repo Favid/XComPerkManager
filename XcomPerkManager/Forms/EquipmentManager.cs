@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
 using System.Windows.Forms;
 using XcomPerkManager.DataObjects;
 
@@ -21,14 +22,11 @@ namespace XcomPerkManager
         {
             ClassOverview owner = Owner as ClassOverview;
             tSquaddieLoadout.Text = owner.currentSoldier.equipment.squaddieLoadout;
-            //tPrimaryWeapon.Text = owner.currentSoldier.equipment.primaryWeapon;
-            //tSecondaryWeapon.Text = owner.currentSoldier.equipment.secondaryWeapon;
             tAllowedArmors.Text = owner.currentSoldier.equipment.allowedArmors;
 
             formerInternalName = owner.currentSoldier.metadata.internalName;
 
-            soldiersWeapons = new List<Weapon>(); // TODO will be owner.currentSoldier.equipment.weapons
-
+            soldiersWeapons = owner.currentSoldier.equipment.weapons;
             weapons = new BindingList<Weapon>(soldiersWeapons);
             lWeapons.DataSource = weapons;
 
@@ -81,9 +79,8 @@ namespace XcomPerkManager
 
             SoldierClassEquipment equipment = new SoldierClassEquipment();
             equipment.squaddieLoadout = tSquaddieLoadout.Text;
-            //equipment.primaryWeapon = tPrimaryWeapon.Text;
-            //equipment.secondaryWeapon = tSecondaryWeapon.Text;
             equipment.allowedArmors = tAllowedArmors.Text;
+            equipment.weapons = weapons.ToList();
 
             ValidationResult allowUpdate = equipment.allowUpdate();
             if (!allowUpdate.valid)
@@ -93,7 +90,8 @@ namespace XcomPerkManager
             }
 
             SavedSoldiersManager manager = new SavedSoldiersManager();
-            manager.updateClassElement(formerInternalName, equipment, Constants.XML_EQUIPMENT);
+            //manager.updateClassElement(formerInternalName, equipment, Constants.XML_EQUIPMENT);
+            manager.saveEquipment(formerInternalName, equipment);
 
             owner.updateSoldiers();
             owner.selectSoldier(formerInternalName);

@@ -23,6 +23,15 @@ namespace XcomPerkManager
             document = XDocument.Load(fullPath);
         }
 
+        public bool saveEquipment(string internalName, SoldierClassEquipment equipment)
+        {
+            XElement xmlEquipment = getClassElement(internalName, Constants.XML_EQUIPMENT);
+            xmlEquipment = Conversion.Convert.toXmlEquipment(equipment);
+            document.Save(fullPath);
+
+            return true;
+        }
+
         public XElement getClassElement(string internalName, string xmlClassElementTag)
         {
             XElement documentElement = document
