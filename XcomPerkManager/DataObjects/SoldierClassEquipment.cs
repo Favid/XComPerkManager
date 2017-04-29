@@ -64,5 +64,36 @@ namespace XcomPerkManager
             
             return allowUpdate;
         }
+
+        public override bool Equals(object obj)
+        {
+            SoldierClassEquipment other = obj as SoldierClassEquipment;
+            if (other == null)
+            {
+                return false;
+            }
+
+            if (!String.Equals(squaddieLoadout, other.squaddieLoadout))
+            {
+                return false;
+            }
+
+            if (!String.Equals(allowedArmors, other.allowedArmors))
+            {
+                return false;
+            }
+
+            if(!weapons.SequenceEqual(other.weapons))
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
     }
 }

@@ -51,3 +51,6 @@ XcomPerkManager/bin/Debug/XcomPerkManager.exe.manifest
 *.pdb
 XcomPerkManager/obj/Debug/XcomPerkManager.application
 *.dll
+XcomPerkManagerTests/obj/Debug/XcomPerkManagerTests.csproj.FileListAbsolute.txt
+*.manifest
+XcomPerkManager/bin/Debug/XcomPerkManager.vshost.application

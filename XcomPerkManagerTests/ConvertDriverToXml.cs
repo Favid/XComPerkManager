@@ -11,6 +11,50 @@ namespace XcomPerkManagerTests
     public class ConvertDriverToXml
     {
         [TestMethod]
+        public void convertEquipment()
+        {
+            SoldierClassEquipment equipment = new SoldierClassEquipment();
+            equipment.squaddieLoadout = "Squaddie_TestClass";
+            equipment.allowedArmors = "squaddie";
+            
+            List<Weapon> weapons = new List<Weapon>();
+
+            Weapon weaponA = new Weapon();
+            weaponA.weaponName = "shotgun";
+            weaponA.weaponSlot = "primary";        // TODO verify if it should be primary or eInv_PrimaryWeapon
+            weapons.Add(weaponA);
+
+            Weapon weaponB = new Weapon();
+            weaponB.weaponName = "sword";
+            weaponB.weaponSlot = "secondary";        // TODO verify if it should be primary or eInv_PrimaryWeapon
+            weapons.Add(weaponB);
+
+            equipment.weapons = weapons;
+
+            XElement actual = XcomPerkManager.Conversion.Convert.toXmlEquipment(equipment);
+
+            XElement expected = new XElement(Constants.XML_EQUIPMENT);
+            expected.Add(new XElement(Constants.XML_EQUIPMENT_SQUADDIE_LOADOUT, "Squaddie_TestClass"));
+            expected.Add(new XElement(Constants.XML_EQUIPMENT_ALLOWED_ARMORS, "squaddie"));
+
+            XElement expectedWeapons = new XElement(Constants.XML_EQUIPMENT_WEAPONS);
+
+            XElement expectedWeaponA = new XElement(Constants.XML_EQUIPMENT_WEAPON);
+            expectedWeaponA.Add(new XElement(Constants.XML_EQUIPMENT_WEAPON_NAME, "shotgun"));
+            expectedWeaponA.Add(new XElement(Constants.XML_EQUIPMENT_WEAPON_SLOT, "primary"));
+            expectedWeapons.Add(expectedWeaponA);
+
+            XElement expectedWeaponB = new XElement(Constants.XML_EQUIPMENT_WEAPON);
+            expectedWeaponB.Add(new XElement(Constants.XML_EQUIPMENT_WEAPON_NAME, "sword"));
+            expectedWeaponB.Add(new XElement(Constants.XML_EQUIPMENT_WEAPON_SLOT, "secondary"));
+            expectedWeapons.Add(expectedWeaponB);
+
+            expected.Add(expectedWeapons);
+
+            Assert.IsTrue(XNode.DeepEquals(expected, actual), "Expected: " + expected.ToString() + "\nActual: " + actual.ToString());
+        }
+
+        [TestMethod]
         public void convertWeapons()
         {
             List<Weapon> weapons = new List<Weapon>();

@@ -22,6 +22,30 @@ namespace XcomPerkManager.DataObjects
             return weaponName + " " + weaponSlot;
         }
 
+        public override bool Equals(object obj)
+        {
+            Weapon other = obj as Weapon;
+            if(other == null)
+            {
+                return false;
+            }
+            
+            if (!String.Equals(weaponName, other.weaponName))
+            {
+                return false;
+            }
 
+            if (!String.Equals(weaponSlot, other.weaponSlot))
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
     }
 }
