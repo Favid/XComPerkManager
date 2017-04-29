@@ -32,16 +32,53 @@ namespace XcomPerkManager
             requiredMod = other.requiredMod;
         }
 
+        // Holding in case things break
+        //public override bool Equals(object obj)
+        //{
+        //    Ability castedObj = obj as Ability;
+
+        //    if(castedObj == null)
+        //    {
+        //        return base.Equals(obj);
+        //    }
+
+        //    return (internalName.Equals(castedObj.internalName));
+        //}
+
         public override bool Equals(object obj)
         {
-            Ability castedObj = obj as Ability;
-
-            if(castedObj == null)
+            Ability other = obj as Ability;
+            if (other == null)
             {
-                return base.Equals(obj);
+                return false;
             }
 
-            return (internalName.Equals(castedObj.internalName));
+            if (internalName != other.internalName)
+            {
+                return false;
+            }
+
+            if (displayName != other.displayName)
+            {
+                return false;
+            }
+
+            if (description != other.description)
+            {
+                return false;
+            }
+
+            if (weaponSlot != other.weaponSlot)
+            {
+                return false;
+            }
+
+            if (requiredMod != other.requiredMod)
+            {
+                return false;
+            }
+
+            return true;
         }
 
         public override int GetHashCode()

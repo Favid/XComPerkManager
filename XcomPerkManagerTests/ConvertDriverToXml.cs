@@ -141,6 +141,50 @@ namespace XcomPerkManagerTests
         }
 
         [TestMethod]
+        public void convertAbilities()
+        {
+            List<SoldierClassAbility> abilities = new List<SoldierClassAbility>();
+
+            SoldierClassAbility abilityA = new SoldierClassAbility();
+            abilityA.internalName = "TestAbility";
+            abilityA.displayName = "Test Ability";
+            abilityA.description = "Hello";
+            abilityA.requiredMod = "My Mod";
+            abilityA.rank = SoldierRank.Corporal;
+            abilityA.slot = 3;
+            abilityA.weaponSlot = WeaponSlot.Primary;
+            abilities.Add(abilityA);
+
+            SoldierClassAbility abilityB = new SoldierClassAbility();
+            abilityB.internalName = "TestAbility2";
+            abilityB.displayName = "Test Ability2";
+            abilityB.description = "Hello2";
+            abilityB.requiredMod = "My Mod2";
+            abilityB.rank = SoldierRank.Lieutenant;
+            abilityB.slot = 1;
+            abilityB.weaponSlot = WeaponSlot.Secondary;
+            abilities.Add(abilityB);
+
+            XElement actual = XcomPerkManager.Conversion.Convert.toXmlAbilities(abilities);
+
+            XElement expected = new XElement(Constants.XML_ABILITIES);
+
+            XElement expectedAbilityA = new XElement(Constants.XML_ABILITY);
+            expectedAbilityA.Add(new XElement(Constants.XML_ABILITY_INTERNAL_NAME, "TestAbility"));
+            expectedAbilityA.Add(new XElement(Constants.XML_ABILITY_RANK, "2"));
+            expectedAbilityA.Add(new XElement(Constants.XML_ABILITY_SLOT, "3"));
+            expected.Add(expectedAbilityA);
+
+            XElement expectedAbilityB = new XElement(Constants.XML_ABILITY);
+            expectedAbilityB.Add(new XElement(Constants.XML_ABILITY_INTERNAL_NAME, "TestAbility2"));
+            expectedAbilityB.Add(new XElement(Constants.XML_ABILITY_RANK, "4"));
+            expectedAbilityB.Add(new XElement(Constants.XML_ABILITY_SLOT, "1"));
+            expected.Add(expectedAbilityB);
+
+            Assert.IsTrue(XNode.DeepEquals(expected, actual), "Expected: " + expected.ToString() + "\nActual: " + actual.ToString());
+        }
+
+        [TestMethod]
         public void convertAbility()
         {
             SoldierClassAbility ability = new SoldierClassAbility();

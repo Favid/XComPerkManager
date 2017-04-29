@@ -76,6 +76,18 @@ namespace XcomPerkManager.Conversion
             return weapon;
         }
 
+        public static List<SoldierClassAbility> toDriverAbilities(XElement xmlAbilities)
+        {
+            List<SoldierClassAbility> abilities = new List<SoldierClassAbility>();
+
+            foreach (XElement xmlAbility in xmlAbilities.Elements())
+            {
+                abilities.Add(toDriverAbility(xmlAbility));
+            }
+
+            return abilities;
+        }
+
         public static SoldierClassAbility toDriverAbility(XElement xmlAbility)
         {
             SoldierClassAbility ability = new SoldierClassAbility();
@@ -90,6 +102,7 @@ namespace XcomPerkManager.Conversion
                 ability.displayName = abilityDefinition.displayName;
                 ability.description = abilityDefinition.description;
                 ability.requiredMod = abilityDefinition.requiredMod;
+                ability.weaponSlot = abilityDefinition.weaponSlot;
             }
 
             return ability;
@@ -147,6 +160,18 @@ namespace XcomPerkManager.Conversion
             addBaseChild(xmlWeapon, Constants.XML_EQUIPMENT_WEAPON_SLOT, weapon.weaponSlot);
             
             return xmlWeapon;
+        }
+
+        public static XElement toXmlAbilities(List<SoldierClassAbility> abilities)
+        {
+            XElement xmlAbilities = new XElement(Constants.XML_ABILITIES);
+
+            foreach (SoldierClassAbility ability in abilities)
+            {
+                addXmlChild(xmlAbilities, toXmlAbility(ability));
+            }
+
+            return xmlAbilities;
         }
 
         public static XElement toXmlAbility(SoldierClassAbility ability)

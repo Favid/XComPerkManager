@@ -140,6 +140,50 @@ namespace XcomPerkManagerTests
         }
 
         [TestMethod]
+        public void convertAbilities()
+        {
+            XElement xmlAbilities = new XElement(Constants.XML_ABILITIES);
+
+            XElement xmlAbilityA = new XElement(Constants.XML_ABILITY);
+            xmlAbilityA.Add(new XElement(Constants.XML_ABILITY_INTERNAL_NAME, "Squadsight"));
+            xmlAbilityA.Add(new XElement(Constants.XML_ABILITY_RANK, "2"));
+            xmlAbilityA.Add(new XElement(Constants.XML_ABILITY_SLOT, "3"));
+            xmlAbilities.Add(xmlAbilityA);
+
+            XElement xmlAbilityB = new XElement(Constants.XML_ABILITY);
+            xmlAbilityB.Add(new XElement(Constants.XML_ABILITY_INTERNAL_NAME, "IntrusionProtocol"));
+            xmlAbilityB.Add(new XElement(Constants.XML_ABILITY_RANK, "4"));
+            xmlAbilityB.Add(new XElement(Constants.XML_ABILITY_SLOT, "1"));
+            xmlAbilities.Add(xmlAbilityB);
+            
+            List<SoldierClassAbility> actual = XcomPerkManager.Conversion.Convert.toDriverAbilities(xmlAbilities);
+
+            List<SoldierClassAbility> expected = new List<SoldierClassAbility>();
+            
+            SoldierClassAbility expectedAbilityA = new SoldierClassAbility();
+            expectedAbilityA.internalName = "Squadsight";
+            expectedAbilityA.displayName = "Squadsight";
+            expectedAbilityA.description = "You can target enemies within squadmates' sight, provided there is line of sight to the target.";
+            expectedAbilityA.requiredMod = "None";
+            expectedAbilityA.rank = SoldierRank.Corporal;
+            expectedAbilityA.slot = 3;
+            expectedAbilityA.weaponSlot = WeaponSlot.None;
+            expected.Add(expectedAbilityA);
+
+            SoldierClassAbility expectedAbilityB = new SoldierClassAbility();
+            expectedAbilityB.internalName = "IntrusionProtocol";
+            expectedAbilityB.displayName = "Hack";
+            expectedAbilityB.description = "Attempt to remotely breach security on a network access point with your GREMLIN.";
+            expectedAbilityB.requiredMod = "None";
+            expectedAbilityB.rank = SoldierRank.Lieutenant;
+            expectedAbilityB.slot = 1;
+            expectedAbilityB.weaponSlot = WeaponSlot.Secondary;
+            expected.Add(expectedAbilityB);
+
+            Assert.IsTrue(expected.SequenceEqual(actual), "Expected: " + expected.ToString() + "\nActual: " + actual.ToString());
+        }
+
+        [TestMethod]
         public void convertAbility()
         {
             XElement xmlAbility = new XElement(Constants.XML_ABILITY);

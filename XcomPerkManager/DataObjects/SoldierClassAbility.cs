@@ -69,5 +69,31 @@ namespace XcomPerkManager
 
             return allowUpdate;
         }
+
+        public override bool Equals(object obj)
+        {
+            SoldierClassAbility other = obj as SoldierClassAbility;
+            if (other == null)
+            {
+                return false;
+            }
+
+            if (rank != other.rank)
+            {
+                return false;
+            }
+
+            if (slot != other.slot)
+            {
+                return false;
+            }
+
+            return base.Equals(obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
     }
 }
