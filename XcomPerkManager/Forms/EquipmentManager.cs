@@ -90,7 +90,6 @@ namespace XcomPerkManager
             }
 
             SavedSoldiersManager manager = new SavedSoldiersManager();
-            //manager.updateClassElement(formerInternalName, equipment, Constants.XML_EQUIPMENT);
             manager.saveEquipment(formerInternalName, equipment);
 
             owner.updateSoldiers();

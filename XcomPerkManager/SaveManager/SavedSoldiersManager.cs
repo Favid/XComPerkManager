@@ -29,6 +29,15 @@ namespace XcomPerkManager
             return Conversion.Convert.toDriverSoldierClasses(xmlSoldierClasses);
         }
 
+        public bool saveMetadata(string internalName, SoldierClassMetadata metadata)
+        {
+            XElement xmlMetadata = getClassElement(internalName, Constants.XML_METADATA);
+            XElement newXmlMetadata = new XElement(Conversion.Convert.toXmlMetadata(metadata));
+            xmlMetadata.ReplaceWith(newXmlMetadata);
+            document.Save(fullPath);
+            return true;
+        }
+
         public bool saveEquipment(string internalName, SoldierClassEquipment equipment)
         {
             XElement xmlEquipment = getClassElement(internalName, Constants.XML_EQUIPMENT);

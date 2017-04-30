@@ -50,8 +50,11 @@ namespace XcomPerkManager
                 return;
             }
 
-            MetadataAccess access = new MetadataAccess();
-            access.update(formerInternalName, metadata);
+            SavedSoldiersManager manager = new SavedSoldiersManager();
+            manager.saveMetadata(formerInternalName, metadata);
+
+            //MetadataAccess access = new MetadataAccess();
+            //access.update(formerInternalName, metadata);
             
             owner.updateSoldiers();
             owner.selectSoldier(metadata.internalName);
