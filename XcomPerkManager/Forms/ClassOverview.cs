@@ -52,10 +52,11 @@ namespace XcomPerkManager
 
         private void bAdd_Click(object sender, EventArgs e)
         {
-            SoldierClassAccess access = new SoldierClassAccess();
-            access.create("Testing");
+            SavedSoldiersManager manager = new SavedSoldiersManager();
+            SoldierClass newSoldierClass = manager.addNewSoldierClass();
 
             updateSoldiers();
+            selectSoldier(newSoldierClass.metadata.internalName);
 
             //SoldierClass soldierClass = new SoldierClass();
             //soldierClass.metadata.internalName = "Test";

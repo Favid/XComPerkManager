@@ -12291,4 +12291,69 @@
       </stat>
     </stats>
   </soldier>
+  <soldier>
+    <metadata>
+      <internal_name>New</internal_name>
+      <display_name>New</display_name>
+      <description>test</description>
+      <icon_string>test</icon_string>
+    </metadata>
+    <experience>
+      <number_in_forced_deck>2</number_in_forced_deck>
+      <number_in_deck>2</number_in_deck>
+      <kill_assists_per_kill>2</kill_assists_per_kill>
+    </experience>
+    <equipment>
+      <squaddie_loadout>test</squaddie_loadout>
+      <allowed_armors>soldier</allowed_armors>
+      <weapons>
+        <weapon>
+          <weapon_name>test</weapon_name>
+          <weapon_type>1</weapon_type>
+        </weapon>
+      </weapons>
+    </equipment>
+    <abilities />
+    <stats />
+  </soldier>
+  <soldier>
+    <metadata>
+      <internal_name>New1</internal_name>
+      <display_name></display_name>
+      <description></description>
+      <icon_string></icon_string>
+    </metadata>
+    <experience>
+      <number_in_forced_deck>1</number_in_forced_deck>
+      <number_in_deck>1</number_in_deck>
+      <kill_assists_per_kill>1</kill_assists_per_kill>
+    </experience>
+    <equipment>
+      <squaddie_loadout></squaddie_loadout>
+      <allowed_armors>soldier</allowed_armors>
+      <weapons />
+    </equipment>
+    <abilities />
+    <stats />
+  </soldier>
+  <soldier>
+    <metadata>
+      <internal_name>New12</internal_name>
+      <display_name>New12</display_name>
+      <description></description>
+      <icon_string></icon_string>
+    </metadata>
+    <experience>
+      <number_in_forced_deck>1</number_in_forced_deck>
+      <number_in_deck>1</number_in_deck>
+      <kill_assists_per_kill>1</kill_assists_per_kill>
+    </experience>
+    <equipment>
+      <squaddie_loadout></squaddie_loadout>
+      <allowed_armors>soldier</allowed_armors>
+      <weapons />
+    </equipment>
+    <abilities />
+    <stats />
+  </soldier>
 </soldiers>

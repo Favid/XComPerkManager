@@ -29,6 +29,67 @@ namespace XcomPerkManager
             return Conversion.Convert.toDriverSoldierClasses(xmlSoldierClasses);
         }
 
+        public SoldierClass addNewSoldierClass()
+        {
+            SoldierClass soldierClass = new SoldierClass();
+            soldierClass.metadata.internalName = getNewName();
+            soldierClass.metadata.displayName = soldierClass.metadata.internalName;
+
+            XElement xmlSoldierClass = Conversion.Convert.toXmlSoldierClass(soldierClass);
+            
+            XElement xmlClasses = getXmlClasses();
+            xmlClasses.Add(xmlSoldierClass);
+            
+            document.Save(fullPath);
+
+            return soldierClass;
+        }
+
+        private string getNewName()
+        {
+            string name = "New";
+
+            if (validName(name))
+            {
+                return name;
+            }
+
+            for (int i = 1; i < 999; i++)
+            {
+                string workingName = name += i.ToString();
+
+                if (validName(workingName))
+                {
+                    return workingName;
+                }
+            }
+
+            throw new ApplicationException("You need to delete some of those 'New' classes...");
+        }
+
+        private bool validName(string name)
+        {
+            List<XElement> classElements = document
+                .Element(Constants.XML_CLASSES)
+                .Elements(Constants.XML_CLASS)
+                .ToList();
+
+            foreach (XElement classElement in classElements)
+            {
+                string internalClassName = classElement
+                    .Element(Constants.XML_METADATA)
+                    .Element(Constants.XML_METADATA_INTERNAL_NAME)
+                    .Value;
+
+                if (name == internalClassName)
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
         public bool saveMetadata(string internalName, SoldierClassMetadata metadata)
         {
             XElement xmlMetadata = getClassElement(internalName, Constants.XML_METADATA);
@@ -45,6 +106,24 @@ namespace XcomPerkManager
             xmlEquipment.ReplaceWith(newXmlEquipment);
             document.Save(fullPath);
             return true;
+        }
+
+        public XElement getXmlClasses()
+        {
+            return document.Element(Constants.XML_CLASSES);
+        }
+
+        public XElement getXmlClass(String internalName)
+        {
+            XElement documentElement = document
+                .Element(Constants.XML_CLASSES)
+                .Elements(Constants.XML_CLASS)
+                .Where(x => x.Element(Constants.XML_METADATA)
+                .Element(Constants.XML_METADATA_INTERNAL_NAME)
+                .Value == internalName)
+                .Single();
+
+            return documentElement;
         }
 
         public XElement getClassElement(string internalName, string xmlClassElementTag)
