@@ -67,8 +67,10 @@ namespace XcomPerkManager
 
         private void ClassOverview_Load(object sender, EventArgs e)
         {
-            XComAbilityListReader reader = new XComAbilityListReader();
-            abilities = reader.read();
+            //XComAbilityListReader reader = new XComAbilityListReader();
+            //abilities = reader.read();
+
+            abilities = XcomPerkManager.Conversion.Convert.getAllAbilities();
 
             updateSoldiers();
         }

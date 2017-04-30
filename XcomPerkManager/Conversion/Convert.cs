@@ -13,7 +13,7 @@ namespace XcomPerkManager.Conversion
         // TODO should probably be elsewhere
         private static List<Ability> allAbilities = null;
 
-        private static Ability getAbility(string internalName)
+        public static Ability getAbility(string internalName)
         {
             if(allAbilities == null)
             {
@@ -22,6 +22,17 @@ namespace XcomPerkManager.Conversion
             }
 
             return allAbilities.Where(x => x.internalName.Equals(internalName)).SingleOrDefault();
+        }
+
+        public static List<Ability> getAllAbilities()
+        {
+            if (allAbilities == null)
+            {
+                XComAbilityListReader reader = new XComAbilityListReader();
+                allAbilities = reader.read();
+            }
+
+            return allAbilities;
         }
 
         public static List<SoldierClass> toDriverSoldierClasses(XElement xmlSoldierClasses)

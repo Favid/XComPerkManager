@@ -45,6 +45,7 @@ namespace XcomPerkManager
             return soldierClass;
         }
 
+        // TODO refactor
         private string getNewName()
         {
             string name = "New";
@@ -67,6 +68,7 @@ namespace XcomPerkManager
             throw new ApplicationException("You need to delete some of those 'New' classes...");
         }
 
+        // TODO refactor
         private bool validName(string name)
         {
             List<XElement> classElements = document
@@ -104,6 +106,15 @@ namespace XcomPerkManager
             XElement xmlEquipment = getClassElement(internalName, Constants.XML_EQUIPMENT);
             XElement newXmlEquipment = new XElement(Conversion.Convert.toXmlEquipment(equipment));
             xmlEquipment.ReplaceWith(newXmlEquipment);
+            document.Save(fullPath);
+            return true;
+        }
+
+        public bool saveAbilities(string internalName, List<SoldierClassAbility> abilities)
+        {
+            XElement xmlAbilities = getClassElement(internalName, Constants.XML_ABILITIES);
+            XElement newXmlAbilities = new XElement(Conversion.Convert.toXmlAbilities(abilities));
+            xmlAbilities.ReplaceWith(newXmlAbilities);
             document.Save(fullPath);
             return true;
         }

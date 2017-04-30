@@ -31,6 +31,7 @@ namespace XcomPerkManager
             ability.displayName = displayName;
             ability.description = description;
             ability.requiredMod = requiredMod;
+            ability.weaponSlot = weaponSlot;
 
             return ability;
         }

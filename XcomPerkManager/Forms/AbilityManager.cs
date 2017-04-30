@@ -154,7 +154,9 @@ namespace XcomPerkManager
             soldierAbilities.Add(buildSoldierAbilityFromCombo(cBrigadier3, SoldierRank.Brigadier, 3));
 
             SavedSoldiersManager manager = new SavedSoldiersManager();
-            manager.updateAbilitiesElement(formerInternalName, soldierAbilities);
+            //manager.updateAbilitiesElement(formerInternalName, soldierAbilities);
+            manager.saveAbilities(formerInternalName, soldierAbilities);
+
             
             owner.updateSoldiers();
             owner.selectSoldier(formerInternalName);
