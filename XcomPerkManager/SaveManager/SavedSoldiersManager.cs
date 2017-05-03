@@ -101,6 +101,16 @@ namespace XcomPerkManager
             return true;
         }
 
+        public bool saveInternalName(string originalInternalName, string newInternalName)
+        {
+            XElement xmlMetadata = getClassElement(originalInternalName, Constants.XML_METADATA);
+            XElement xmlInternalName = xmlMetadata.Element(Constants.XML_METADATA_INTERNAL_NAME);
+            XElement newXmlInternalName = new XElement(Conversion.Convert.toXmlInternalName(newInternalName));
+            xmlInternalName.ReplaceWith(newXmlInternalName);
+            document.Save(fullPath);
+            return true;
+        }
+
         public bool saveMetadata(string internalName, SoldierClassMetadata metadata)
         {
             XElement xmlMetadata = getClassElement(internalName, Constants.XML_METADATA);

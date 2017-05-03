@@ -69,6 +69,11 @@ namespace XcomPerkManager.DataObjects
             return soldierClasses;
         }
 
+        public SoldierClass getSoldierClass(string internalName)
+        {
+            return soldierClasses.Where(x => x.metadata.internalName.Equals(internalName)).FirstOrDefault();
+        }
+
         public SoldierClass getOpenSolderClass()
         {
             return openSoldierClass;
@@ -79,6 +84,14 @@ namespace XcomPerkManager.DataObjects
             openSoldierClass = soldierClass;
             openSoldierClassOriginalName = openSoldierClass.metadata.internalName;
             return openSoldierClass;
+        }
+
+        public SoldierClass renameClass(string originalInternalName, string newInternalName)
+        {
+            // TODO validation
+            manager.saveInternalName(originalInternalName, newInternalName);
+            loadSoldierClasses();
+            return getSoldierClass(newInternalName);
         }
 
         private void loadSoldierClasses()

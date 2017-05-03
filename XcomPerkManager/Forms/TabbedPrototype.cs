@@ -150,8 +150,34 @@ namespace XcomPerkManager.Forms
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            // TODO make sure rest of data can be saved first
+
             SoldierClass soldierClass = state.saveClass(buildSoldierClass());
             open(soldierClass);
+        }
+
+        private void renameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Rename rename = new Rename(state.getOpenSolderClass().metadata.internalName);
+            rename.VisibleChanged += formVisibleChanged;
+            rename.ShowDialog(this);
+        }
+
+        // TODO surely there's a better way to do this
+        private void formVisibleChanged(object sender, EventArgs e)
+        {
+            Rename renameForm = sender as Rename;
+            if (renameForm != null && !renameForm.Visible)
+            {
+                if(!renameForm.getNewName().Equals(state.getOpenSolderClass().metadata.internalName))
+                {
+                    state.renameClass(state.getOpenSolderClass().metadata.internalName, renameForm.getNewName());
+                    setupMenuItemOpen();
+                    renameForm.Dispose();
+                }
+            }
+
+
         }
     }
 }

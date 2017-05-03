@@ -201,6 +201,13 @@ namespace XcomPerkManager.Conversion
             return xmlMetadata;
         }
 
+        public static XElement toXmlInternalName(string internalName)
+        {
+            XElement xmlInternalName = new XElement(Constants.XML_METADATA_INTERNAL_NAME);
+            xmlInternalName.Value = internalName;
+            return xmlInternalName;
+        }
+
         public static XElement toXmlExperience(SoldierClassExperience experience)
         {
             XElement xmlExperience = new XElement(Constants.XML_EXPERIENCE);
