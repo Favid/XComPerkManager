@@ -68,6 +68,12 @@ namespace XcomPerkManager.DataObjects
         private void deleteClass(string soldierClassInternalName)
         {
             manager.deleteSoldierClass(soldierClassInternalName);
+            loadSoldierClasses();
+
+            if (!soldierClasses.Contains(openSoldierClass))
+            {
+                setOpenSoldierClass(soldierClasses.FirstOrDefault());
+            }
         }
 
         public List<SoldierClass> getSoldierClasses()

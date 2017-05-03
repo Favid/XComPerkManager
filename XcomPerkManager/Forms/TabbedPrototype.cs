@@ -125,13 +125,19 @@ namespace XcomPerkManager.Forms
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Close();
         }
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SoldierClass newClass = state.addClass();
             open(newClass);
+        }
+
+        private void deleteToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            state.deleteClass();
+            open(state.getOpenSoldierClass());
         }
     }
 }
