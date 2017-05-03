@@ -127,5 +127,11 @@ namespace XcomPerkManager.Forms
         {
 
         }
+
+        private void newToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SoldierClass newClass = state.addClass();
+            open(newClass);
+        }
     }
 }

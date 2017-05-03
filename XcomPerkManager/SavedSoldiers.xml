@@ -11948,4 +11948,24 @@
     </abilities>
     <stats />
   </soldier>
+  <soldier>
+    <metadata>
+      <internal_name>Fighter</internal_name>
+      <display_name>Fighter</display_name>
+      <description></description>
+      <icon_string></icon_string>
+    </metadata>
+    <experience>
+      <number_in_forced_deck>1</number_in_forced_deck>
+      <number_in_deck>1</number_in_deck>
+      <kill_assists_per_kill>1</kill_assists_per_kill>
+    </experience>
+    <equipment>
+      <squaddie_loadout></squaddie_loadout>
+      <allowed_armors>soldier</allowed_armors>
+      <weapons />
+    </equipment>
+    <abilities />
+    <stats />
+  </soldier>
 </soldiers>

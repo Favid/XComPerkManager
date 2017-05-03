@@ -30,45 +30,59 @@
         {
             this.laClass = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.laHelp = new System.Windows.Forms.Label();
             this.tabGeneral = new System.Windows.Forms.TabPage();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.tNumInForcedDeck = new System.Windows.Forms.TextBox();
-            this.tNumInDeck = new System.Windows.Forms.TextBox();
-            this.tKillAssistsPerKill = new System.Windows.Forms.TextBox();
-            this.tAllowedArmor = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
             this.tSquaddieLoadout = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.tAllowedArmor = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.lWeapons = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.menu = new System.Windows.Forms.MenuStrip();
-            this.menuItemFile = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItemOpen = new System.Windows.Forms.ToolStripMenuItem();
-            this.rangerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.specialistToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.renameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.tIconString = new System.Windows.Forms.TextBox();
-            this.tDescription = new System.Windows.Forms.TextBox();
-            this.tDisplayName = new System.Windows.Forms.TextBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label19 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.tNumInForcedDeck = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.tNumInDeck = new System.Windows.Forms.TextBox();
+            this.tKillAssistsPerKill = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.tDisplayName = new System.Windows.Forms.TextBox();
+            this.tDescription = new System.Windows.Forms.TextBox();
+            this.tIconString = new System.Windows.Forms.TextBox();
             this.tabStats = new System.Windows.Forms.TabPage();
+            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.textBox26 = new System.Windows.Forms.TextBox();
+            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.textBox28 = new System.Windows.Forms.TextBox();
+            this.textBox29 = new System.Windows.Forms.TextBox();
+            this.textBox30 = new System.Windows.Forms.TextBox();
+            this.textBox31 = new System.Windows.Forms.TextBox();
+            this.textBox32 = new System.Windows.Forms.TextBox();
+            this.label49 = new System.Windows.Forms.Label();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.label48 = new System.Windows.Forms.Label();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.label47 = new System.Windows.Forms.Label();
             this.tBrigadierPsi = new System.Windows.Forms.TextBox();
             this.tColonelPsi = new System.Windows.Forms.TextBox();
             this.tMajorPsi = new System.Windows.Forms.TextBox();
@@ -122,33 +136,6 @@
             this.label44 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.label47 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.label48 = new System.Windows.Forms.Label();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.textBox30 = new System.Windows.Forms.TextBox();
-            this.textBox31 = new System.Windows.Forms.TextBox();
-            this.textBox32 = new System.Windows.Forms.TextBox();
-            this.label49 = new System.Windows.Forms.Label();
             this.tabAbilities = new System.Windows.Forms.TabPage();
             this.cSquaddie6 = new System.Windows.Forms.ComboBox();
             this.cSquaddie5 = new System.Windows.Forms.ComboBox();
@@ -185,14 +172,27 @@
             this.laLieutenant = new System.Windows.Forms.Label();
             this.laSergeant = new System.Windows.Forms.Label();
             this.laCorporal = new System.Windows.Forms.Label();
+            this.laHelp = new System.Windows.Forms.Label();
+            this.menu = new System.Windows.Forms.MenuStrip();
+            this.menuItemFile = new System.Windows.Forms.ToolStripMenuItem();
+            this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemOpen = new System.Windows.Forms.ToolStripMenuItem();
+            this.rangerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.specialistToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.renameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1.SuspendLayout();
             this.tabGeneral.SuspendLayout();
-            this.menu.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.tabStats.SuspendLayout();
             this.tabAbilities.SuspendLayout();
+            this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
             // laClass
@@ -217,14 +217,6 @@
             this.tabControl1.Size = new System.Drawing.Size(519, 497);
             this.tabControl1.TabIndex = 16;
             // 
-            // laHelp
-            // 
-            this.laHelp.Location = new System.Drawing.Point(13, 540);
-            this.laHelp.Name = "laHelp";
-            this.laHelp.Size = new System.Drawing.Size(479, 34);
-            this.laHelp.TabIndex = 17;
-            this.laHelp.Text = "Click a parameter label for more details about what each item does.";
-            // 
             // tabGeneral
             // 
             this.tabGeneral.Controls.Add(this.groupBox3);
@@ -237,23 +229,23 @@
             this.tabGeneral.Text = "General";
             this.tabGeneral.UseVisualStyleBackColor = true;
             // 
-            // label18
+            // groupBox3
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(6, 56);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(77, 13);
-            this.label18.TabIndex = 29;
-            this.label18.Text = "Allowed Armor:";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(6, 87);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(56, 13);
-            this.label19.TabIndex = 28;
-            this.label19.Text = "Weapons:";
+            this.groupBox3.Controls.Add(this.label20);
+            this.groupBox3.Controls.Add(this.label18);
+            this.groupBox3.Controls.Add(this.tSquaddieLoadout);
+            this.groupBox3.Controls.Add(this.button3);
+            this.groupBox3.Controls.Add(this.tAllowedArmor);
+            this.groupBox3.Controls.Add(this.button2);
+            this.groupBox3.Controls.Add(this.lWeapons);
+            this.groupBox3.Controls.Add(this.button1);
+            this.groupBox3.Controls.Add(this.label19);
+            this.groupBox3.Location = new System.Drawing.Point(9, 259);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(499, 199);
+            this.groupBox3.TabIndex = 95;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Equipment";
             // 
             // label20
             // 
@@ -264,56 +256,31 @@
             this.label20.TabIndex = 27;
             this.label20.Text = "Squaddie Loadout:";
             // 
-            // label21
+            // label18
             // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(6, 79);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(93, 13);
-            this.label21.TabIndex = 26;
-            this.label21.Text = "Kill Assists Per Kill:";
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(6, 56);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(77, 13);
+            this.label18.TabIndex = 29;
+            this.label18.Text = "Allowed Armor:";
             // 
-            // label22
+            // tSquaddieLoadout
             // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(6, 53);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(73, 13);
-            this.label22.TabIndex = 25;
-            this.label22.Text = "Num In Deck:";
+            this.tSquaddieLoadout.Location = new System.Drawing.Point(136, 23);
+            this.tSquaddieLoadout.Name = "tSquaddieLoadout";
+            this.tSquaddieLoadout.Size = new System.Drawing.Size(173, 20);
+            this.tSquaddieLoadout.TabIndex = 37;
+            this.tSquaddieLoadout.Text = "SquaddieRanger";
             // 
-            // label23
+            // button3
             // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(6, 27);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(109, 13);
-            this.label23.TabIndex = 24;
-            this.label23.Text = "Num In Forced Deck:";
-            // 
-            // tNumInForcedDeck
-            // 
-            this.tNumInForcedDeck.Location = new System.Drawing.Point(136, 20);
-            this.tNumInForcedDeck.Name = "tNumInForcedDeck";
-            this.tNumInForcedDeck.Size = new System.Drawing.Size(29, 20);
-            this.tNumInForcedDeck.TabIndex = 34;
-            this.tNumInForcedDeck.Text = "2";
-            // 
-            // tNumInDeck
-            // 
-            this.tNumInDeck.Location = new System.Drawing.Point(136, 46);
-            this.tNumInDeck.Name = "tNumInDeck";
-            this.tNumInDeck.Size = new System.Drawing.Size(29, 20);
-            this.tNumInDeck.TabIndex = 35;
-            this.tNumInDeck.Text = "4";
-            // 
-            // tKillAssistsPerKill
-            // 
-            this.tKillAssistsPerKill.Location = new System.Drawing.Point(136, 72);
-            this.tKillAssistsPerKill.Name = "tKillAssistsPerKill";
-            this.tKillAssistsPerKill.Size = new System.Drawing.Size(29, 20);
-            this.tKillAssistsPerKill.TabIndex = 36;
-            this.tKillAssistsPerKill.Text = "5";
+            this.button3.Location = new System.Drawing.Point(315, 141);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 21);
+            this.button3.TabIndex = 92;
+            this.button3.Text = "Delete";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // tAllowedArmor
             // 
@@ -323,13 +290,14 @@
             this.tAllowedArmor.TabIndex = 38;
             this.tAllowedArmor.Text = "soldier";
             // 
-            // tSquaddieLoadout
+            // button2
             // 
-            this.tSquaddieLoadout.Location = new System.Drawing.Point(136, 23);
-            this.tSquaddieLoadout.Name = "tSquaddieLoadout";
-            this.tSquaddieLoadout.Size = new System.Drawing.Size(173, 20);
-            this.tSquaddieLoadout.TabIndex = 37;
-            this.tSquaddieLoadout.Text = "SquaddieRanger";
+            this.button2.Location = new System.Drawing.Point(315, 114);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 21);
+            this.button2.TabIndex = 91;
+            this.button2.Text = "Add";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // lWeapons
             // 
@@ -351,183 +319,14 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // button2
+            // label19
             // 
-            this.button2.Location = new System.Drawing.Point(315, 114);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 21);
-            this.button2.TabIndex = 91;
-            this.button2.Text = "Add";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(315, 141);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 21);
-            this.button3.TabIndex = 92;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // menu
-            // 
-            this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuItemFile,
-            this.editToolStripMenuItem});
-            this.menu.Location = new System.Drawing.Point(0, 0);
-            this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(543, 24);
-            this.menu.TabIndex = 18;
-            this.menu.Text = "menu";
-            // 
-            // menuItemFile
-            // 
-            this.menuItemFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newToolStripMenuItem,
-            this.menuItemOpen,
-            this.saveToolStripMenuItem,
-            this.exportToolStripMenuItem,
-            this.exitToolStripMenuItem});
-            this.menuItemFile.Name = "menuItemFile";
-            this.menuItemFile.Size = new System.Drawing.Size(37, 20);
-            this.menuItemFile.Text = "File";
-            // 
-            // menuItemOpen
-            // 
-            this.menuItemOpen.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.rangerToolStripMenuItem,
-            this.specialistToolStripMenuItem});
-            this.menuItemOpen.Name = "menuItemOpen";
-            this.menuItemOpen.Size = new System.Drawing.Size(152, 22);
-            this.menuItemOpen.Text = "Open";
-            this.menuItemOpen.Click += new System.EventHandler(this.selectClassToolStripMenuItem_Click);
-            // 
-            // rangerToolStripMenuItem
-            // 
-            this.rangerToolStripMenuItem.Name = "rangerToolStripMenuItem";
-            this.rangerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.rangerToolStripMenuItem.Text = "Ranger";
-            // 
-            // specialistToolStripMenuItem
-            // 
-            this.specialistToolStripMenuItem.Name = "specialistToolStripMenuItem";
-            this.specialistToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.specialistToolStripMenuItem.Text = "Specialist";
-            // 
-            // newToolStripMenuItem
-            // 
-            this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.newToolStripMenuItem.Text = "New";
-            // 
-            // saveToolStripMenuItem
-            // 
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.saveToolStripMenuItem.Text = "Save";
-            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
-            // exportToolStripMenuItem
-            // 
-            this.exportToolStripMenuItem.Name = "exportToolStripMenuItem";
-            this.exportToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.exportToolStripMenuItem.Text = "Export";
-            // 
-            // editToolStripMenuItem
-            // 
-            this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.renameToolStripMenuItem,
-            this.deleteToolStripMenuItem1});
-            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
-            this.editToolStripMenuItem.Text = "Edit";
-            // 
-            // renameToolStripMenuItem
-            // 
-            this.renameToolStripMenuItem.Name = "renameToolStripMenuItem";
-            this.renameToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.renameToolStripMenuItem.Text = "Rename";
-            this.renameToolStripMenuItem.Click += new System.EventHandler(this.renameToolStripMenuItem_Click);
-            // 
-            // deleteToolStripMenuItem1
-            // 
-            this.deleteToolStripMenuItem1.Name = "deleteToolStripMenuItem1";
-            this.deleteToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.deleteToolStripMenuItem1.Text = "Delete";
-            // 
-            // tIconString
-            // 
-            this.tIconString.Location = new System.Drawing.Point(136, 102);
-            this.tIconString.Name = "tIconString";
-            this.tIconString.Size = new System.Drawing.Size(348, 20);
-            this.tIconString.TabIndex = 33;
-            this.tIconString.Text = " img:///UILibrary_Common.class_ranger";
-            // 
-            // tDescription
-            // 
-            this.tDescription.Location = new System.Drawing.Point(136, 50);
-            this.tDescription.Multiline = true;
-            this.tDescription.Name = "tDescription";
-            this.tDescription.Size = new System.Drawing.Size(348, 47);
-            this.tDescription.TabIndex = 32;
-            this.tDescription.Text = "The Ranger is a close quarters specialist that excels at dealing high critical da" +
-    "mage and taking hits. Not very effective at longer ranges.";
-            // 
-            // tDisplayName
-            // 
-            this.tDisplayName.Location = new System.Drawing.Point(136, 24);
-            this.tDisplayName.Name = "tDisplayName";
-            this.tDisplayName.Size = new System.Drawing.Size(169, 20);
-            this.tDisplayName.TabIndex = 31;
-            this.tDisplayName.Text = "Ranger";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(3, 105);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(84, 13);
-            this.label24.TabIndex = 22;
-            this.label24.Text = "Class Icon Path:";
-            // 
-            // label25
-            // 
-            this.label25.Location = new System.Drawing.Point(6, 50);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(75, 24);
-            this.label25.TabIndex = 21;
-            this.label25.Text = "Description:";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(6, 26);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(75, 13);
-            this.label26.TabIndex = 20;
-            this.label26.Text = "Display Name:";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.label26);
-            this.groupBox1.Controls.Add(this.label25);
-            this.groupBox1.Controls.Add(this.label24);
-            this.groupBox1.Controls.Add(this.tDisplayName);
-            this.groupBox1.Controls.Add(this.tDescription);
-            this.groupBox1.Controls.Add(this.tIconString);
-            this.groupBox1.Location = new System.Drawing.Point(9, 15);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(499, 132);
-            this.groupBox1.TabIndex = 93;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Metadata";
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(6, 87);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(56, 13);
+            this.label19.TabIndex = 28;
+            this.label19.Text = "Weapons:";
             // 
             // groupBox2
             // 
@@ -544,23 +343,123 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Experience";
             // 
-            // groupBox3
+            // tNumInForcedDeck
             // 
-            this.groupBox3.Controls.Add(this.label20);
-            this.groupBox3.Controls.Add(this.label18);
-            this.groupBox3.Controls.Add(this.tSquaddieLoadout);
-            this.groupBox3.Controls.Add(this.button3);
-            this.groupBox3.Controls.Add(this.tAllowedArmor);
-            this.groupBox3.Controls.Add(this.button2);
-            this.groupBox3.Controls.Add(this.lWeapons);
-            this.groupBox3.Controls.Add(this.button1);
-            this.groupBox3.Controls.Add(this.label19);
-            this.groupBox3.Location = new System.Drawing.Point(9, 259);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(499, 199);
-            this.groupBox3.TabIndex = 95;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Equipment";
+            this.tNumInForcedDeck.Location = new System.Drawing.Point(136, 20);
+            this.tNumInForcedDeck.Name = "tNumInForcedDeck";
+            this.tNumInForcedDeck.Size = new System.Drawing.Size(29, 20);
+            this.tNumInForcedDeck.TabIndex = 34;
+            this.tNumInForcedDeck.Text = "2";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(6, 27);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(109, 13);
+            this.label23.TabIndex = 24;
+            this.label23.Text = "Num In Forced Deck:";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(6, 53);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(73, 13);
+            this.label22.TabIndex = 25;
+            this.label22.Text = "Num In Deck:";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(6, 79);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(93, 13);
+            this.label21.TabIndex = 26;
+            this.label21.Text = "Kill Assists Per Kill:";
+            // 
+            // tNumInDeck
+            // 
+            this.tNumInDeck.Location = new System.Drawing.Point(136, 46);
+            this.tNumInDeck.Name = "tNumInDeck";
+            this.tNumInDeck.Size = new System.Drawing.Size(29, 20);
+            this.tNumInDeck.TabIndex = 35;
+            this.tNumInDeck.Text = "4";
+            // 
+            // tKillAssistsPerKill
+            // 
+            this.tKillAssistsPerKill.Location = new System.Drawing.Point(136, 72);
+            this.tKillAssistsPerKill.Name = "tKillAssistsPerKill";
+            this.tKillAssistsPerKill.Size = new System.Drawing.Size(29, 20);
+            this.tKillAssistsPerKill.TabIndex = 36;
+            this.tKillAssistsPerKill.Text = "5";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label26);
+            this.groupBox1.Controls.Add(this.label25);
+            this.groupBox1.Controls.Add(this.label24);
+            this.groupBox1.Controls.Add(this.tDisplayName);
+            this.groupBox1.Controls.Add(this.tDescription);
+            this.groupBox1.Controls.Add(this.tIconString);
+            this.groupBox1.Location = new System.Drawing.Point(9, 15);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(499, 132);
+            this.groupBox1.TabIndex = 93;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Metadata";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(6, 26);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(75, 13);
+            this.label26.TabIndex = 20;
+            this.label26.Text = "Display Name:";
+            // 
+            // label25
+            // 
+            this.label25.Location = new System.Drawing.Point(6, 50);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(75, 24);
+            this.label25.TabIndex = 21;
+            this.label25.Text = "Description:";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(3, 105);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(84, 13);
+            this.label24.TabIndex = 22;
+            this.label24.Text = "Class Icon Path:";
+            // 
+            // tDisplayName
+            // 
+            this.tDisplayName.Location = new System.Drawing.Point(136, 24);
+            this.tDisplayName.Name = "tDisplayName";
+            this.tDisplayName.Size = new System.Drawing.Size(169, 20);
+            this.tDisplayName.TabIndex = 31;
+            this.tDisplayName.Text = "Ranger";
+            // 
+            // tDescription
+            // 
+            this.tDescription.Location = new System.Drawing.Point(136, 50);
+            this.tDescription.Multiline = true;
+            this.tDescription.Name = "tDescription";
+            this.tDescription.Size = new System.Drawing.Size(348, 47);
+            this.tDescription.TabIndex = 32;
+            this.tDescription.Text = "The Ranger is a close quarters specialist that excels at dealing high critical da" +
+    "mage and taking hits. Not very effective at longer ranges.";
+            // 
+            // tIconString
+            // 
+            this.tIconString.Location = new System.Drawing.Point(136, 102);
+            this.tIconString.Name = "tIconString";
+            this.tIconString.Size = new System.Drawing.Size(348, 20);
+            this.tIconString.TabIndex = 33;
+            this.tIconString.Text = " img:///UILibrary_Common.class_ranger";
             // 
             // tabStats
             // 
@@ -650,6 +549,201 @@
             this.tabStats.TabIndex = 7;
             this.tabStats.Text = "Stats";
             this.tabStats.UseVisualStyleBackColor = true;
+            // 
+            // textBox25
+            // 
+            this.textBox25.Location = new System.Drawing.Point(375, 241);
+            this.textBox25.Name = "textBox25";
+            this.textBox25.Size = new System.Drawing.Size(28, 20);
+            this.textBox25.TabIndex = 238;
+            // 
+            // textBox26
+            // 
+            this.textBox26.Location = new System.Drawing.Point(375, 214);
+            this.textBox26.Name = "textBox26";
+            this.textBox26.Size = new System.Drawing.Size(28, 20);
+            this.textBox26.TabIndex = 237;
+            // 
+            // textBox27
+            // 
+            this.textBox27.Location = new System.Drawing.Point(375, 187);
+            this.textBox27.Name = "textBox27";
+            this.textBox27.Size = new System.Drawing.Size(28, 20);
+            this.textBox27.TabIndex = 236;
+            // 
+            // textBox28
+            // 
+            this.textBox28.Location = new System.Drawing.Point(375, 160);
+            this.textBox28.Name = "textBox28";
+            this.textBox28.Size = new System.Drawing.Size(28, 20);
+            this.textBox28.TabIndex = 235;
+            // 
+            // textBox29
+            // 
+            this.textBox29.Location = new System.Drawing.Point(375, 133);
+            this.textBox29.Name = "textBox29";
+            this.textBox29.Size = new System.Drawing.Size(28, 20);
+            this.textBox29.TabIndex = 234;
+            // 
+            // textBox30
+            // 
+            this.textBox30.Location = new System.Drawing.Point(375, 106);
+            this.textBox30.Name = "textBox30";
+            this.textBox30.Size = new System.Drawing.Size(28, 20);
+            this.textBox30.TabIndex = 233;
+            // 
+            // textBox31
+            // 
+            this.textBox31.Location = new System.Drawing.Point(375, 79);
+            this.textBox31.Name = "textBox31";
+            this.textBox31.Size = new System.Drawing.Size(28, 20);
+            this.textBox31.TabIndex = 232;
+            // 
+            // textBox32
+            // 
+            this.textBox32.Location = new System.Drawing.Point(375, 53);
+            this.textBox32.Name = "textBox32";
+            this.textBox32.Size = new System.Drawing.Size(28, 20);
+            this.textBox32.TabIndex = 231;
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(372, 19);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(39, 13);
+            this.label49.TabIndex = 230;
+            this.label49.Text = "Dodge";
+            // 
+            // textBox17
+            // 
+            this.textBox17.Location = new System.Drawing.Point(334, 241);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(28, 20);
+            this.textBox17.TabIndex = 229;
+            // 
+            // textBox18
+            // 
+            this.textBox18.Location = new System.Drawing.Point(334, 214);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(28, 20);
+            this.textBox18.TabIndex = 228;
+            // 
+            // textBox19
+            // 
+            this.textBox19.Location = new System.Drawing.Point(334, 187);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(28, 20);
+            this.textBox19.TabIndex = 227;
+            // 
+            // textBox20
+            // 
+            this.textBox20.Location = new System.Drawing.Point(334, 160);
+            this.textBox20.Name = "textBox20";
+            this.textBox20.Size = new System.Drawing.Size(28, 20);
+            this.textBox20.TabIndex = 226;
+            // 
+            // textBox21
+            // 
+            this.textBox21.Location = new System.Drawing.Point(334, 133);
+            this.textBox21.Name = "textBox21";
+            this.textBox21.Size = new System.Drawing.Size(28, 20);
+            this.textBox21.TabIndex = 225;
+            // 
+            // textBox22
+            // 
+            this.textBox22.Location = new System.Drawing.Point(334, 106);
+            this.textBox22.Name = "textBox22";
+            this.textBox22.Size = new System.Drawing.Size(28, 20);
+            this.textBox22.TabIndex = 224;
+            // 
+            // textBox23
+            // 
+            this.textBox23.Location = new System.Drawing.Point(334, 79);
+            this.textBox23.Name = "textBox23";
+            this.textBox23.Size = new System.Drawing.Size(28, 20);
+            this.textBox23.TabIndex = 223;
+            // 
+            // textBox24
+            // 
+            this.textBox24.Location = new System.Drawing.Point(334, 53);
+            this.textBox24.Name = "textBox24";
+            this.textBox24.Size = new System.Drawing.Size(28, 20);
+            this.textBox24.TabIndex = 222;
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(341, 19);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(24, 13);
+            this.label48.TabIndex = 221;
+            this.label48.Text = "Will";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(291, 241);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(28, 20);
+            this.textBox9.TabIndex = 220;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(291, 214);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(28, 20);
+            this.textBox10.TabIndex = 219;
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(291, 187);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(28, 20);
+            this.textBox11.TabIndex = 218;
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(291, 160);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(28, 20);
+            this.textBox12.TabIndex = 217;
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(291, 133);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(28, 20);
+            this.textBox13.TabIndex = 216;
+            // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(291, 106);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(28, 20);
+            this.textBox14.TabIndex = 215;
+            // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(291, 79);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(28, 20);
+            this.textBox15.TabIndex = 214;
+            // 
+            // textBox16
+            // 
+            this.textBox16.Location = new System.Drawing.Point(291, 53);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(28, 20);
+            this.textBox16.TabIndex = 213;
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(288, 19);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(42, 13);
+            this.label47.TabIndex = 212;
+            this.label47.Text = "Mobility";
             // 
             // tBrigadierPsi
             // 
@@ -1047,201 +1141,6 @@
             this.label46.Size = new System.Drawing.Size(46, 13);
             this.label46.TabIndex = 159;
             this.label46.Text = "Corporal";
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(291, 241);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(28, 20);
-            this.textBox9.TabIndex = 220;
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(291, 214);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(28, 20);
-            this.textBox10.TabIndex = 219;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(291, 187);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(28, 20);
-            this.textBox11.TabIndex = 218;
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(291, 160);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(28, 20);
-            this.textBox12.TabIndex = 217;
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(291, 133);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(28, 20);
-            this.textBox13.TabIndex = 216;
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(291, 106);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(28, 20);
-            this.textBox14.TabIndex = 215;
-            // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(291, 79);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(28, 20);
-            this.textBox15.TabIndex = 214;
-            // 
-            // textBox16
-            // 
-            this.textBox16.Location = new System.Drawing.Point(291, 53);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(28, 20);
-            this.textBox16.TabIndex = 213;
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(288, 19);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(42, 13);
-            this.label47.TabIndex = 212;
-            this.label47.Text = "Mobility";
-            // 
-            // textBox17
-            // 
-            this.textBox17.Location = new System.Drawing.Point(334, 241);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(28, 20);
-            this.textBox17.TabIndex = 229;
-            // 
-            // textBox18
-            // 
-            this.textBox18.Location = new System.Drawing.Point(334, 214);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(28, 20);
-            this.textBox18.TabIndex = 228;
-            // 
-            // textBox19
-            // 
-            this.textBox19.Location = new System.Drawing.Point(334, 187);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(28, 20);
-            this.textBox19.TabIndex = 227;
-            // 
-            // textBox20
-            // 
-            this.textBox20.Location = new System.Drawing.Point(334, 160);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(28, 20);
-            this.textBox20.TabIndex = 226;
-            // 
-            // textBox21
-            // 
-            this.textBox21.Location = new System.Drawing.Point(334, 133);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(28, 20);
-            this.textBox21.TabIndex = 225;
-            // 
-            // textBox22
-            // 
-            this.textBox22.Location = new System.Drawing.Point(334, 106);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(28, 20);
-            this.textBox22.TabIndex = 224;
-            // 
-            // textBox23
-            // 
-            this.textBox23.Location = new System.Drawing.Point(334, 79);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(28, 20);
-            this.textBox23.TabIndex = 223;
-            // 
-            // textBox24
-            // 
-            this.textBox24.Location = new System.Drawing.Point(334, 53);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(28, 20);
-            this.textBox24.TabIndex = 222;
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(341, 19);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(24, 13);
-            this.label48.TabIndex = 221;
-            this.label48.Text = "Will";
-            // 
-            // textBox25
-            // 
-            this.textBox25.Location = new System.Drawing.Point(375, 241);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(28, 20);
-            this.textBox25.TabIndex = 238;
-            // 
-            // textBox26
-            // 
-            this.textBox26.Location = new System.Drawing.Point(375, 214);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(28, 20);
-            this.textBox26.TabIndex = 237;
-            // 
-            // textBox27
-            // 
-            this.textBox27.Location = new System.Drawing.Point(375, 187);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(28, 20);
-            this.textBox27.TabIndex = 236;
-            // 
-            // textBox28
-            // 
-            this.textBox28.Location = new System.Drawing.Point(375, 160);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(28, 20);
-            this.textBox28.TabIndex = 235;
-            // 
-            // textBox29
-            // 
-            this.textBox29.Location = new System.Drawing.Point(375, 133);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(28, 20);
-            this.textBox29.TabIndex = 234;
-            // 
-            // textBox30
-            // 
-            this.textBox30.Location = new System.Drawing.Point(375, 106);
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(28, 20);
-            this.textBox30.TabIndex = 233;
-            // 
-            // textBox31
-            // 
-            this.textBox31.Location = new System.Drawing.Point(375, 79);
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(28, 20);
-            this.textBox31.TabIndex = 232;
-            // 
-            // textBox32
-            // 
-            this.textBox32.Location = new System.Drawing.Point(375, 53);
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(28, 20);
-            this.textBox32.TabIndex = 231;
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(372, 19);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(39, 13);
-            this.label49.TabIndex = 230;
-            this.label49.Text = "Dodge";
             // 
             // tabAbilities
             // 
@@ -1683,6 +1582,108 @@
             this.laCorporal.TabIndex = 72;
             this.laCorporal.Text = "Corporal";
             // 
+            // laHelp
+            // 
+            this.laHelp.Location = new System.Drawing.Point(13, 540);
+            this.laHelp.Name = "laHelp";
+            this.laHelp.Size = new System.Drawing.Size(479, 34);
+            this.laHelp.TabIndex = 17;
+            this.laHelp.Text = "Click a parameter label for more details about what each item does.";
+            // 
+            // menu
+            // 
+            this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuItemFile,
+            this.editToolStripMenuItem});
+            this.menu.Location = new System.Drawing.Point(0, 0);
+            this.menu.Name = "menu";
+            this.menu.Size = new System.Drawing.Size(543, 24);
+            this.menu.TabIndex = 18;
+            this.menu.Text = "menu";
+            // 
+            // menuItemFile
+            // 
+            this.menuItemFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newToolStripMenuItem,
+            this.menuItemOpen,
+            this.saveToolStripMenuItem,
+            this.exportToolStripMenuItem,
+            this.exitToolStripMenuItem});
+            this.menuItemFile.Name = "menuItemFile";
+            this.menuItemFile.Size = new System.Drawing.Size(37, 20);
+            this.menuItemFile.Text = "File";
+            // 
+            // newToolStripMenuItem
+            // 
+            this.newToolStripMenuItem.Name = "newToolStripMenuItem";
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.newToolStripMenuItem.Text = "New";
+            this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
+            // 
+            // menuItemOpen
+            // 
+            this.menuItemOpen.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.rangerToolStripMenuItem,
+            this.specialistToolStripMenuItem});
+            this.menuItemOpen.Name = "menuItemOpen";
+            this.menuItemOpen.Size = new System.Drawing.Size(152, 22);
+            this.menuItemOpen.Text = "Open";
+            this.menuItemOpen.Click += new System.EventHandler(this.selectClassToolStripMenuItem_Click);
+            // 
+            // rangerToolStripMenuItem
+            // 
+            this.rangerToolStripMenuItem.Name = "rangerToolStripMenuItem";
+            this.rangerToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.rangerToolStripMenuItem.Text = "Ranger";
+            // 
+            // specialistToolStripMenuItem
+            // 
+            this.specialistToolStripMenuItem.Name = "specialistToolStripMenuItem";
+            this.specialistToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.specialistToolStripMenuItem.Text = "Specialist";
+            // 
+            // saveToolStripMenuItem
+            // 
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveToolStripMenuItem.Text = "Save";
+            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
+            // 
+            // exportToolStripMenuItem
+            // 
+            this.exportToolStripMenuItem.Name = "exportToolStripMenuItem";
+            this.exportToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exportToolStripMenuItem.Text = "Export";
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // editToolStripMenuItem
+            // 
+            this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.renameToolStripMenuItem,
+            this.deleteToolStripMenuItem1});
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
+            this.editToolStripMenuItem.Text = "Edit";
+            // 
+            // renameToolStripMenuItem
+            // 
+            this.renameToolStripMenuItem.Name = "renameToolStripMenuItem";
+            this.renameToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.renameToolStripMenuItem.Text = "Rename";
+            this.renameToolStripMenuItem.Click += new System.EventHandler(this.renameToolStripMenuItem_Click);
+            // 
+            // deleteToolStripMenuItem1
+            // 
+            this.deleteToolStripMenuItem1.Name = "deleteToolStripMenuItem1";
+            this.deleteToolStripMenuItem1.Size = new System.Drawing.Size(117, 22);
+            this.deleteToolStripMenuItem1.Text = "Delete";
+            // 
             // TabbedPrototype
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1698,18 +1699,18 @@
             this.Load += new System.EventHandler(this.TabbedPrototype_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabGeneral.ResumeLayout(false);
-            this.menu.ResumeLayout(false);
-            this.menu.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.tabStats.ResumeLayout(false);
             this.tabStats.PerformLayout();
             this.tabAbilities.ResumeLayout(false);
             this.tabAbilities.PerformLayout();
+            this.menu.ResumeLayout(false);
+            this.menu.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
