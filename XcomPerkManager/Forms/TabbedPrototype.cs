@@ -104,21 +104,19 @@ namespace XcomPerkManager.Forms
         private void renameToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Rename rename = new Rename(state.getOpenSoldierClass().metadata.internalName);
-            rename.VisibleChanged += formVisibleChanged;
+            rename.FormClosing += renameClosingListener;
             rename.ShowDialog(this);
         }
-
-        // TODO surely there's a better way to do this
-        private void formVisibleChanged(object sender, EventArgs e)
+        
+        private void renameClosingListener(object sender, FormClosingEventArgs e)
         {
             Rename renameForm = sender as Rename;
-            if (renameForm != null && !renameForm.Visible)
+            if (renameForm != null)
             {
-                if(!renameForm.getNewName().Equals(state.getOpenSoldierClass().metadata.internalName))
+                if (!renameForm.getNewName().Equals(state.getOpenSoldierClassInternalName()))
                 {
                     state.renameClass(renameForm.getNewName());
                     setupMenuItemOpen();
-                    renameForm.Dispose();
                 }
             }
         }
