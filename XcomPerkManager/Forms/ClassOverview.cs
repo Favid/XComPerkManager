@@ -34,8 +34,10 @@ namespace XcomPerkManager
 
         private void bEditMetadata_Click(object sender, EventArgs e)
         {
+            
             MetadataManager manager = new MetadataManager();
-            manager.Show(this);
+            manager.loadSoldierClass(currentSoldier);
+            manager.ShowDialog(this);
         }
 
         private void bEditExperience_Click(object sender, EventArgs e)

@@ -92,6 +92,15 @@ namespace XcomPerkManager
             return true;
         }
 
+        public bool saveSoldierClass(string originalInternalName, SoldierClass soldierClass)
+        {
+            XElement xmlSoldierClass = getXmlClass(originalInternalName);
+            XElement newXmlSoldierClass = new XElement(Conversion.Convert.toXmlSoldierClass(soldierClass));
+            xmlSoldierClass.ReplaceWith(newXmlSoldierClass);
+            document.Save(fullPath);
+            return true;
+        }
+
         public bool saveMetadata(string internalName, SoldierClassMetadata metadata)
         {
             XElement xmlMetadata = getClassElement(internalName, Constants.XML_METADATA);
@@ -115,6 +124,14 @@ namespace XcomPerkManager
             XElement xmlAbilities = getClassElement(internalName, Constants.XML_ABILITIES);
             XElement newXmlAbilities = new XElement(Conversion.Convert.toXmlAbilities(abilities));
             xmlAbilities.ReplaceWith(newXmlAbilities);
+            document.Save(fullPath);
+            return true;
+        }
+
+        public bool deleteSoldierClass(string originalInternalName)
+        {
+            XElement xmlSoldierClass = getXmlClass(originalInternalName);
+            xmlSoldierClass.Remove();
             document.Save(fullPath);
             return true;
         }

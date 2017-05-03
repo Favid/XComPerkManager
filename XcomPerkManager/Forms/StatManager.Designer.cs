@@ -204,7 +204,7 @@
             // 
             // bSave
             // 
-            this.bSave.Location = new System.Drawing.Point(207, 273);
+            this.bSave.Location = new System.Drawing.Point(211, 273);
             this.bSave.Name = "bSave";
             this.bSave.Size = new System.Drawing.Size(75, 23);
             this.bSave.TabIndex = 104;

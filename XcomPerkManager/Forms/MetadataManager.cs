@@ -14,23 +14,24 @@ namespace XcomPerkManager
     public partial class MetadataManager : Form
     {
         private string formerInternalName;
-        public bool newClass { get; set; }
 
         public MetadataManager()
         {
             InitializeComponent();
-            newClass = false;
+        }
+
+        public void loadSoldierClass(SoldierClass soldierClass)
+        {
+            tInternalName.Text = soldierClass.metadata.internalName;
+            tDisplayName.Text = soldierClass.metadata.displayName;
+            tDescription.Text = soldierClass.metadata.description;
+            tIconString.Text = soldierClass.metadata.iconString;
+
+            formerInternalName = soldierClass.metadata.internalName;
         }
 
         private void MetadataManager_Load(object sender, EventArgs e)
         {
-            ClassOverview owner = Owner as ClassOverview;
-            tInternalName.Text = owner.currentSoldier.metadata.internalName;
-            tDisplayName.Text = owner.currentSoldier.metadata.displayName;
-            tDescription.Text = owner.currentSoldier.metadata.description;
-            tIconString.Text = owner.currentSoldier.metadata.iconString;
-
-            formerInternalName = owner.currentSoldier.metadata.internalName;
         }
 
         private void bSave_Click(object sender, EventArgs e)
@@ -52,9 +53,6 @@ namespace XcomPerkManager
 
             SavedSoldiersManager manager = new SavedSoldiersManager();
             manager.saveMetadata(formerInternalName, metadata);
-
-            //MetadataAccess access = new MetadataAccess();
-            //access.update(formerInternalName, metadata);
             
             owner.updateSoldiers();
             owner.selectSoldier(metadata.internalName);

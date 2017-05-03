@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using XcomPerkManager.Forms;
 
 namespace XcomPerkManager
 {
@@ -16,7 +17,7 @@ namespace XcomPerkManager
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ClassOverview());
+            Application.Run(new TabbedPrototype());
         }
     }
 }
