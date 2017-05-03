@@ -31,12 +31,12 @@ namespace XcomPerkManager.Forms
             // TODO validate name
 
             newInternalName = tNewName.Text;
-
             Close();
         }
 
         private void bCancel_Click(object sender, EventArgs e)
         {
+            newInternalName = originalInternalName;
             Close();
         }
 

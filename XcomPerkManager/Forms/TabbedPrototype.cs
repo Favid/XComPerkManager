@@ -82,62 +82,7 @@ namespace XcomPerkManager.Forms
 
             return soldierClass;
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label18_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label19_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label20_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label21_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label22_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label23_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label24_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label25_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label26_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void selectClassToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
@@ -177,6 +122,11 @@ namespace XcomPerkManager.Forms
                 }
             }
 
+
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
 
         }
     }

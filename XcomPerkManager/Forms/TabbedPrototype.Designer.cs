@@ -240,32 +240,29 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(6, 46);
+            this.label18.Location = new System.Drawing.Point(6, 56);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(77, 13);
             this.label18.TabIndex = 29;
             this.label18.Text = "Allowed Armor:";
-            this.label18.Click += new System.EventHandler(this.label18_Click);
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(6, 77);
+            this.label19.Location = new System.Drawing.Point(6, 87);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(56, 13);
             this.label19.TabIndex = 28;
             this.label19.Text = "Weapons:";
-            this.label19.Click += new System.EventHandler(this.label19_Click);
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(6, 16);
+            this.label20.Location = new System.Drawing.Point(6, 26);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(97, 13);
             this.label20.TabIndex = 27;
             this.label20.Text = "Squaddie Loadout:";
-            this.label20.Click += new System.EventHandler(this.label20_Click);
             // 
             // label21
             // 
@@ -275,7 +272,6 @@
             this.label21.Size = new System.Drawing.Size(93, 13);
             this.label21.TabIndex = 26;
             this.label21.Text = "Kill Assists Per Kill:";
-            this.label21.Click += new System.EventHandler(this.label21_Click);
             // 
             // label22
             // 
@@ -285,7 +281,6 @@
             this.label22.Size = new System.Drawing.Size(73, 13);
             this.label22.TabIndex = 25;
             this.label22.Text = "Num In Deck:";
-            this.label22.Click += new System.EventHandler(this.label22_Click);
             // 
             // label23
             // 
@@ -295,7 +290,6 @@
             this.label23.Size = new System.Drawing.Size(109, 13);
             this.label23.TabIndex = 24;
             this.label23.Text = "Num In Forced Deck:";
-            this.label23.Click += new System.EventHandler(this.label23_Click);
             // 
             // tNumInForcedDeck
             // 
@@ -323,7 +317,7 @@
             // 
             // tAllowedArmor
             // 
-            this.tAllowedArmor.Location = new System.Drawing.Point(136, 39);
+            this.tAllowedArmor.Location = new System.Drawing.Point(136, 49);
             this.tAllowedArmor.Name = "tAllowedArmor";
             this.tAllowedArmor.Size = new System.Drawing.Size(173, 20);
             this.tAllowedArmor.TabIndex = 38;
@@ -331,7 +325,7 @@
             // 
             // tSquaddieLoadout
             // 
-            this.tSquaddieLoadout.Location = new System.Drawing.Point(136, 13);
+            this.tSquaddieLoadout.Location = new System.Drawing.Point(136, 23);
             this.tSquaddieLoadout.Name = "tSquaddieLoadout";
             this.tSquaddieLoadout.Size = new System.Drawing.Size(173, 20);
             this.tSquaddieLoadout.TabIndex = 37;
@@ -341,7 +335,7 @@
             // 
             this.lWeapons.DisplayMember = "weaponName";
             this.lWeapons.FormattingEnabled = true;
-            this.lWeapons.Location = new System.Drawing.Point(136, 77);
+            this.lWeapons.Location = new System.Drawing.Point(136, 87);
             this.lWeapons.Name = "lWeapons";
             this.lWeapons.Size = new System.Drawing.Size(173, 95);
             this.lWeapons.TabIndex = 90;
@@ -349,7 +343,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(315, 77);
+            this.button1.Location = new System.Drawing.Point(315, 87);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 21);
             this.button1.TabIndex = 18;
@@ -359,7 +353,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(315, 104);
+            this.button2.Location = new System.Drawing.Point(315, 114);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 21);
             this.button2.TabIndex = 91;
@@ -368,7 +362,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(315, 131);
+            this.button3.Location = new System.Drawing.Point(315, 141);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 21);
             this.button3.TabIndex = 92;
@@ -438,6 +432,7 @@
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // exportToolStripMenuItem
             // 
@@ -501,7 +496,6 @@
             this.label24.Size = new System.Drawing.Size(84, 13);
             this.label24.TabIndex = 22;
             this.label24.Text = "Class Icon Path:";
-            this.label24.Click += new System.EventHandler(this.label24_Click);
             // 
             // label25
             // 
@@ -510,7 +504,6 @@
             this.label25.Size = new System.Drawing.Size(75, 24);
             this.label25.TabIndex = 21;
             this.label25.Text = "Description:";
-            this.label25.Click += new System.EventHandler(this.label25_Click);
             // 
             // label26
             // 
@@ -520,7 +513,6 @@
             this.label26.Size = new System.Drawing.Size(75, 13);
             this.label26.TabIndex = 20;
             this.label26.Text = "Display Name:";
-            this.label26.Click += new System.EventHandler(this.label26_Click);
             // 
             // groupBox1
             // 

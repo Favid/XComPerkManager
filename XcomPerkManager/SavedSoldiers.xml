@@ -22,7 +22,7 @@
   </soldier>
   <soldier>
     <metadata>
-      <internal_name>F_Marksman</internal_name>
+      <internal_name>F_Marksman2</internal_name>
       <display_name>Marksman1</display_name>
       <description>A soldier that favors the Marksman Rifle and mid to long range combat. Carries a Sawed-Off Shotgun in case any foes get too close</description>
       <icon_string>img:///UILibrary_Common.class_grenadier</icon_string>
