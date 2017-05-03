@@ -2,7 +2,7 @@
 <soldiers>
   <soldier>
     <metadata>
-      <internal_name>F_Assault23</internal_name>
+      <internal_name>F_Assault</internal_name>
       <display_name>Assault2</display_name>
       <description>A close quarters specialist that excels at dealing high critical damage and taking hits. Not very effective at longer ranges.</description>
       <icon_string>img:///UILibrary_Common.class_ranger</icon_string>

@@ -15,8 +15,6 @@ namespace XcomPerkManager.DataObjects
         private List<SoldierClass> soldierClasses;
         private List<Ability> abilities;
 
-        private String openSoldierClassOriginalName;
-
         public ProjectState()
         {
             reader = new XComAbilityListReader();
@@ -33,6 +31,11 @@ namespace XcomPerkManager.DataObjects
             return abilities.Where(x => x.internalName.Equals(internalName)).SingleOrDefault();
         }
 
+        public List<Ability> getAbilities()
+        {
+            return abilities;
+        }
+
         public SoldierClass addClass()
         {
             SoldierClass newClass = manager.addNewSoldierClass();
@@ -40,28 +43,31 @@ namespace XcomPerkManager.DataObjects
             return newClass;
         }
 
-        public SoldierClass saveOpenClass()
-        {
-            return saveClass(openSoldierClassOriginalName, openSoldierClass);
-        }
-
         public SoldierClass saveClass(SoldierClass soldierClass)
         {
-            manager.saveSoldierClass(openSoldierClassOriginalName, soldierClass);
-            loadSoldierClasses();
-            return soldierClass;
+            return saveClass(getOpenSoldierClassInternalName(), soldierClass);
         }
 
-        public SoldierClass saveClass(string originalInternalName, SoldierClass soldierClass)
+        private SoldierClass saveClass(string originalInternalName, SoldierClass soldierClass)
         {
             manager.saveSoldierClass(originalInternalName, soldierClass);
             loadSoldierClasses();
             return soldierClass;
         }
 
-        public void deleteClass(string originalInternalName, SoldierClass soldierClass)
+        public void deleteClass()
         {
-            manager.deleteSoldierClass(originalInternalName);
+            deleteClass(openSoldierClass);
+        }
+
+        private void deleteClass(SoldierClass soldierClass)
+        {
+            deleteClass(soldierClass.getInternalName());
+        }
+
+        private void deleteClass(string soldierClassInternalName)
+        {
+            manager.deleteSoldierClass(soldierClassInternalName);
         }
 
         public List<SoldierClass> getSoldierClasses()
@@ -74,23 +80,50 @@ namespace XcomPerkManager.DataObjects
             return soldierClasses.Where(x => x.metadata.internalName.Equals(internalName)).FirstOrDefault();
         }
 
-        public SoldierClass getOpenSolderClass()
+        public SoldierClass getOpenSoldierClass()
         {
             return openSoldierClass;
         }
 
-        public SoldierClass setOpenSoldierClass(SoldierClass soldierClass)
+        public string getOpenSoldierClassInternalName()
+        {
+            return openSoldierClass.getInternalName();
+        }
+
+        public SoldierClass setOpenSoldierClass(string soldierClassInternalName)
+        {
+            SoldierClass soldierClassToOpen = soldierClasses.Where(x => x.metadata.internalName.Equals(soldierClassInternalName)).SingleOrDefault();
+
+            if(soldierClassToOpen == null)
+            {
+                throw new ArgumentException("Soldier class name is not in class list");
+            }
+
+            return setOpenSoldierClass(soldierClassToOpen);
+        }
+
+        private SoldierClass setOpenSoldierClass(SoldierClass soldierClass)
         {
             openSoldierClass = soldierClass;
-            openSoldierClassOriginalName = openSoldierClass.metadata.internalName;
             return openSoldierClass;
         }
 
-        public SoldierClass renameClass(string originalInternalName, string newInternalName)
+        public SoldierClass renameClass(string newInternalName)
+        {
+            return renameClass(getOpenSoldierClassInternalName(), newInternalName);
+        }
+
+        private SoldierClass renameClass(string originalInternalName, string newInternalName)
         {
             // TODO validation
             manager.saveInternalName(originalInternalName, newInternalName);
             loadSoldierClasses();
+
+            if(!soldierClasses.Contains(openSoldierClass))
+            {
+                setOpenSoldierClass(newInternalName);
+            }
+
             return getSoldierClass(newInternalName);
         }
 

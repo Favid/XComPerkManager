@@ -23,7 +23,7 @@ namespace XcomPerkManager.Forms
         private void TabbedPrototype_Load(object sender, EventArgs e)
         {
             state = new ProjectState();
-            open(state.getOpenSolderClass());
+            open(state.getOpenSoldierClass());
         }
 
         private void setupMenuItemOpen()
@@ -49,7 +49,7 @@ namespace XcomPerkManager.Forms
 
         private void open(SoldierClass soldierClass)
         {
-            SoldierClass openSoldierClass = state.setOpenSoldierClass(soldierClass);
+            SoldierClass openSoldierClass = state.setOpenSoldierClass(soldierClass.getInternalName());
             setupMenuItemOpen();
 
             tDisplayName.Text = soldierClass.metadata.displayName;
@@ -68,7 +68,7 @@ namespace XcomPerkManager.Forms
         {
             SoldierClass soldierClass = new SoldierClass();
 
-            soldierClass.metadata.internalName = state.getOpenSolderClass().metadata.internalName;
+            soldierClass.metadata.internalName = state.getOpenSoldierClass().metadata.internalName;
             soldierClass.metadata.displayName = tDisplayName.Text;
             soldierClass.metadata.description = tDescription.Text;
             soldierClass.metadata.iconString = tIconString.Text;
@@ -103,7 +103,7 @@ namespace XcomPerkManager.Forms
 
         private void renameToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Rename rename = new Rename(state.getOpenSolderClass().metadata.internalName);
+            Rename rename = new Rename(state.getOpenSoldierClass().metadata.internalName);
             rename.VisibleChanged += formVisibleChanged;
             rename.ShowDialog(this);
         }
@@ -114,15 +114,13 @@ namespace XcomPerkManager.Forms
             Rename renameForm = sender as Rename;
             if (renameForm != null && !renameForm.Visible)
             {
-                if(!renameForm.getNewName().Equals(state.getOpenSolderClass().metadata.internalName))
+                if(!renameForm.getNewName().Equals(state.getOpenSoldierClass().metadata.internalName))
                 {
-                    state.renameClass(state.getOpenSolderClass().metadata.internalName, renameForm.getNewName());
+                    state.renameClass(renameForm.getNewName());
                     setupMenuItemOpen();
                     renameForm.Dispose();
                 }
             }
-
-
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)

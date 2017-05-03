@@ -24,6 +24,11 @@ namespace XcomPerkManager
             stats = new List<SoldierClassStat>();
         }
 
+        public string getInternalName()
+        {
+            return metadata.internalName;
+        }
+
         public XElement createNewSoldierClass()
         {
             throw new NotImplementedException();
