@@ -126,5 +126,12 @@ namespace XcomPerkManager
         Psi = 4
     }
 
+    public enum EditorState
+    {
+        ADD,
+        EDIT,
+        CANCEL
+    }
+
     #endregion Enums
 }

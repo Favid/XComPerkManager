@@ -35,11 +35,11 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.tSquaddieLoadout = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.bDeleteWeapon = new System.Windows.Forms.Button();
             this.tAllowedArmor = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.bAddWeapon = new System.Windows.Forms.Button();
             this.lWeapons = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.bEditWeapon = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tNumInForcedDeck = new System.Windows.Forms.TextBox();
@@ -234,11 +234,11 @@
             this.groupBox3.Controls.Add(this.label20);
             this.groupBox3.Controls.Add(this.label18);
             this.groupBox3.Controls.Add(this.tSquaddieLoadout);
-            this.groupBox3.Controls.Add(this.button3);
+            this.groupBox3.Controls.Add(this.bDeleteWeapon);
             this.groupBox3.Controls.Add(this.tAllowedArmor);
-            this.groupBox3.Controls.Add(this.button2);
+            this.groupBox3.Controls.Add(this.bAddWeapon);
             this.groupBox3.Controls.Add(this.lWeapons);
-            this.groupBox3.Controls.Add(this.button1);
+            this.groupBox3.Controls.Add(this.bEditWeapon);
             this.groupBox3.Controls.Add(this.label19);
             this.groupBox3.Location = new System.Drawing.Point(9, 259);
             this.groupBox3.Name = "groupBox3";
@@ -273,14 +273,15 @@
             this.tSquaddieLoadout.TabIndex = 37;
             this.tSquaddieLoadout.Text = "SquaddieRanger";
             // 
-            // button3
+            // bDeleteWeapon
             // 
-            this.button3.Location = new System.Drawing.Point(315, 141);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 21);
-            this.button3.TabIndex = 92;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = true;
+            this.bDeleteWeapon.Location = new System.Drawing.Point(315, 141);
+            this.bDeleteWeapon.Name = "bDeleteWeapon";
+            this.bDeleteWeapon.Size = new System.Drawing.Size(75, 21);
+            this.bDeleteWeapon.TabIndex = 92;
+            this.bDeleteWeapon.Text = "Delete";
+            this.bDeleteWeapon.UseVisualStyleBackColor = true;
+            this.bDeleteWeapon.Click += new System.EventHandler(this.bDeleteWeapon_Click);
             // 
             // tAllowedArmor
             // 
@@ -290,14 +291,15 @@
             this.tAllowedArmor.TabIndex = 38;
             this.tAllowedArmor.Text = "soldier";
             // 
-            // button2
+            // bAddWeapon
             // 
-            this.button2.Location = new System.Drawing.Point(315, 114);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 21);
-            this.button2.TabIndex = 91;
-            this.button2.Text = "Add";
-            this.button2.UseVisualStyleBackColor = true;
+            this.bAddWeapon.Location = new System.Drawing.Point(315, 114);
+            this.bAddWeapon.Name = "bAddWeapon";
+            this.bAddWeapon.Size = new System.Drawing.Size(75, 21);
+            this.bAddWeapon.TabIndex = 91;
+            this.bAddWeapon.Text = "Add";
+            this.bAddWeapon.UseVisualStyleBackColor = true;
+            this.bAddWeapon.Click += new System.EventHandler(this.bAddWeapon_Click);
             // 
             // lWeapons
             // 
@@ -309,15 +311,15 @@
             this.lWeapons.TabIndex = 90;
             this.lWeapons.ValueMember = "weaponName";
             // 
-            // button1
+            // bEditWeapon
             // 
-            this.button1.Location = new System.Drawing.Point(315, 87);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 21);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "Edit";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.bEditWeapon.Location = new System.Drawing.Point(315, 87);
+            this.bEditWeapon.Name = "bEditWeapon";
+            this.bEditWeapon.Size = new System.Drawing.Size(75, 21);
+            this.bEditWeapon.TabIndex = 18;
+            this.bEditWeapon.Text = "Edit";
+            this.bEditWeapon.UseVisualStyleBackColor = true;
+            this.bEditWeapon.Click += new System.EventHandler(this.bEditWeapon_Click);
             // 
             // label19
             // 
@@ -1654,6 +1656,7 @@
             this.exportToolStripMenuItem.Name = "exportToolStripMenuItem";
             this.exportToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.exportToolStripMenuItem.Text = "Export";
+            this.exportToolStripMenuItem.Click += new System.EventHandler(this.exportToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
@@ -1674,7 +1677,7 @@
             // renameToolStripMenuItem
             // 
             this.renameToolStripMenuItem.Name = "renameToolStripMenuItem";
-            this.renameToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.renameToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.renameToolStripMenuItem.Text = "Rename";
             this.renameToolStripMenuItem.Click += new System.EventHandler(this.renameToolStripMenuItem_Click);
             // 
@@ -1735,9 +1738,9 @@
         private System.Windows.Forms.TextBox tNumInDeck;
         private System.Windows.Forms.TextBox tNumInForcedDeck;
         private System.Windows.Forms.ListBox lWeapons;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bDeleteWeapon;
+        private System.Windows.Forms.Button bAddWeapon;
+        private System.Windows.Forms.Button bEditWeapon;
         private System.Windows.Forms.MenuStrip menu;
         private System.Windows.Forms.ToolStripMenuItem menuItemFile;
         private System.Windows.Forms.ToolStripMenuItem menuItemOpen;

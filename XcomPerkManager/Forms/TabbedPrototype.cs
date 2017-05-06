@@ -62,6 +62,9 @@ namespace XcomPerkManager.Forms
 
             tSquaddieLoadout.Text = soldierClass.equipment.squaddieLoadout;
             tAllowedArmor.Text = soldierClass.equipment.allowedArmors;
+
+            BindingList<Weapon> weapons = new BindingList<Weapon>(soldierClass.equipment.weapons);
+            lWeapons.DataSource = weapons;
         }
 
         private SoldierClass buildSoldierClass()
@@ -79,6 +82,7 @@ namespace XcomPerkManager.Forms
 
             soldierClass.equipment.squaddieLoadout = tSquaddieLoadout.Text;
             soldierClass.equipment.allowedArmors = tAllowedArmor.Text;
+            soldierClass.equipment.weapons = (lWeapons.DataSource as BindingList<Weapon>).ToList();
 
             return soldierClass;
         }
@@ -136,6 +140,67 @@ namespace XcomPerkManager.Forms
         {
             state.deleteClass();
             open(state.getOpenSoldierClass());
+        }
+
+        private void bEditWeapon_Click(object sender, EventArgs e)
+        {
+            WeaponEditor weaponEditor = new WeaponEditor(lWeapons.SelectedItem as Weapon, EditorState.EDIT);
+            weaponEditor.FormClosing += weaponEditorClosingListener;
+            weaponEditor.ShowDialog(this);
+        }
+
+        private void bAddWeapon_Click(object sender, EventArgs e)
+        {
+            WeaponEditor weaponEditor = new WeaponEditor(null, EditorState.ADD);
+            weaponEditor.FormClosing += weaponEditorClosingListener;
+            weaponEditor.ShowDialog(this);
+        }
+
+        private void weaponEditorClosingListener(object sender, FormClosingEventArgs e)
+        {
+            WeaponEditor weaponEditor = sender as WeaponEditor;
+            if (weaponEditor != null)
+            {
+                BindingList<Weapon> weapons = lWeapons.DataSource as BindingList<Weapon>;
+                Weapon oldWeapon = weaponEditor.oldWeapon;
+                Weapon newWeapon = weaponEditor.newWeapon;
+
+                if(weaponEditor.editorState == EditorState.CANCEL)
+                {
+                    return;
+                }
+                else if (weaponEditor.editorState == EditorState.ADD)
+                {
+                    weapons.Add(newWeapon);
+                    lWeapons.DataSource = weapons;
+                }
+                else if (weaponEditor.editorState == EditorState.EDIT)
+                {
+                    int index = weapons.IndexOf(oldWeapon);
+
+                    if(index == -1)
+                    {
+                        weapons.Add(newWeapon);
+                    }
+                    else
+                    {
+                        weapons[index] = newWeapon;
+                    }
+                    
+                    lWeapons.DataSource = weapons;
+                }
+            }
+        }
+
+        private void bDeleteWeapon_Click(object sender, EventArgs e)
+        {
+            BindingList<Weapon> weapons = lWeapons.DataSource as BindingList<Weapon>;
+            weapons.Remove(lWeapons.SelectedItem as Weapon);
+        }
+
+        private void exportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

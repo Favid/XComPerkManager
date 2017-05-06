@@ -17,6 +17,12 @@ namespace XcomPerkManager.DataObjects
             weaponSlot = "";
         }
 
+        public Weapon(Weapon original)
+        {
+            weaponName = original.weaponName;
+            weaponSlot = original.weaponSlot;
+        }
+
         public string toString()
         {
             return weaponName + " " + weaponSlot;
