@@ -123,7 +123,16 @@ namespace XcomPerkManager
         Hacking = 3,
 
         [Description("eStat_PsiOffense")]
-        Psi = 4
+        Psi = 4,
+
+        [Description("eStat_Mobility")]
+        Mobility = 5,
+
+        [Description("eStat_Will")]
+        Will = 6,
+
+        [Description("eStat_Dodge")]
+        Dodge = 7
     }
 
     public enum EditorState

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.laClass = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabGeneral = new System.Windows.Forms.TabPage();
@@ -56,32 +57,32 @@
             this.tDescription = new System.Windows.Forms.TextBox();
             this.tIconString = new System.Windows.Forms.TextBox();
             this.tabStats = new System.Windows.Forms.TabPage();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.textBox30 = new System.Windows.Forms.TextBox();
-            this.textBox31 = new System.Windows.Forms.TextBox();
-            this.textBox32 = new System.Windows.Forms.TextBox();
+            this.tBrigadierDodge = new System.Windows.Forms.TextBox();
+            this.tColonelDodge = new System.Windows.Forms.TextBox();
+            this.tMajorDodge = new System.Windows.Forms.TextBox();
+            this.tCaptainDodge = new System.Windows.Forms.TextBox();
+            this.tLieutenantDodge = new System.Windows.Forms.TextBox();
+            this.tSergeantDodge = new System.Windows.Forms.TextBox();
+            this.tCorporalDodge = new System.Windows.Forms.TextBox();
+            this.tSquaddieDodge = new System.Windows.Forms.TextBox();
             this.label49 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.tBrigadierWill = new System.Windows.Forms.TextBox();
+            this.tColonelWill = new System.Windows.Forms.TextBox();
+            this.tMajorWill = new System.Windows.Forms.TextBox();
+            this.tCaptainWill = new System.Windows.Forms.TextBox();
+            this.tLieutenantWill = new System.Windows.Forms.TextBox();
+            this.tSergeantWill = new System.Windows.Forms.TextBox();
+            this.tCorporalWill = new System.Windows.Forms.TextBox();
+            this.tSquaddieWill = new System.Windows.Forms.TextBox();
             this.label48 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.tBrigadierMobility = new System.Windows.Forms.TextBox();
+            this.tColonelMobility = new System.Windows.Forms.TextBox();
+            this.tMajorMobility = new System.Windows.Forms.TextBox();
+            this.tCaptainMobility = new System.Windows.Forms.TextBox();
+            this.tLieutenantMobility = new System.Windows.Forms.TextBox();
+            this.tSergeantMobility = new System.Windows.Forms.TextBox();
+            this.tCorporalMobility = new System.Windows.Forms.TextBox();
+            this.tSquaddieMobility = new System.Windows.Forms.TextBox();
             this.label47 = new System.Windows.Forms.Label();
             this.tBrigadierPsi = new System.Windows.Forms.TextBox();
             this.tColonelPsi = new System.Windows.Forms.TextBox();
@@ -185,6 +186,7 @@
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.renameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.soldierClassAbilityBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabControl1.SuspendLayout();
             this.tabGeneral.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -193,6 +195,7 @@
             this.tabStats.SuspendLayout();
             this.tabAbilities.SuspendLayout();
             this.menu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.soldierClassAbilityBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // laClass
@@ -442,7 +445,7 @@
             this.tDisplayName.Location = new System.Drawing.Point(136, 24);
             this.tDisplayName.Name = "tDisplayName";
             this.tDisplayName.Size = new System.Drawing.Size(169, 20);
-            this.tDisplayName.TabIndex = 31;
+            this.tDisplayName.TabIndex = 1;
             this.tDisplayName.Text = "Ranger";
             // 
             // tDescription
@@ -465,32 +468,32 @@
             // 
             // tabStats
             // 
-            this.tabStats.Controls.Add(this.textBox25);
-            this.tabStats.Controls.Add(this.textBox26);
-            this.tabStats.Controls.Add(this.textBox27);
-            this.tabStats.Controls.Add(this.textBox28);
-            this.tabStats.Controls.Add(this.textBox29);
-            this.tabStats.Controls.Add(this.textBox30);
-            this.tabStats.Controls.Add(this.textBox31);
-            this.tabStats.Controls.Add(this.textBox32);
+            this.tabStats.Controls.Add(this.tBrigadierDodge);
+            this.tabStats.Controls.Add(this.tColonelDodge);
+            this.tabStats.Controls.Add(this.tMajorDodge);
+            this.tabStats.Controls.Add(this.tCaptainDodge);
+            this.tabStats.Controls.Add(this.tLieutenantDodge);
+            this.tabStats.Controls.Add(this.tSergeantDodge);
+            this.tabStats.Controls.Add(this.tCorporalDodge);
+            this.tabStats.Controls.Add(this.tSquaddieDodge);
             this.tabStats.Controls.Add(this.label49);
-            this.tabStats.Controls.Add(this.textBox17);
-            this.tabStats.Controls.Add(this.textBox18);
-            this.tabStats.Controls.Add(this.textBox19);
-            this.tabStats.Controls.Add(this.textBox20);
-            this.tabStats.Controls.Add(this.textBox21);
-            this.tabStats.Controls.Add(this.textBox22);
-            this.tabStats.Controls.Add(this.textBox23);
-            this.tabStats.Controls.Add(this.textBox24);
+            this.tabStats.Controls.Add(this.tBrigadierWill);
+            this.tabStats.Controls.Add(this.tColonelWill);
+            this.tabStats.Controls.Add(this.tMajorWill);
+            this.tabStats.Controls.Add(this.tCaptainWill);
+            this.tabStats.Controls.Add(this.tLieutenantWill);
+            this.tabStats.Controls.Add(this.tSergeantWill);
+            this.tabStats.Controls.Add(this.tCorporalWill);
+            this.tabStats.Controls.Add(this.tSquaddieWill);
             this.tabStats.Controls.Add(this.label48);
-            this.tabStats.Controls.Add(this.textBox9);
-            this.tabStats.Controls.Add(this.textBox10);
-            this.tabStats.Controls.Add(this.textBox11);
-            this.tabStats.Controls.Add(this.textBox12);
-            this.tabStats.Controls.Add(this.textBox13);
-            this.tabStats.Controls.Add(this.textBox14);
-            this.tabStats.Controls.Add(this.textBox15);
-            this.tabStats.Controls.Add(this.textBox16);
+            this.tabStats.Controls.Add(this.tBrigadierMobility);
+            this.tabStats.Controls.Add(this.tColonelMobility);
+            this.tabStats.Controls.Add(this.tMajorMobility);
+            this.tabStats.Controls.Add(this.tCaptainMobility);
+            this.tabStats.Controls.Add(this.tLieutenantMobility);
+            this.tabStats.Controls.Add(this.tSergeantMobility);
+            this.tabStats.Controls.Add(this.tCorporalMobility);
+            this.tabStats.Controls.Add(this.tSquaddieMobility);
             this.tabStats.Controls.Add(this.label47);
             this.tabStats.Controls.Add(this.tBrigadierPsi);
             this.tabStats.Controls.Add(this.tColonelPsi);
@@ -552,61 +555,61 @@
             this.tabStats.Text = "Stats";
             this.tabStats.UseVisualStyleBackColor = true;
             // 
-            // textBox25
+            // tBrigadierDodge
             // 
-            this.textBox25.Location = new System.Drawing.Point(375, 241);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(28, 20);
-            this.textBox25.TabIndex = 238;
+            this.tBrigadierDodge.Location = new System.Drawing.Point(375, 241);
+            this.tBrigadierDodge.Name = "tBrigadierDodge";
+            this.tBrigadierDodge.Size = new System.Drawing.Size(28, 20);
+            this.tBrigadierDodge.TabIndex = 78;
             // 
-            // textBox26
+            // tColonelDodge
             // 
-            this.textBox26.Location = new System.Drawing.Point(375, 214);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(28, 20);
-            this.textBox26.TabIndex = 237;
+            this.tColonelDodge.Location = new System.Drawing.Point(375, 214);
+            this.tColonelDodge.Name = "tColonelDodge";
+            this.tColonelDodge.Size = new System.Drawing.Size(28, 20);
+            this.tColonelDodge.TabIndex = 68;
             // 
-            // textBox27
+            // tMajorDodge
             // 
-            this.textBox27.Location = new System.Drawing.Point(375, 187);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(28, 20);
-            this.textBox27.TabIndex = 236;
+            this.tMajorDodge.Location = new System.Drawing.Point(375, 187);
+            this.tMajorDodge.Name = "tMajorDodge";
+            this.tMajorDodge.Size = new System.Drawing.Size(28, 20);
+            this.tMajorDodge.TabIndex = 58;
             // 
-            // textBox28
+            // tCaptainDodge
             // 
-            this.textBox28.Location = new System.Drawing.Point(375, 160);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(28, 20);
-            this.textBox28.TabIndex = 235;
+            this.tCaptainDodge.Location = new System.Drawing.Point(375, 160);
+            this.tCaptainDodge.Name = "tCaptainDodge";
+            this.tCaptainDodge.Size = new System.Drawing.Size(28, 20);
+            this.tCaptainDodge.TabIndex = 48;
             // 
-            // textBox29
+            // tLieutenantDodge
             // 
-            this.textBox29.Location = new System.Drawing.Point(375, 133);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(28, 20);
-            this.textBox29.TabIndex = 234;
+            this.tLieutenantDodge.Location = new System.Drawing.Point(375, 133);
+            this.tLieutenantDodge.Name = "tLieutenantDodge";
+            this.tLieutenantDodge.Size = new System.Drawing.Size(28, 20);
+            this.tLieutenantDodge.TabIndex = 38;
             // 
-            // textBox30
+            // tSergeantDodge
             // 
-            this.textBox30.Location = new System.Drawing.Point(375, 106);
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(28, 20);
-            this.textBox30.TabIndex = 233;
+            this.tSergeantDodge.Location = new System.Drawing.Point(375, 106);
+            this.tSergeantDodge.Name = "tSergeantDodge";
+            this.tSergeantDodge.Size = new System.Drawing.Size(28, 20);
+            this.tSergeantDodge.TabIndex = 28;
             // 
-            // textBox31
+            // tCorporalDodge
             // 
-            this.textBox31.Location = new System.Drawing.Point(375, 79);
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(28, 20);
-            this.textBox31.TabIndex = 232;
+            this.tCorporalDodge.Location = new System.Drawing.Point(375, 79);
+            this.tCorporalDodge.Name = "tCorporalDodge";
+            this.tCorporalDodge.Size = new System.Drawing.Size(28, 20);
+            this.tCorporalDodge.TabIndex = 18;
             // 
-            // textBox32
+            // tSquaddieDodge
             // 
-            this.textBox32.Location = new System.Drawing.Point(375, 53);
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(28, 20);
-            this.textBox32.TabIndex = 231;
+            this.tSquaddieDodge.Location = new System.Drawing.Point(375, 53);
+            this.tSquaddieDodge.Name = "tSquaddieDodge";
+            this.tSquaddieDodge.Size = new System.Drawing.Size(28, 20);
+            this.tSquaddieDodge.TabIndex = 8;
             // 
             // label49
             // 
@@ -617,61 +620,61 @@
             this.label49.TabIndex = 230;
             this.label49.Text = "Dodge";
             // 
-            // textBox17
+            // tBrigadierWill
             // 
-            this.textBox17.Location = new System.Drawing.Point(334, 241);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(28, 20);
-            this.textBox17.TabIndex = 229;
+            this.tBrigadierWill.Location = new System.Drawing.Point(334, 241);
+            this.tBrigadierWill.Name = "tBrigadierWill";
+            this.tBrigadierWill.Size = new System.Drawing.Size(28, 20);
+            this.tBrigadierWill.TabIndex = 77;
             // 
-            // textBox18
+            // tColonelWill
             // 
-            this.textBox18.Location = new System.Drawing.Point(334, 214);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(28, 20);
-            this.textBox18.TabIndex = 228;
+            this.tColonelWill.Location = new System.Drawing.Point(334, 214);
+            this.tColonelWill.Name = "tColonelWill";
+            this.tColonelWill.Size = new System.Drawing.Size(28, 20);
+            this.tColonelWill.TabIndex = 67;
             // 
-            // textBox19
+            // tMajorWill
             // 
-            this.textBox19.Location = new System.Drawing.Point(334, 187);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(28, 20);
-            this.textBox19.TabIndex = 227;
+            this.tMajorWill.Location = new System.Drawing.Point(334, 187);
+            this.tMajorWill.Name = "tMajorWill";
+            this.tMajorWill.Size = new System.Drawing.Size(28, 20);
+            this.tMajorWill.TabIndex = 57;
             // 
-            // textBox20
+            // tCaptainWill
             // 
-            this.textBox20.Location = new System.Drawing.Point(334, 160);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(28, 20);
-            this.textBox20.TabIndex = 226;
+            this.tCaptainWill.Location = new System.Drawing.Point(334, 160);
+            this.tCaptainWill.Name = "tCaptainWill";
+            this.tCaptainWill.Size = new System.Drawing.Size(28, 20);
+            this.tCaptainWill.TabIndex = 47;
             // 
-            // textBox21
+            // tLieutenantWill
             // 
-            this.textBox21.Location = new System.Drawing.Point(334, 133);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(28, 20);
-            this.textBox21.TabIndex = 225;
+            this.tLieutenantWill.Location = new System.Drawing.Point(334, 133);
+            this.tLieutenantWill.Name = "tLieutenantWill";
+            this.tLieutenantWill.Size = new System.Drawing.Size(28, 20);
+            this.tLieutenantWill.TabIndex = 37;
             // 
-            // textBox22
+            // tSergeantWill
             // 
-            this.textBox22.Location = new System.Drawing.Point(334, 106);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(28, 20);
-            this.textBox22.TabIndex = 224;
+            this.tSergeantWill.Location = new System.Drawing.Point(334, 106);
+            this.tSergeantWill.Name = "tSergeantWill";
+            this.tSergeantWill.Size = new System.Drawing.Size(28, 20);
+            this.tSergeantWill.TabIndex = 27;
             // 
-            // textBox23
+            // tCorporalWill
             // 
-            this.textBox23.Location = new System.Drawing.Point(334, 79);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(28, 20);
-            this.textBox23.TabIndex = 223;
+            this.tCorporalWill.Location = new System.Drawing.Point(334, 79);
+            this.tCorporalWill.Name = "tCorporalWill";
+            this.tCorporalWill.Size = new System.Drawing.Size(28, 20);
+            this.tCorporalWill.TabIndex = 17;
             // 
-            // textBox24
+            // tSquaddieWill
             // 
-            this.textBox24.Location = new System.Drawing.Point(334, 53);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(28, 20);
-            this.textBox24.TabIndex = 222;
+            this.tSquaddieWill.Location = new System.Drawing.Point(334, 53);
+            this.tSquaddieWill.Name = "tSquaddieWill";
+            this.tSquaddieWill.Size = new System.Drawing.Size(28, 20);
+            this.tSquaddieWill.TabIndex = 7;
             // 
             // label48
             // 
@@ -682,61 +685,61 @@
             this.label48.TabIndex = 221;
             this.label48.Text = "Will";
             // 
-            // textBox9
+            // tBrigadierMobility
             // 
-            this.textBox9.Location = new System.Drawing.Point(291, 241);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(28, 20);
-            this.textBox9.TabIndex = 220;
+            this.tBrigadierMobility.Location = new System.Drawing.Point(291, 241);
+            this.tBrigadierMobility.Name = "tBrigadierMobility";
+            this.tBrigadierMobility.Size = new System.Drawing.Size(28, 20);
+            this.tBrigadierMobility.TabIndex = 76;
             // 
-            // textBox10
+            // tColonelMobility
             // 
-            this.textBox10.Location = new System.Drawing.Point(291, 214);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(28, 20);
-            this.textBox10.TabIndex = 219;
+            this.tColonelMobility.Location = new System.Drawing.Point(291, 214);
+            this.tColonelMobility.Name = "tColonelMobility";
+            this.tColonelMobility.Size = new System.Drawing.Size(28, 20);
+            this.tColonelMobility.TabIndex = 66;
             // 
-            // textBox11
+            // tMajorMobility
             // 
-            this.textBox11.Location = new System.Drawing.Point(291, 187);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(28, 20);
-            this.textBox11.TabIndex = 218;
+            this.tMajorMobility.Location = new System.Drawing.Point(291, 187);
+            this.tMajorMobility.Name = "tMajorMobility";
+            this.tMajorMobility.Size = new System.Drawing.Size(28, 20);
+            this.tMajorMobility.TabIndex = 56;
             // 
-            // textBox12
+            // tCaptainMobility
             // 
-            this.textBox12.Location = new System.Drawing.Point(291, 160);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(28, 20);
-            this.textBox12.TabIndex = 217;
+            this.tCaptainMobility.Location = new System.Drawing.Point(291, 160);
+            this.tCaptainMobility.Name = "tCaptainMobility";
+            this.tCaptainMobility.Size = new System.Drawing.Size(28, 20);
+            this.tCaptainMobility.TabIndex = 46;
             // 
-            // textBox13
+            // tLieutenantMobility
             // 
-            this.textBox13.Location = new System.Drawing.Point(291, 133);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(28, 20);
-            this.textBox13.TabIndex = 216;
+            this.tLieutenantMobility.Location = new System.Drawing.Point(291, 133);
+            this.tLieutenantMobility.Name = "tLieutenantMobility";
+            this.tLieutenantMobility.Size = new System.Drawing.Size(28, 20);
+            this.tLieutenantMobility.TabIndex = 36;
             // 
-            // textBox14
+            // tSergeantMobility
             // 
-            this.textBox14.Location = new System.Drawing.Point(291, 106);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(28, 20);
-            this.textBox14.TabIndex = 215;
+            this.tSergeantMobility.Location = new System.Drawing.Point(291, 106);
+            this.tSergeantMobility.Name = "tSergeantMobility";
+            this.tSergeantMobility.Size = new System.Drawing.Size(28, 20);
+            this.tSergeantMobility.TabIndex = 26;
             // 
-            // textBox15
+            // tCorporalMobility
             // 
-            this.textBox15.Location = new System.Drawing.Point(291, 79);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(28, 20);
-            this.textBox15.TabIndex = 214;
+            this.tCorporalMobility.Location = new System.Drawing.Point(291, 79);
+            this.tCorporalMobility.Name = "tCorporalMobility";
+            this.tCorporalMobility.Size = new System.Drawing.Size(28, 20);
+            this.tCorporalMobility.TabIndex = 16;
             // 
-            // textBox16
+            // tSquaddieMobility
             // 
-            this.textBox16.Location = new System.Drawing.Point(291, 53);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(28, 20);
-            this.textBox16.TabIndex = 213;
+            this.tSquaddieMobility.Location = new System.Drawing.Point(291, 53);
+            this.tSquaddieMobility.Name = "tSquaddieMobility";
+            this.tSquaddieMobility.Size = new System.Drawing.Size(28, 20);
+            this.tSquaddieMobility.TabIndex = 6;
             // 
             // label47
             // 
@@ -752,280 +755,280 @@
             this.tBrigadierPsi.Location = new System.Drawing.Point(248, 241);
             this.tBrigadierPsi.Name = "tBrigadierPsi";
             this.tBrigadierPsi.Size = new System.Drawing.Size(28, 20);
-            this.tBrigadierPsi.TabIndex = 211;
+            this.tBrigadierPsi.TabIndex = 75;
             // 
             // tColonelPsi
             // 
             this.tColonelPsi.Location = new System.Drawing.Point(248, 214);
             this.tColonelPsi.Name = "tColonelPsi";
             this.tColonelPsi.Size = new System.Drawing.Size(28, 20);
-            this.tColonelPsi.TabIndex = 210;
+            this.tColonelPsi.TabIndex = 65;
             // 
             // tMajorPsi
             // 
             this.tMajorPsi.Location = new System.Drawing.Point(248, 187);
             this.tMajorPsi.Name = "tMajorPsi";
             this.tMajorPsi.Size = new System.Drawing.Size(28, 20);
-            this.tMajorPsi.TabIndex = 209;
+            this.tMajorPsi.TabIndex = 55;
             // 
             // tCaptainPsi
             // 
             this.tCaptainPsi.Location = new System.Drawing.Point(248, 160);
             this.tCaptainPsi.Name = "tCaptainPsi";
             this.tCaptainPsi.Size = new System.Drawing.Size(28, 20);
-            this.tCaptainPsi.TabIndex = 208;
+            this.tCaptainPsi.TabIndex = 45;
             // 
             // tLieutenantPsi
             // 
             this.tLieutenantPsi.Location = new System.Drawing.Point(248, 133);
             this.tLieutenantPsi.Name = "tLieutenantPsi";
             this.tLieutenantPsi.Size = new System.Drawing.Size(28, 20);
-            this.tLieutenantPsi.TabIndex = 207;
+            this.tLieutenantPsi.TabIndex = 35;
             // 
             // tSergeantPsi
             // 
             this.tSergeantPsi.Location = new System.Drawing.Point(248, 106);
             this.tSergeantPsi.Name = "tSergeantPsi";
             this.tSergeantPsi.Size = new System.Drawing.Size(28, 20);
-            this.tSergeantPsi.TabIndex = 206;
+            this.tSergeantPsi.TabIndex = 25;
             // 
             // tCorporalPsi
             // 
             this.tCorporalPsi.Location = new System.Drawing.Point(248, 79);
             this.tCorporalPsi.Name = "tCorporalPsi";
             this.tCorporalPsi.Size = new System.Drawing.Size(28, 20);
-            this.tCorporalPsi.TabIndex = 205;
+            this.tCorporalPsi.TabIndex = 15;
             // 
             // tSquaddiePsi
             // 
             this.tSquaddiePsi.Location = new System.Drawing.Point(248, 53);
             this.tSquaddiePsi.Name = "tSquaddiePsi";
             this.tSquaddiePsi.Size = new System.Drawing.Size(28, 20);
-            this.tSquaddiePsi.TabIndex = 204;
+            this.tSquaddiePsi.TabIndex = 5;
             // 
             // tBrigadierHacking
             // 
             this.tBrigadierHacking.Location = new System.Drawing.Point(205, 241);
             this.tBrigadierHacking.Name = "tBrigadierHacking";
             this.tBrigadierHacking.Size = new System.Drawing.Size(28, 20);
-            this.tBrigadierHacking.TabIndex = 203;
+            this.tBrigadierHacking.TabIndex = 74;
             // 
             // tColonelHacking
             // 
             this.tColonelHacking.Location = new System.Drawing.Point(205, 214);
             this.tColonelHacking.Name = "tColonelHacking";
             this.tColonelHacking.Size = new System.Drawing.Size(28, 20);
-            this.tColonelHacking.TabIndex = 202;
+            this.tColonelHacking.TabIndex = 64;
             // 
             // tMajorHacking
             // 
             this.tMajorHacking.Location = new System.Drawing.Point(205, 187);
             this.tMajorHacking.Name = "tMajorHacking";
             this.tMajorHacking.Size = new System.Drawing.Size(28, 20);
-            this.tMajorHacking.TabIndex = 201;
+            this.tMajorHacking.TabIndex = 54;
             // 
             // tCaptainHacking
             // 
             this.tCaptainHacking.Location = new System.Drawing.Point(205, 160);
             this.tCaptainHacking.Name = "tCaptainHacking";
             this.tCaptainHacking.Size = new System.Drawing.Size(28, 20);
-            this.tCaptainHacking.TabIndex = 200;
+            this.tCaptainHacking.TabIndex = 44;
             // 
             // tLieutenantHacking
             // 
             this.tLieutenantHacking.Location = new System.Drawing.Point(205, 133);
             this.tLieutenantHacking.Name = "tLieutenantHacking";
             this.tLieutenantHacking.Size = new System.Drawing.Size(28, 20);
-            this.tLieutenantHacking.TabIndex = 199;
+            this.tLieutenantHacking.TabIndex = 34;
             // 
             // tSergeantHacking
             // 
             this.tSergeantHacking.Location = new System.Drawing.Point(205, 106);
             this.tSergeantHacking.Name = "tSergeantHacking";
             this.tSergeantHacking.Size = new System.Drawing.Size(28, 20);
-            this.tSergeantHacking.TabIndex = 198;
+            this.tSergeantHacking.TabIndex = 24;
             // 
             // tCorporalHacking
             // 
             this.tCorporalHacking.Location = new System.Drawing.Point(205, 79);
             this.tCorporalHacking.Name = "tCorporalHacking";
             this.tCorporalHacking.Size = new System.Drawing.Size(28, 20);
-            this.tCorporalHacking.TabIndex = 197;
+            this.tCorporalHacking.TabIndex = 14;
             // 
             // tSquaddieHacking
             // 
             this.tSquaddieHacking.Location = new System.Drawing.Point(205, 53);
             this.tSquaddieHacking.Name = "tSquaddieHacking";
             this.tSquaddieHacking.Size = new System.Drawing.Size(28, 20);
-            this.tSquaddieHacking.TabIndex = 196;
+            this.tSquaddieHacking.TabIndex = 4;
             // 
             // tBrigadierStrength
             // 
             this.tBrigadierStrength.Location = new System.Drawing.Point(154, 241);
             this.tBrigadierStrength.Name = "tBrigadierStrength";
             this.tBrigadierStrength.Size = new System.Drawing.Size(28, 20);
-            this.tBrigadierStrength.TabIndex = 195;
+            this.tBrigadierStrength.TabIndex = 73;
             // 
             // tColonelStrength
             // 
             this.tColonelStrength.Location = new System.Drawing.Point(154, 214);
             this.tColonelStrength.Name = "tColonelStrength";
             this.tColonelStrength.Size = new System.Drawing.Size(28, 20);
-            this.tColonelStrength.TabIndex = 194;
+            this.tColonelStrength.TabIndex = 63;
             // 
             // tMajorStrength
             // 
             this.tMajorStrength.Location = new System.Drawing.Point(154, 187);
             this.tMajorStrength.Name = "tMajorStrength";
             this.tMajorStrength.Size = new System.Drawing.Size(28, 20);
-            this.tMajorStrength.TabIndex = 193;
+            this.tMajorStrength.TabIndex = 53;
             // 
             // tCaptainStrength
             // 
             this.tCaptainStrength.Location = new System.Drawing.Point(154, 160);
             this.tCaptainStrength.Name = "tCaptainStrength";
             this.tCaptainStrength.Size = new System.Drawing.Size(28, 20);
-            this.tCaptainStrength.TabIndex = 192;
+            this.tCaptainStrength.TabIndex = 43;
             // 
             // tLieutenantStrength
             // 
             this.tLieutenantStrength.Location = new System.Drawing.Point(154, 133);
             this.tLieutenantStrength.Name = "tLieutenantStrength";
             this.tLieutenantStrength.Size = new System.Drawing.Size(28, 20);
-            this.tLieutenantStrength.TabIndex = 191;
+            this.tLieutenantStrength.TabIndex = 33;
             // 
             // tSergeantStrength
             // 
             this.tSergeantStrength.Location = new System.Drawing.Point(154, 106);
             this.tSergeantStrength.Name = "tSergeantStrength";
             this.tSergeantStrength.Size = new System.Drawing.Size(28, 20);
-            this.tSergeantStrength.TabIndex = 190;
+            this.tSergeantStrength.TabIndex = 23;
             // 
             // tCorporalStrength
             // 
             this.tCorporalStrength.Location = new System.Drawing.Point(154, 79);
             this.tCorporalStrength.Name = "tCorporalStrength";
             this.tCorporalStrength.Size = new System.Drawing.Size(28, 20);
-            this.tCorporalStrength.TabIndex = 189;
+            this.tCorporalStrength.TabIndex = 13;
             // 
             // tSquaddieStrength
             // 
             this.tSquaddieStrength.Location = new System.Drawing.Point(154, 53);
             this.tSquaddieStrength.Name = "tSquaddieStrength";
             this.tSquaddieStrength.Size = new System.Drawing.Size(28, 20);
-            this.tSquaddieStrength.TabIndex = 188;
+            this.tSquaddieStrength.TabIndex = 3;
             // 
             // tBrigadierAim
             // 
             this.tBrigadierAim.Location = new System.Drawing.Point(120, 241);
             this.tBrigadierAim.Name = "tBrigadierAim";
             this.tBrigadierAim.Size = new System.Drawing.Size(28, 20);
-            this.tBrigadierAim.TabIndex = 187;
+            this.tBrigadierAim.TabIndex = 72;
             // 
             // tColonelAim
             // 
             this.tColonelAim.Location = new System.Drawing.Point(120, 214);
             this.tColonelAim.Name = "tColonelAim";
             this.tColonelAim.Size = new System.Drawing.Size(28, 20);
-            this.tColonelAim.TabIndex = 186;
+            this.tColonelAim.TabIndex = 62;
             // 
             // tMajorAim
             // 
             this.tMajorAim.Location = new System.Drawing.Point(120, 187);
             this.tMajorAim.Name = "tMajorAim";
             this.tMajorAim.Size = new System.Drawing.Size(28, 20);
-            this.tMajorAim.TabIndex = 185;
+            this.tMajorAim.TabIndex = 52;
             // 
             // tCaptainAim
             // 
             this.tCaptainAim.Location = new System.Drawing.Point(120, 160);
             this.tCaptainAim.Name = "tCaptainAim";
             this.tCaptainAim.Size = new System.Drawing.Size(28, 20);
-            this.tCaptainAim.TabIndex = 184;
+            this.tCaptainAim.TabIndex = 42;
             // 
             // tLieutenantAim
             // 
             this.tLieutenantAim.Location = new System.Drawing.Point(120, 133);
             this.tLieutenantAim.Name = "tLieutenantAim";
             this.tLieutenantAim.Size = new System.Drawing.Size(28, 20);
-            this.tLieutenantAim.TabIndex = 183;
+            this.tLieutenantAim.TabIndex = 32;
             // 
             // tSergeantAim
             // 
             this.tSergeantAim.Location = new System.Drawing.Point(120, 106);
             this.tSergeantAim.Name = "tSergeantAim";
             this.tSergeantAim.Size = new System.Drawing.Size(28, 20);
-            this.tSergeantAim.TabIndex = 182;
+            this.tSergeantAim.TabIndex = 22;
             // 
             // tCorporalAim
             // 
             this.tCorporalAim.Location = new System.Drawing.Point(120, 79);
             this.tCorporalAim.Name = "tCorporalAim";
             this.tCorporalAim.Size = new System.Drawing.Size(28, 20);
-            this.tCorporalAim.TabIndex = 181;
+            this.tCorporalAim.TabIndex = 12;
             // 
             // tSquaddieAim
             // 
             this.tSquaddieAim.Location = new System.Drawing.Point(120, 53);
             this.tSquaddieAim.Name = "tSquaddieAim";
             this.tSquaddieAim.Size = new System.Drawing.Size(28, 20);
-            this.tSquaddieAim.TabIndex = 180;
+            this.tSquaddieAim.TabIndex = 2;
             // 
             // tBrigadierHp
             // 
             this.tBrigadierHp.Location = new System.Drawing.Point(86, 241);
             this.tBrigadierHp.Name = "tBrigadierHp";
             this.tBrigadierHp.Size = new System.Drawing.Size(28, 20);
-            this.tBrigadierHp.TabIndex = 179;
+            this.tBrigadierHp.TabIndex = 71;
             // 
             // tColonelHp
             // 
             this.tColonelHp.Location = new System.Drawing.Point(86, 214);
             this.tColonelHp.Name = "tColonelHp";
             this.tColonelHp.Size = new System.Drawing.Size(28, 20);
-            this.tColonelHp.TabIndex = 178;
+            this.tColonelHp.TabIndex = 61;
             // 
             // tMajorHp
             // 
             this.tMajorHp.Location = new System.Drawing.Point(86, 187);
             this.tMajorHp.Name = "tMajorHp";
             this.tMajorHp.Size = new System.Drawing.Size(28, 20);
-            this.tMajorHp.TabIndex = 177;
+            this.tMajorHp.TabIndex = 51;
             // 
             // tCaptainHp
             // 
             this.tCaptainHp.Location = new System.Drawing.Point(86, 160);
             this.tCaptainHp.Name = "tCaptainHp";
             this.tCaptainHp.Size = new System.Drawing.Size(28, 20);
-            this.tCaptainHp.TabIndex = 176;
+            this.tCaptainHp.TabIndex = 41;
             // 
             // tLieutenantHp
             // 
             this.tLieutenantHp.Location = new System.Drawing.Point(86, 133);
             this.tLieutenantHp.Name = "tLieutenantHp";
             this.tLieutenantHp.Size = new System.Drawing.Size(28, 20);
-            this.tLieutenantHp.TabIndex = 175;
+            this.tLieutenantHp.TabIndex = 31;
             // 
             // tSergeantHp
             // 
             this.tSergeantHp.Location = new System.Drawing.Point(86, 106);
             this.tSergeantHp.Name = "tSergeantHp";
             this.tSergeantHp.Size = new System.Drawing.Size(28, 20);
-            this.tSergeantHp.TabIndex = 174;
+            this.tSergeantHp.TabIndex = 21;
             // 
             // tCorporalHp
             // 
             this.tCorporalHp.Location = new System.Drawing.Point(86, 79);
             this.tCorporalHp.Name = "tCorporalHp";
             this.tCorporalHp.Size = new System.Drawing.Size(28, 20);
-            this.tCorporalHp.TabIndex = 173;
+            this.tCorporalHp.TabIndex = 11;
             // 
             // tSquaddieHp
             // 
             this.tSquaddieHp.Location = new System.Drawing.Point(86, 53);
             this.tSquaddieHp.Name = "tSquaddieHp";
             this.tSquaddieHp.Size = new System.Drawing.Size(28, 20);
-            this.tSquaddieHp.TabIndex = 172;
+            this.tSquaddieHp.TabIndex = 1;
             // 
             // label41
             // 
@@ -1618,7 +1621,7 @@
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.newToolStripMenuItem.Text = "New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
@@ -1628,7 +1631,7 @@
             this.rangerToolStripMenuItem,
             this.specialistToolStripMenuItem});
             this.menuItemOpen.Name = "menuItemOpen";
-            this.menuItemOpen.Size = new System.Drawing.Size(152, 22);
+            this.menuItemOpen.Size = new System.Drawing.Size(107, 22);
             this.menuItemOpen.Text = "Open";
             this.menuItemOpen.Click += new System.EventHandler(this.selectClassToolStripMenuItem_Click);
             // 
@@ -1647,21 +1650,21 @@
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // exportToolStripMenuItem
             // 
             this.exportToolStripMenuItem.Name = "exportToolStripMenuItem";
-            this.exportToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exportToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.exportToolStripMenuItem.Text = "Export";
             this.exportToolStripMenuItem.Click += new System.EventHandler(this.exportToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -1677,16 +1680,20 @@
             // renameToolStripMenuItem
             // 
             this.renameToolStripMenuItem.Name = "renameToolStripMenuItem";
-            this.renameToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.renameToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.renameToolStripMenuItem.Text = "Rename";
             this.renameToolStripMenuItem.Click += new System.EventHandler(this.renameToolStripMenuItem_Click);
             // 
             // deleteToolStripMenuItem1
             // 
             this.deleteToolStripMenuItem1.Name = "deleteToolStripMenuItem1";
-            this.deleteToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.deleteToolStripMenuItem1.Size = new System.Drawing.Size(117, 22);
             this.deleteToolStripMenuItem1.Text = "Delete";
             this.deleteToolStripMenuItem1.Click += new System.EventHandler(this.deleteToolStripMenuItem1_Click);
+            // 
+            // soldierClassAbilityBindingSource
+            // 
+            this.soldierClassAbilityBindingSource.DataSource = typeof(XcomPerkManager.SoldierClassAbility);
             // 
             // TabbedPrototype
             // 
@@ -1715,6 +1722,7 @@
             this.tabAbilities.PerformLayout();
             this.menu.ResumeLayout(false);
             this.menu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.soldierClassAbilityBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1816,32 +1824,32 @@
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.TextBox textBox25;
-        private System.Windows.Forms.TextBox textBox26;
-        private System.Windows.Forms.TextBox textBox27;
-        private System.Windows.Forms.TextBox textBox28;
-        private System.Windows.Forms.TextBox textBox29;
-        private System.Windows.Forms.TextBox textBox30;
-        private System.Windows.Forms.TextBox textBox31;
-        private System.Windows.Forms.TextBox textBox32;
+        private System.Windows.Forms.TextBox tBrigadierDodge;
+        private System.Windows.Forms.TextBox tColonelDodge;
+        private System.Windows.Forms.TextBox tMajorDodge;
+        private System.Windows.Forms.TextBox tCaptainDodge;
+        private System.Windows.Forms.TextBox tLieutenantDodge;
+        private System.Windows.Forms.TextBox tSergeantDodge;
+        private System.Windows.Forms.TextBox tCorporalDodge;
+        private System.Windows.Forms.TextBox tSquaddieDodge;
         private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox23;
-        private System.Windows.Forms.TextBox textBox24;
+        private System.Windows.Forms.TextBox tBrigadierWill;
+        private System.Windows.Forms.TextBox tColonelWill;
+        private System.Windows.Forms.TextBox tMajorWill;
+        private System.Windows.Forms.TextBox tCaptainWill;
+        private System.Windows.Forms.TextBox tLieutenantWill;
+        private System.Windows.Forms.TextBox tSergeantWill;
+        private System.Windows.Forms.TextBox tCorporalWill;
+        private System.Windows.Forms.TextBox tSquaddieWill;
         private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox tBrigadierMobility;
+        private System.Windows.Forms.TextBox tColonelMobility;
+        private System.Windows.Forms.TextBox tMajorMobility;
+        private System.Windows.Forms.TextBox tCaptainMobility;
+        private System.Windows.Forms.TextBox tLieutenantMobility;
+        private System.Windows.Forms.TextBox tSergeantMobility;
+        private System.Windows.Forms.TextBox tCorporalMobility;
+        private System.Windows.Forms.TextBox tSquaddieMobility;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.TabPage tabAbilities;
         private System.Windows.Forms.ComboBox cSquaddie6;
@@ -1879,5 +1887,6 @@
         private System.Windows.Forms.Label laLieutenant;
         private System.Windows.Forms.Label laSergeant;
         private System.Windows.Forms.Label laCorporal;
+        private System.Windows.Forms.BindingSource soldierClassAbilityBindingSource;
     }
 }

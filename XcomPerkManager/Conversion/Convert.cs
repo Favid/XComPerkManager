@@ -171,8 +171,18 @@ namespace XcomPerkManager.Conversion
         public static SoldierClassStat toDriverStat(XElement xmlStat)
         {
             SoldierClassStat stat = new SoldierClassStat();
+
             stat.stat = (Stat)int.Parse(xmlStat.Element(Constants.XML_STAT_TYPE).Value);
-            stat.value = int.Parse(xmlStat.Element(Constants.XML_STAT_VALUE).Value);
+            string statValueString = xmlStat.Element(Constants.XML_STAT_VALUE).Value;
+            if(String.IsNullOrEmpty(statValueString))
+            {
+                stat.value = null;
+            }
+            else
+            {
+                stat.value = int.Parse(statValueString);
+            }
+            
             stat.rank = (SoldierRank)int.Parse(xmlStat.Element(Constants.XML_STAT_RANK).Value);
             
             return stat;

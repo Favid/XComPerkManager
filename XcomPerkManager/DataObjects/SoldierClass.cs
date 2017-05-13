@@ -33,5 +33,32 @@ namespace XcomPerkManager
         {
             throw new NotImplementedException();
         }
+
+        public SoldierClassStat getStat(SoldierRank rank, Stat stat)
+        {
+            return stats.Where(x => x.rank == rank && x.stat == stat).SingleOrDefault();
+        }
+
+        public int? getStatValue(SoldierRank rank, Stat stat)
+        {
+            SoldierClassStat classStat = stats.Where(x => x.rank == rank && x.stat == stat).SingleOrDefault();
+            if(classStat == null)
+            {
+                return null;
+            }
+
+            return classStat.value;
+        }
+
+        public string getStatValueText(SoldierRank rank, Stat stat)
+        {
+            int? statValue = getStatValue(rank, stat);
+            if(statValue == null)
+            {
+                return "";
+            }
+
+            return statValue.ToString();
+        }
     }
 }
