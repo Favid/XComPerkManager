@@ -33,12 +33,12 @@ namespace XcomPerkManagerTests
 
             Weapon weaponA = new Weapon();
             weaponA.weaponName = "shotgun";
-            weaponA.weaponSlot = "primary";        // TODO verify if it should be primary or eInv_PrimaryWeapon
+            weaponA.weaponSlot = WeaponSlot.Primary;
             weapons.Add(weaponA);
 
             Weapon weaponB = new Weapon();
             weaponB.weaponName = "sword";
-            weaponB.weaponSlot = "secondary";        // TODO verify if it should be primary or eInv_PrimaryWeapon
+            weaponB.weaponSlot = WeaponSlot.Secondary;
             weapons.Add(weaponB);
 
             equipment.weapons = weapons;
@@ -141,12 +141,12 @@ namespace XcomPerkManagerTests
 
             Weapon weaponA = new Weapon();
             weaponA.weaponName = "shotgun";
-            weaponA.weaponSlot = "primary";        // TODO verify if it should be primary or eInv_PrimaryWeapon
+            weaponA.weaponSlot = WeaponSlot.Primary;
             weapons.Add(weaponA);
 
             Weapon weaponB = new Weapon();
             weaponB.weaponName = "sword";
-            weaponB.weaponSlot = "secondary";        // TODO verify if it should be primary or eInv_PrimaryWeapon
+            weaponB.weaponSlot = WeaponSlot.Secondary;
             weapons.Add(weaponB);
 
             equipment.weapons = weapons;
@@ -161,12 +161,12 @@ namespace XcomPerkManagerTests
 
             XElement expectedWeaponA = new XElement(Constants.XML_EQUIPMENT_WEAPON);
             expectedWeaponA.Add(new XElement(Constants.XML_EQUIPMENT_WEAPON_NAME, "shotgun"));
-            expectedWeaponA.Add(new XElement(Constants.XML_EQUIPMENT_WEAPON_SLOT, "primary"));
+            expectedWeaponA.Add(new XElement(Constants.XML_EQUIPMENT_WEAPON_SLOT, "2"));
             expectedWeapons.Add(expectedWeaponA);
 
             XElement expectedWeaponB = new XElement(Constants.XML_EQUIPMENT_WEAPON);
             expectedWeaponB.Add(new XElement(Constants.XML_EQUIPMENT_WEAPON_NAME, "sword"));
-            expectedWeaponB.Add(new XElement(Constants.XML_EQUIPMENT_WEAPON_SLOT, "secondary"));
+            expectedWeaponB.Add(new XElement(Constants.XML_EQUIPMENT_WEAPON_SLOT, "3"));
             expectedWeapons.Add(expectedWeaponB);
 
             expected.Add(expectedWeapons);
@@ -181,12 +181,12 @@ namespace XcomPerkManagerTests
             
             Weapon weaponA = new Weapon();
             weaponA.weaponName = "shotgun";
-            weaponA.weaponSlot = "primary";        // TODO verify if it should be primary or eInv_PrimaryWeapon
+            weaponA.weaponSlot = WeaponSlot.Primary;
             weapons.Add(weaponA);
 
             Weapon weaponB = new Weapon();
             weaponB.weaponName = "sword";
-            weaponB.weaponSlot = "secondary";        // TODO verify if it should be primary or eInv_PrimaryWeapon
+            weaponB.weaponSlot = WeaponSlot.Secondary;
             weapons.Add(weaponB);
 
             XElement actual = XcomPerkManager.Conversion.Convert.toXmlWeapons(weapons);
@@ -195,12 +195,12 @@ namespace XcomPerkManagerTests
 
             XElement expectedWeaponA = new XElement(Constants.XML_EQUIPMENT_WEAPON);
             expectedWeaponA.Add(new XElement(Constants.XML_EQUIPMENT_WEAPON_NAME, "shotgun"));
-            expectedWeaponA.Add(new XElement(Constants.XML_EQUIPMENT_WEAPON_SLOT, "primary"));
+            expectedWeaponA.Add(new XElement(Constants.XML_EQUIPMENT_WEAPON_SLOT, "2"));
             expected.Add(expectedWeaponA);
 
             XElement expectedWeaponB = new XElement(Constants.XML_EQUIPMENT_WEAPON);
             expectedWeaponB.Add(new XElement(Constants.XML_EQUIPMENT_WEAPON_NAME, "sword"));
-            expectedWeaponB.Add(new XElement(Constants.XML_EQUIPMENT_WEAPON_SLOT, "secondary"));
+            expectedWeaponB.Add(new XElement(Constants.XML_EQUIPMENT_WEAPON_SLOT, "3"));
             expected.Add(expectedWeaponB);
 
             Assert.IsTrue(XNode.DeepEquals(expected, actual));
@@ -211,13 +211,13 @@ namespace XcomPerkManagerTests
         {
             Weapon weapon = new Weapon();
             weapon.weaponName = "shotgun";
-            weapon.weaponSlot = "primary";        // TODO verify if it should be primary or eInv_PrimaryWeapon
+            weapon.weaponSlot = WeaponSlot.Primary;
 
             XElement actual = XcomPerkManager.Conversion.Convert.toXmlWeapon(weapon);
 
             XElement expected = new XElement(Constants.XML_EQUIPMENT_WEAPON);
             expected.Add(new XElement(Constants.XML_EQUIPMENT_WEAPON_NAME, "shotgun"));
-            expected.Add(new XElement(Constants.XML_EQUIPMENT_WEAPON_SLOT, "primary"));
+            expected.Add(new XElement(Constants.XML_EQUIPMENT_WEAPON_SLOT, "2"));
 
             Assert.IsTrue(XNode.DeepEquals(expected, actual));
         }

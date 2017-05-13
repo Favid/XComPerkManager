@@ -111,7 +111,7 @@ namespace XcomPerkManager
             {
                 setControlsEditingWeapon();
 
-                tWeaponSlot.Text = weaponToEdit.weaponSlot;
+                //tWeaponSlot.Text = weaponToEdit.weaponSlot;
                 tWeaponName.Text = weaponToEdit.weaponName;
             }
         }
@@ -121,7 +121,7 @@ namespace XcomPerkManager
             
             Weapon weapon = new Weapon();
             weapon.weaponName = "new";
-            weapon.weaponSlot = "primary";
+            //weapon.weaponSlot = "primary";
             weapons.Add(weapon);
 
             lWeapons.DataSource = weapons;
@@ -149,7 +149,7 @@ namespace XcomPerkManager
         private void bSaveWeapon_Click(object sender, EventArgs e)
         {
             Weapon weaponToEdit = lWeapons.SelectedItem as Weapon;
-            weaponToEdit.weaponSlot = tWeaponSlot.Text;
+            //weaponToEdit.weaponSlot = tWeaponSlot.Text;
             weaponToEdit.weaponName = tWeaponName.Text;
             weapons[lWeapons.SelectedIndex] = weaponToEdit;
             

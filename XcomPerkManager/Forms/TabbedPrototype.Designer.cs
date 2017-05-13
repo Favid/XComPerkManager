@@ -187,6 +187,8 @@
             this.renameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.chDragAndDrop = new System.Windows.Forms.CheckBox();
+            this.importToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.abilitiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.soldierClassAbilityBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabControl1.SuspendLayout();
             this.tabGeneral.SuspendLayout();
@@ -1696,7 +1698,8 @@
             this.menuItemOpen,
             this.saveToolStripMenuItem,
             this.exportToolStripMenuItem,
-            this.exitToolStripMenuItem});
+            this.exitToolStripMenuItem,
+            this.importToolStripMenuItem});
             this.menuItemFile.Name = "menuItemFile";
             this.menuItemFile.Size = new System.Drawing.Size(37, 20);
             this.menuItemFile.Text = "File";
@@ -1704,7 +1707,7 @@
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.newToolStripMenuItem.Text = "New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
@@ -1714,7 +1717,7 @@
             this.rangerToolStripMenuItem,
             this.specialistToolStripMenuItem});
             this.menuItemOpen.Name = "menuItemOpen";
-            this.menuItemOpen.Size = new System.Drawing.Size(107, 22);
+            this.menuItemOpen.Size = new System.Drawing.Size(110, 22);
             this.menuItemOpen.Text = "Open";
             this.menuItemOpen.Click += new System.EventHandler(this.selectClassToolStripMenuItem_Click);
             // 
@@ -1733,21 +1736,21 @@
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // exportToolStripMenuItem
             // 
             this.exportToolStripMenuItem.Name = "exportToolStripMenuItem";
-            this.exportToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.exportToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.exportToolStripMenuItem.Text = "Export";
             this.exportToolStripMenuItem.Click += new System.EventHandler(this.exportToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -1783,6 +1786,21 @@
             this.chDragAndDrop.TabIndex = 107;
             this.chDragAndDrop.Text = "Drag and Drop";
             this.chDragAndDrop.UseVisualStyleBackColor = true;
+            // 
+            // importToolStripMenuItem
+            // 
+            this.importToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.abilitiesToolStripMenuItem});
+            this.importToolStripMenuItem.Name = "importToolStripMenuItem";
+            this.importToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.importToolStripMenuItem.Text = "Import";
+            // 
+            // abilitiesToolStripMenuItem
+            // 
+            this.abilitiesToolStripMenuItem.Name = "abilitiesToolStripMenuItem";
+            this.abilitiesToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.abilitiesToolStripMenuItem.Text = "Abilities";
+            this.abilitiesToolStripMenuItem.Click += new System.EventHandler(this.abilitiesToolStripMenuItem_Click);
             // 
             // soldierClassAbilityBindingSource
             // 
@@ -1982,5 +2000,7 @@
         private System.Windows.Forms.Label laCorporal;
         private System.Windows.Forms.BindingSource soldierClassAbilityBindingSource;
         private System.Windows.Forms.CheckBox chDragAndDrop;
+        private System.Windows.Forms.ToolStripMenuItem importToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem abilitiesToolStripMenuItem;
     }
 }

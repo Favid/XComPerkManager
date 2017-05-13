@@ -17,6 +17,11 @@ namespace XcomPerkManager.Forms
         public Weapon newWeapon { get; private set; }
 
         public EditorState editorState { get; private set; }
+        
+        private void WeaponEditor_Load(object sender, EventArgs e)
+        {
+            
+        }
 
         public WeaponEditor(Weapon weapon, EditorState editorState)
         {
@@ -34,7 +39,17 @@ namespace XcomPerkManager.Forms
             }
             
             tWeaponName.Text = oldWeapon.weaponName;
-            tWeaponSlot.Text = oldWeapon.weaponSlot;
+
+            List<WeaponSlot> weaponSlots = new List<WeaponSlot>();
+            weaponSlots.Add(WeaponSlot.None);
+            weaponSlots.Add(WeaponSlot.Unknown);
+            weaponSlots.Add(WeaponSlot.Primary);
+            weaponSlots.Add(WeaponSlot.Secondary);
+            weaponSlots.Add(WeaponSlot.Heavy);
+
+            cWeaponSlot.DataSource = weaponSlots;
+
+            cWeaponSlot.SelectedIndex = cWeaponSlot.Items.IndexOf(oldWeapon.weaponSlot);
 
             this.editorState = editorState;
         }
@@ -44,7 +59,7 @@ namespace XcomPerkManager.Forms
             // TODO validate
 
             newWeapon.weaponName = tWeaponName.Text;
-            newWeapon.weaponSlot = tWeaponSlot.Text;
+            newWeapon.weaponSlot = (WeaponSlot)cWeaponSlot.SelectedItem;
 
             Close();
         }

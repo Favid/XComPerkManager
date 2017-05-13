@@ -75,7 +75,10 @@ namespace XcomPerkManager
         Primary = 2,
 
         [Description("eInvSlot_SecondaryWeapon")]
-        Secondary = 3
+        Secondary = 3,
+
+        [Description("eInvSlot_HeavyWeapon")]
+        Heavy = 4
     }
 
     public enum SoldierRank

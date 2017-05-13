@@ -547,7 +547,6 @@ namespace XcomPerkManager.Forms
                 ComboBox comboSender = sender as ComboBox;
                 comboSender.DoDragDrop(comboSender, DragDropEffects.Copy);
             }
-
         }
 
         private void cAbility_DragEnter(object sender, DragEventArgs e)
@@ -576,6 +575,11 @@ namespace XcomPerkManager.Forms
             
             comboSender.SelectedIndex = comboSender.Items.IndexOf(draggedAbility);
             comboDragged.SelectedIndex = comboSender.Items.IndexOf(senderAbility);
+        }
+
+        private void abilitiesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Import Abilities
         }
     }
 }

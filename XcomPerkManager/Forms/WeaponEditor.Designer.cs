@@ -33,13 +33,12 @@
             this.tWeaponName = new System.Windows.Forms.TextBox();
             this.laWeapon = new System.Windows.Forms.Label();
             this.laWeaponType = new System.Windows.Forms.Label();
-            this.tWeaponSlot = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.cWeaponSlot = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // bOk
             // 
-            this.bOk.Location = new System.Drawing.Point(190, 174);
+            this.bOk.Location = new System.Drawing.Point(190, 97);
             this.bOk.Name = "bOk";
             this.bOk.Size = new System.Drawing.Size(75, 23);
             this.bOk.TabIndex = 11;
@@ -49,7 +48,7 @@
             // 
             // bCancel
             // 
-            this.bCancel.Location = new System.Drawing.Point(101, 174);
+            this.bCancel.Location = new System.Drawing.Point(101, 97);
             this.bCancel.Name = "bCancel";
             this.bCancel.Size = new System.Drawing.Size(75, 23);
             this.bCancel.TabIndex = 10;
@@ -82,29 +81,21 @@
             this.laWeaponType.TabIndex = 6;
             this.laWeaponType.Text = "Weapon slot:";
             // 
-            // tWeaponSlot
+            // cWeaponSlot
             // 
-            this.tWeaponSlot.Location = new System.Drawing.Point(101, 45);
-            this.tWeaponSlot.Name = "tWeaponSlot";
-            this.tWeaponSlot.Size = new System.Drawing.Size(164, 20);
-            this.tWeaponSlot.TabIndex = 12;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 83);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 39);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Common weapon slots:\r\n - eInv_PrimaryWeapon\r\n - eInv_SecondaryWeapon\r\n";
+            this.cWeaponSlot.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cWeaponSlot.FormattingEnabled = true;
+            this.cWeaponSlot.Location = new System.Drawing.Point(101, 48);
+            this.cWeaponSlot.Name = "cWeaponSlot";
+            this.cWeaponSlot.Size = new System.Drawing.Size(164, 21);
+            this.cWeaponSlot.TabIndex = 14;
             // 
             // WeaponEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 221);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.tWeaponSlot);
+            this.ClientSize = new System.Drawing.Size(284, 131);
+            this.Controls.Add(this.cWeaponSlot);
             this.Controls.Add(this.bOk);
             this.Controls.Add(this.bCancel);
             this.Controls.Add(this.tWeaponName);
@@ -112,6 +103,7 @@
             this.Controls.Add(this.laWeaponType);
             this.Name = "WeaponEditor";
             this.Text = "WeaponEditor";
+            this.Load += new System.EventHandler(this.WeaponEditor_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,7 +116,6 @@
         private System.Windows.Forms.TextBox tWeaponName;
         private System.Windows.Forms.Label laWeapon;
         private System.Windows.Forms.Label laWeaponType;
-        private System.Windows.Forms.TextBox tWeaponSlot;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cWeaponSlot;
     }
 }

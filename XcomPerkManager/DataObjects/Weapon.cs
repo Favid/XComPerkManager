@@ -9,12 +9,12 @@ namespace XcomPerkManager.DataObjects
     public class Weapon
     {
         public string weaponName { get; set; }
-        public string weaponSlot { get; set; }
+        public WeaponSlot weaponSlot { get; set; }
 
         public Weapon()
         {
             weaponName = "";
-            weaponSlot = "";
+            weaponSlot = WeaponSlot.None;
         }
 
         public Weapon(Weapon original)
@@ -41,7 +41,7 @@ namespace XcomPerkManager.DataObjects
                 return false;
             }
 
-            if (!String.Equals(weaponSlot, other.weaponSlot))
+            if (weaponSlot != other.weaponSlot)
             {
                 return false;
             }

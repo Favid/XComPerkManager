@@ -119,7 +119,20 @@ namespace XcomPerkManager.Conversion
         {
             Weapon weapon = new Weapon();
             weapon.weaponName = xmlWeapon.Element(Constants.XML_EQUIPMENT_WEAPON_NAME).Value;
-            weapon.weaponSlot = xmlWeapon.Element(Constants.XML_EQUIPMENT_WEAPON_SLOT).Value;
+
+            string valueString = xmlWeapon.Element(Constants.XML_EQUIPMENT_WEAPON_SLOT).Value;
+            if(String.IsNullOrEmpty(valueString))
+            {
+                weapon.weaponSlot = WeaponSlot.None;
+            }
+            else
+            {
+                int valueInt;
+                if(int.TryParse(valueString, out valueInt))
+                {
+                    weapon.weaponSlot = (WeaponSlot)valueInt;
+                }
+            }
 
             return weapon;
         }
@@ -256,7 +269,7 @@ namespace XcomPerkManager.Conversion
             XElement xmlWeapon = new XElement(Constants.XML_EQUIPMENT_WEAPON);
 
             addBaseChild(xmlWeapon, Constants.XML_EQUIPMENT_WEAPON_NAME, weapon.weaponName);
-            addBaseChild(xmlWeapon, Constants.XML_EQUIPMENT_WEAPON_SLOT, weapon.weaponSlot);
+            addBaseChild(xmlWeapon, Constants.XML_EQUIPMENT_WEAPON_SLOT, ((int)weapon.weaponSlot).ToString());
             
             return xmlWeapon;
         }
