@@ -25,6 +25,7 @@ namespace XcomPerkManager.Forms
             state = new ProjectState();
 
             initAbilitiesDataSources();
+            chDragAndDrop.Checked = false;
             open(state.getOpenSoldierClass());
         }
 
@@ -537,6 +538,44 @@ namespace XcomPerkManager.Forms
             }
 
             return new Ability();
+        }
+
+        private void cAbility_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (chDragAndDrop.Checked)
+            {
+                ComboBox comboSender = sender as ComboBox;
+                comboSender.DoDragDrop(comboSender, DragDropEffects.Copy);
+            }
+
+        }
+
+        private void cAbility_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Effect = DragDropEffects.Copy;
+        }
+
+        private void cAbility_DragDrop(object sender, DragEventArgs e)
+        {
+            ComboBox comboSender = sender as ComboBox;
+            ComboBox comboDragged = e.Data.GetData(typeof(ComboBox)) as ComboBox;
+            
+            string temp = comboSender.Text;
+
+            Ability senderAbility = state.getAbility(comboSender.Text);
+            if(senderAbility == null)
+            {
+                senderAbility = new Ability();
+            }
+
+            Ability draggedAbility = state.getAbility(comboDragged.Text);
+            if (draggedAbility == null)
+            {
+                draggedAbility = new Ability();
+            }
+            
+            comboSender.SelectedIndex = comboSender.Items.IndexOf(draggedAbility);
+            comboDragged.SelectedIndex = comboSender.Items.IndexOf(senderAbility);
         }
     }
 }

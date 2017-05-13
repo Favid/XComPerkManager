@@ -186,6 +186,7 @@
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.renameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.chDragAndDrop = new System.Windows.Forms.CheckBox();
             this.soldierClassAbilityBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabControl1.SuspendLayout();
             this.tabGeneral.SuspendLayout();
@@ -1149,6 +1150,7 @@
             // 
             // tabAbilities
             // 
+            this.tabAbilities.Controls.Add(this.chDragAndDrop);
             this.tabAbilities.Controls.Add(this.cSquaddie6);
             this.tabAbilities.Controls.Add(this.cSquaddie5);
             this.tabAbilities.Controls.Add(this.cSquaddie4);
@@ -1202,6 +1204,9 @@
             this.cSquaddie6.Size = new System.Drawing.Size(121, 21);
             this.cSquaddie6.TabIndex = 106;
             this.cSquaddie6.ValueMember = "internalName";
+            this.cSquaddie6.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cSquaddie6.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cSquaddie6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cSquaddie5
             // 
@@ -1214,6 +1219,9 @@
             this.cSquaddie5.Size = new System.Drawing.Size(121, 21);
             this.cSquaddie5.TabIndex = 105;
             this.cSquaddie5.ValueMember = "internalName";
+            this.cSquaddie5.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cSquaddie5.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cSquaddie5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cSquaddie4
             // 
@@ -1226,6 +1234,9 @@
             this.cSquaddie4.Size = new System.Drawing.Size(121, 21);
             this.cSquaddie4.TabIndex = 104;
             this.cSquaddie4.ValueMember = "internalName";
+            this.cSquaddie4.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cSquaddie4.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cSquaddie4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cSquaddie3
             // 
@@ -1238,6 +1249,9 @@
             this.cSquaddie3.Size = new System.Drawing.Size(121, 21);
             this.cSquaddie3.TabIndex = 103;
             this.cSquaddie3.ValueMember = "internalName";
+            this.cSquaddie3.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cSquaddie3.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cSquaddie3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cSquaddie2
             // 
@@ -1250,6 +1264,9 @@
             this.cSquaddie2.Size = new System.Drawing.Size(121, 21);
             this.cSquaddie2.TabIndex = 102;
             this.cSquaddie2.ValueMember = "internalName";
+            this.cSquaddie2.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cSquaddie2.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cSquaddie2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cSquaddie1
             // 
@@ -1262,6 +1279,9 @@
             this.cSquaddie1.Size = new System.Drawing.Size(121, 21);
             this.cSquaddie1.TabIndex = 101;
             this.cSquaddie1.ValueMember = "internalName";
+            this.cSquaddie1.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cSquaddie1.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cSquaddie1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // laSquaddie
             // 
@@ -1283,6 +1303,9 @@
             this.cBrigadier3.Size = new System.Drawing.Size(121, 21);
             this.cBrigadier3.TabIndex = 99;
             this.cBrigadier3.ValueMember = "internalName";
+            this.cBrigadier3.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cBrigadier3.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cBrigadier3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cBrigadier2
             // 
@@ -1295,6 +1318,9 @@
             this.cBrigadier2.Size = new System.Drawing.Size(121, 21);
             this.cBrigadier2.TabIndex = 98;
             this.cBrigadier2.ValueMember = "internalName";
+            this.cBrigadier2.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cBrigadier2.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cBrigadier2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cBrigadier1
             // 
@@ -1307,6 +1333,9 @@
             this.cBrigadier1.Size = new System.Drawing.Size(121, 21);
             this.cBrigadier1.TabIndex = 97;
             this.cBrigadier1.ValueMember = "internalName";
+            this.cBrigadier1.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cBrigadier1.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cBrigadier1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cColonel3
             // 
@@ -1319,6 +1348,9 @@
             this.cColonel3.Size = new System.Drawing.Size(121, 21);
             this.cColonel3.TabIndex = 96;
             this.cColonel3.ValueMember = "internalName";
+            this.cColonel3.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cColonel3.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cColonel3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cColonel2
             // 
@@ -1331,6 +1363,9 @@
             this.cColonel2.Size = new System.Drawing.Size(121, 21);
             this.cColonel2.TabIndex = 95;
             this.cColonel2.ValueMember = "internalName";
+            this.cColonel2.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cColonel2.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cColonel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cColonel1
             // 
@@ -1343,6 +1378,9 @@
             this.cColonel1.Size = new System.Drawing.Size(121, 21);
             this.cColonel1.TabIndex = 94;
             this.cColonel1.ValueMember = "internalName";
+            this.cColonel1.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cColonel1.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cColonel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cMajor3
             // 
@@ -1355,6 +1393,9 @@
             this.cMajor3.Size = new System.Drawing.Size(121, 21);
             this.cMajor3.TabIndex = 93;
             this.cMajor3.ValueMember = "internalName";
+            this.cMajor3.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cMajor3.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cMajor3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cMajor2
             // 
@@ -1367,6 +1408,9 @@
             this.cMajor2.Size = new System.Drawing.Size(121, 21);
             this.cMajor2.TabIndex = 92;
             this.cMajor2.ValueMember = "internalName";
+            this.cMajor2.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cMajor2.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cMajor2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cMajor1
             // 
@@ -1379,6 +1423,9 @@
             this.cMajor1.Size = new System.Drawing.Size(121, 21);
             this.cMajor1.TabIndex = 91;
             this.cMajor1.ValueMember = "internalName";
+            this.cMajor1.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cMajor1.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cMajor1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cCaptain3
             // 
@@ -1391,6 +1438,9 @@
             this.cCaptain3.Size = new System.Drawing.Size(121, 21);
             this.cCaptain3.TabIndex = 90;
             this.cCaptain3.ValueMember = "internalName";
+            this.cCaptain3.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cCaptain3.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cCaptain3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cCaptain2
             // 
@@ -1403,6 +1453,9 @@
             this.cCaptain2.Size = new System.Drawing.Size(121, 21);
             this.cCaptain2.TabIndex = 89;
             this.cCaptain2.ValueMember = "internalName";
+            this.cCaptain2.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cCaptain2.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cCaptain2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cCaptain1
             // 
@@ -1415,6 +1468,9 @@
             this.cCaptain1.Size = new System.Drawing.Size(121, 21);
             this.cCaptain1.TabIndex = 88;
             this.cCaptain1.ValueMember = "internalName";
+            this.cCaptain1.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cCaptain1.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cCaptain1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cLieutenant3
             // 
@@ -1427,6 +1483,9 @@
             this.cLieutenant3.Size = new System.Drawing.Size(121, 21);
             this.cLieutenant3.TabIndex = 87;
             this.cLieutenant3.ValueMember = "internalName";
+            this.cLieutenant3.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cLieutenant3.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cLieutenant3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cLieutenant2
             // 
@@ -1439,6 +1498,9 @@
             this.cLieutenant2.Size = new System.Drawing.Size(121, 21);
             this.cLieutenant2.TabIndex = 86;
             this.cLieutenant2.ValueMember = "internalName";
+            this.cLieutenant2.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cLieutenant2.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cLieutenant2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cLieutenant1
             // 
@@ -1451,6 +1513,9 @@
             this.cLieutenant1.Size = new System.Drawing.Size(121, 21);
             this.cLieutenant1.TabIndex = 85;
             this.cLieutenant1.ValueMember = "internalName";
+            this.cLieutenant1.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cLieutenant1.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cLieutenant1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cSergeant3
             // 
@@ -1463,6 +1528,9 @@
             this.cSergeant3.Size = new System.Drawing.Size(121, 21);
             this.cSergeant3.TabIndex = 84;
             this.cSergeant3.ValueMember = "internalName";
+            this.cSergeant3.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cSergeant3.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cSergeant3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cSergeant2
             // 
@@ -1475,6 +1543,9 @@
             this.cSergeant2.Size = new System.Drawing.Size(121, 21);
             this.cSergeant2.TabIndex = 83;
             this.cSergeant2.ValueMember = "internalName";
+            this.cSergeant2.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cSergeant2.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cSergeant2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cSergeant1
             // 
@@ -1487,6 +1558,9 @@
             this.cSergeant1.Size = new System.Drawing.Size(121, 21);
             this.cSergeant1.TabIndex = 82;
             this.cSergeant1.ValueMember = "internalName";
+            this.cSergeant1.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cSergeant1.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cSergeant1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cCorporal3
             // 
@@ -1499,6 +1573,9 @@
             this.cCorporal3.Size = new System.Drawing.Size(121, 21);
             this.cCorporal3.TabIndex = 81;
             this.cCorporal3.ValueMember = "internalName";
+            this.cCorporal3.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cCorporal3.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cCorporal3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cCorporal2
             // 
@@ -1511,6 +1588,9 @@
             this.cCorporal2.Size = new System.Drawing.Size(121, 21);
             this.cCorporal2.TabIndex = 80;
             this.cCorporal2.ValueMember = "internalName";
+            this.cCorporal2.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cCorporal2.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cCorporal2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // cCorporal1
             // 
@@ -1523,6 +1603,9 @@
             this.cCorporal1.Size = new System.Drawing.Size(121, 21);
             this.cCorporal1.TabIndex = 79;
             this.cCorporal1.ValueMember = "internalName";
+            this.cCorporal1.DragDrop += new System.Windows.Forms.DragEventHandler(this.cAbility_DragDrop);
+            this.cCorporal1.DragEnter += new System.Windows.Forms.DragEventHandler(this.cAbility_DragEnter);
+            this.cCorporal1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cAbility_MouseDown);
             // 
             // laBrigadier
             // 
@@ -1690,6 +1773,16 @@
             this.deleteToolStripMenuItem1.Size = new System.Drawing.Size(117, 22);
             this.deleteToolStripMenuItem1.Text = "Delete";
             this.deleteToolStripMenuItem1.Click += new System.EventHandler(this.deleteToolStripMenuItem1_Click);
+            // 
+            // chDragAndDrop
+            // 
+            this.chDragAndDrop.AutoSize = true;
+            this.chDragAndDrop.Location = new System.Drawing.Point(15, 311);
+            this.chDragAndDrop.Name = "chDragAndDrop";
+            this.chDragAndDrop.Size = new System.Drawing.Size(96, 17);
+            this.chDragAndDrop.TabIndex = 107;
+            this.chDragAndDrop.Text = "Drag and Drop";
+            this.chDragAndDrop.UseVisualStyleBackColor = true;
             // 
             // soldierClassAbilityBindingSource
             // 
@@ -1888,5 +1981,6 @@
         private System.Windows.Forms.Label laSergeant;
         private System.Windows.Forms.Label laCorporal;
         private System.Windows.Forms.BindingSource soldierClassAbilityBindingSource;
+        private System.Windows.Forms.CheckBox chDragAndDrop;
     }
 }
