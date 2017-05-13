@@ -23,7 +23,56 @@ namespace XcomPerkManager.Forms
         private void TabbedPrototype_Load(object sender, EventArgs e)
         {
             state = new ProjectState();
+
+            initAbilitiesDataSources();
             open(state.getOpenSoldierClass());
+        }
+
+        private void initAbilitiesDataSources()
+        {
+            initAbilityDataSource(cSquaddie1);
+            initAbilityDataSource(cSquaddie2);
+            initAbilityDataSource(cSquaddie3);
+            initAbilityDataSource(cSquaddie4);
+            initAbilityDataSource(cSquaddie5);
+            initAbilityDataSource(cSquaddie6);
+
+            initAbilityDataSource(cCorporal1);
+            initAbilityDataSource(cCorporal2);
+            initAbilityDataSource(cCorporal3);
+
+            initAbilityDataSource(cSergeant1);
+            initAbilityDataSource(cSergeant2);
+            initAbilityDataSource(cSergeant3);
+
+            initAbilityDataSource(cLieutenant1);
+            initAbilityDataSource(cLieutenant2);
+            initAbilityDataSource(cLieutenant3);
+
+            initAbilityDataSource(cCaptain1);
+            initAbilityDataSource(cCaptain2);
+            initAbilityDataSource(cCaptain3);
+
+            initAbilityDataSource(cMajor1);
+            initAbilityDataSource(cMajor2);
+            initAbilityDataSource(cMajor3);
+
+            initAbilityDataSource(cColonel1);
+            initAbilityDataSource(cColonel2);
+            initAbilityDataSource(cColonel3);
+
+            initAbilityDataSource(cBrigadier1);
+            initAbilityDataSource(cBrigadier2);
+            initAbilityDataSource(cBrigadier3);
+        }
+
+        private void initAbilityDataSource(ComboBox combo)
+        {
+            List<Ability> abilities = new List<Ability>(state.getAbilities());
+            abilities.Add(new Ability());
+            abilities = abilities.OrderBy(x => x.internalName).ToList();
+
+            combo.DataSource = abilities;
         }
 
         private void setupMenuItemOpen()
@@ -67,6 +116,7 @@ namespace XcomPerkManager.Forms
             lWeapons.DataSource = weapons;
 
             openSoldierStats(soldierClass);
+            openSoldierAbilities(soldierClass);
         }
 
         private SoldierClass buildSoldierClass()
@@ -370,6 +420,61 @@ namespace XcomPerkManager.Forms
             tMajorDodge.Text = soldierClass.getStatValueText(SoldierRank.Major, Stat.Dodge);
             tColonelDodge.Text = soldierClass.getStatValueText(SoldierRank.Colonel, Stat.Dodge);
             tBrigadierDodge.Text = soldierClass.getStatValueText(SoldierRank.Brigadier, Stat.Dodge);
+        }
+
+        private void openSoldierAbilities(SoldierClass soldierClass)
+        {
+            setCombo(soldierClass, cSquaddie1, SoldierRank.Squaddie, 1);
+            setCombo(soldierClass, cSquaddie2, SoldierRank.Squaddie, 2);
+            setCombo(soldierClass, cSquaddie3, SoldierRank.Squaddie, 3);
+            setCombo(soldierClass, cSquaddie4, SoldierRank.Squaddie, 4);
+            setCombo(soldierClass, cSquaddie5, SoldierRank.Squaddie, 5);
+            setCombo(soldierClass, cSquaddie6, SoldierRank.Squaddie, 6);
+
+            setCombo(soldierClass, cCorporal1, SoldierRank.Corporal, 1);
+            setCombo(soldierClass, cCorporal2, SoldierRank.Corporal, 2);
+            setCombo(soldierClass, cCorporal3, SoldierRank.Corporal, 3);
+
+            setCombo(soldierClass, cSergeant1, SoldierRank.Sergeant, 1);
+            setCombo(soldierClass, cSergeant2, SoldierRank.Sergeant, 2);
+            setCombo(soldierClass, cSergeant3, SoldierRank.Sergeant, 3);
+
+            setCombo(soldierClass, cLieutenant1, SoldierRank.Lieutenant, 1);
+            setCombo(soldierClass, cLieutenant2, SoldierRank.Lieutenant, 2);
+            setCombo(soldierClass, cLieutenant3, SoldierRank.Lieutenant, 3);
+
+            setCombo(soldierClass, cCaptain1, SoldierRank.Captain, 1);
+            setCombo(soldierClass, cCaptain2, SoldierRank.Captain, 2);
+            setCombo(soldierClass, cCaptain3, SoldierRank.Captain, 3);
+
+            setCombo(soldierClass, cMajor1, SoldierRank.Major, 1);
+            setCombo(soldierClass, cMajor2, SoldierRank.Major, 2);
+            setCombo(soldierClass, cMajor3, SoldierRank.Major, 3);
+
+            setCombo(soldierClass, cColonel1, SoldierRank.Colonel, 1);
+            setCombo(soldierClass, cColonel2, SoldierRank.Colonel, 2);
+            setCombo(soldierClass, cColonel3, SoldierRank.Colonel, 3);
+
+            setCombo(soldierClass, cBrigadier1, SoldierRank.Brigadier, 1);
+            setCombo(soldierClass, cBrigadier2, SoldierRank.Brigadier, 2);
+            setCombo(soldierClass, cBrigadier3, SoldierRank.Brigadier, 3);
+        }
+
+        private void setCombo(SoldierClass soldierClass, ComboBox combo, SoldierRank rank, int slot)
+        {
+            combo.SelectedIndex = combo.Items.IndexOf(getAbilityForCombo(soldierClass, rank, slot));
+        }
+
+        private Ability getAbilityForCombo(SoldierClass soldierClass, SoldierRank rank, int slot)
+        {
+            SoldierClassAbility soldierAbility = soldierClass.getSoldierAbility(rank, slot);
+
+            if (soldierAbility != null)
+            {
+                return soldierAbility.getAbility();
+            }
+
+            return new Ability();
         }
     }
 }

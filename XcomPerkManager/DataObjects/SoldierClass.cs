@@ -60,5 +60,12 @@ namespace XcomPerkManager
 
             return statValue.ToString();
         }
+
+        public SoldierClassAbility getSoldierAbility(SoldierRank rank, int slot)
+        {
+            SoldierClassAbility soldierAbility = soldierAbilities.Where(x => x.rank == rank && x.slot == slot).FirstOrDefault();
+
+            return soldierAbility;
+        }
     }
 }
