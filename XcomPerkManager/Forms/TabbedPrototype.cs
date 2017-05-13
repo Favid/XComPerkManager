@@ -137,6 +137,7 @@ namespace XcomPerkManager.Forms
             soldierClass.equipment.weapons = (lWeapons.DataSource as BindingList<Weapon>).ToList();
 
             soldierClass.stats = buildSoldierClassStats();
+            soldierClass.soldierAbilities = buildSoldierClassAbilities();
 
             return soldierClass;
         }
@@ -229,6 +230,67 @@ namespace XcomPerkManager.Forms
             soldierStat.value = Utils.parseStringToInt(control.Text);
 
             return soldierStat;
+        }
+
+        private List<SoldierClassAbility> buildSoldierClassAbilities()
+        {
+            List<SoldierClassAbility> soldierAbilities = new List<SoldierClassAbility>();
+
+            soldierAbilities.Add(buildSoldierAbilityFromCombo(cSquaddie1, SoldierRank.Squaddie, 1));
+            soldierAbilities.Add(buildSoldierAbilityFromCombo(cSquaddie2, SoldierRank.Squaddie, 2));
+            soldierAbilities.Add(buildSoldierAbilityFromCombo(cSquaddie3, SoldierRank.Squaddie, 3));
+            soldierAbilities.Add(buildSoldierAbilityFromCombo(cSquaddie4, SoldierRank.Squaddie, 4));
+            soldierAbilities.Add(buildSoldierAbilityFromCombo(cSquaddie5, SoldierRank.Squaddie, 5));
+            soldierAbilities.Add(buildSoldierAbilityFromCombo(cSquaddie6, SoldierRank.Squaddie, 6));
+
+            soldierAbilities.Add(buildSoldierAbilityFromCombo(cCorporal1, SoldierRank.Corporal, 1));
+            soldierAbilities.Add(buildSoldierAbilityFromCombo(cCorporal2, SoldierRank.Corporal, 2));
+            soldierAbilities.Add(buildSoldierAbilityFromCombo(cCorporal3, SoldierRank.Corporal, 3));
+
+            soldierAbilities.Add(buildSoldierAbilityFromCombo(cSergeant1, SoldierRank.Sergeant, 1));
+            soldierAbilities.Add(buildSoldierAbilityFromCombo(cSergeant2, SoldierRank.Sergeant, 2));
+            soldierAbilities.Add(buildSoldierAbilityFromCombo(cSergeant3, SoldierRank.Sergeant, 3));
+
+            soldierAbilities.Add(buildSoldierAbilityFromCombo(cLieutenant1, SoldierRank.Lieutenant, 1));
+            soldierAbilities.Add(buildSoldierAbilityFromCombo(cLieutenant2, SoldierRank.Lieutenant, 2));
+            soldierAbilities.Add(buildSoldierAbilityFromCombo(cLieutenant3, SoldierRank.Lieutenant, 3));
+
+            soldierAbilities.Add(buildSoldierAbilityFromCombo(cCaptain1, SoldierRank.Captain, 1));
+            soldierAbilities.Add(buildSoldierAbilityFromCombo(cCaptain2, SoldierRank.Captain, 2));
+            soldierAbilities.Add(buildSoldierAbilityFromCombo(cCaptain3, SoldierRank.Captain, 3));
+
+            soldierAbilities.Add(buildSoldierAbilityFromCombo(cMajor1, SoldierRank.Major, 1));
+            soldierAbilities.Add(buildSoldierAbilityFromCombo(cMajor2, SoldierRank.Major, 2));
+            soldierAbilities.Add(buildSoldierAbilityFromCombo(cMajor3, SoldierRank.Major, 3));
+
+            soldierAbilities.Add(buildSoldierAbilityFromCombo(cColonel1, SoldierRank.Colonel, 1));
+            soldierAbilities.Add(buildSoldierAbilityFromCombo(cColonel2, SoldierRank.Colonel, 2));
+            soldierAbilities.Add(buildSoldierAbilityFromCombo(cColonel3, SoldierRank.Colonel, 3));
+
+            soldierAbilities.Add(buildSoldierAbilityFromCombo(cBrigadier1, SoldierRank.Brigadier, 1));
+            soldierAbilities.Add(buildSoldierAbilityFromCombo(cBrigadier2, SoldierRank.Brigadier, 2));
+            soldierAbilities.Add(buildSoldierAbilityFromCombo(cBrigadier3, SoldierRank.Brigadier, 3));
+
+            return soldierAbilities;
+        }
+
+        private SoldierClassAbility buildSoldierAbilityFromCombo(ComboBox combo, SoldierRank rank, int slot)
+        {
+            SoldierClassAbility soldierAbility = new SoldierClassAbility();
+            Ability comboAbility = combo.SelectedItem as Ability;
+
+            if (comboAbility != null)
+            {
+                soldierAbility.internalName = comboAbility.internalName;
+                soldierAbility.displayName = comboAbility.displayName;
+                soldierAbility.description = comboAbility.description;
+                soldierAbility.weaponSlot = comboAbility.weaponSlot;
+                soldierAbility.requiredMod = comboAbility.requiredMod;
+                soldierAbility.rank = rank;
+                soldierAbility.slot = slot;
+            }
+
+            return soldierAbility;
         }
 
         private void selectClassToolStripMenuItem_Click(object sender, EventArgs e)
