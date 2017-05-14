@@ -26,6 +26,20 @@ namespace XcomPerkManager
             weapons = new List<Weapon>();
         }
 
+        public SoldierClassEquipment(SoldierClassEquipment other) : base()
+        {
+            squaddieLoadout = other.squaddieLoadout;
+            primaryWeapon = other.primaryWeapon;
+            secondaryWeapon = other.secondaryWeapon;
+            allowedArmors = other.allowedArmors;
+
+            weapons = new List<Weapon>();
+            foreach(Weapon weapon in other.weapons)
+            {
+                weapons.Add(new Weapon(weapon));
+            }
+        }
+
         public XElement getXmlElement()
         {
             XElement equipmentElement = new XElement(Constants.XML_EQUIPMENT);

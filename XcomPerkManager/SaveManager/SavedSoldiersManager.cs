@@ -29,17 +29,22 @@ namespace XcomPerkManager
             return Conversion.Convert.toDriverSoldierClasses(xmlSoldierClasses);
         }
 
-        public SoldierClass addNewSoldierClass()
+        public SoldierClass addSoldierClass()
         {
             SoldierClass soldierClass = new SoldierClass();
             soldierClass.metadata.internalName = getNewName();
             soldierClass.metadata.displayName = soldierClass.metadata.internalName;
 
+            return addSoldierClass(soldierClass);
+        }
+
+        public SoldierClass addSoldierClass(SoldierClass soldierClass)
+        {
             XElement xmlSoldierClass = Conversion.Convert.toXmlSoldierClass(soldierClass);
-            
+
             XElement xmlClasses = getXmlClasses();
             xmlClasses.Add(xmlSoldierClass);
-            
+
             document.Save(fullPath);
 
             return soldierClass;

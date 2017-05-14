@@ -20,6 +20,13 @@ namespace XcomPerkManager
             rank = SoldierRank.Squaddie;
         }
 
+        public SoldierClassStat(SoldierClassStat other) : base()
+        {
+            stat = other.stat;
+            value = other.value;
+            rank = other.rank;
+        }
+
         public XElement getXmlElement()
         {
             XElement abilityElement = new XElement(Constants.XML_STAT);

@@ -24,6 +24,12 @@ namespace XcomPerkManager
             slot = 1;
         }
 
+        public SoldierClassAbility(SoldierClassAbility other) : base(other)
+        {
+            rank = other.rank;
+            slot = other.slot;
+        }
+
         public Ability getAbility()
         {
             Ability ability = new Ability();

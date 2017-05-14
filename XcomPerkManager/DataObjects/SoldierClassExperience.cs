@@ -20,6 +20,13 @@ namespace XcomPerkManager
             killAssistsPerKill = 1;
         }
 
+        public SoldierClassExperience(SoldierClassExperience other) : base()
+        {
+            numberInForcedDeck = other.numberInForcedDeck;
+            numberInDeck = other.numberInDeck;
+            killAssistsPerKill = other.killAssistsPerKill;
+        }
+
         public XElement getXmlElement()
         {
             XElement metadataElement = new XElement(Constants.XML_EXPERIENCE);

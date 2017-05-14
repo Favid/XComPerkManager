@@ -24,6 +24,25 @@ namespace XcomPerkManager
             stats = new List<SoldierClassStat>();
         }
 
+        public SoldierClass(SoldierClass other)
+        {
+            metadata = new SoldierClassMetadata(other.metadata);
+            experience = new SoldierClassExperience(other.experience);
+            equipment = new SoldierClassEquipment(other.equipment);
+
+            soldierAbilities = new List<SoldierClassAbility>();
+            foreach (SoldierClassAbility soldierAbility in other.soldierAbilities)
+            {
+                soldierAbilities.Add(new SoldierClassAbility(soldierAbility));
+            }
+
+            stats = new List<SoldierClassStat>();
+            foreach (SoldierClassStat stat in other.stats)
+            {
+                stats.Add(new SoldierClassStat(stat));
+            }
+        }
+
         public string getInternalName()
         {
             return metadata.internalName;

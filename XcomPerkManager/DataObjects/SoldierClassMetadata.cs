@@ -22,6 +22,14 @@ namespace XcomPerkManager
             iconString = "";
         }
 
+        public SoldierClassMetadata(SoldierClassMetadata other) : base()
+        {
+            internalName = other.internalName;
+            displayName = other.displayName;
+            description = other.description;
+            iconString = other.iconString;
+        }
+
         public XElement getXmlElement()
         {
             XElement metadataElement = new XElement(Constants.XML_METADATA);

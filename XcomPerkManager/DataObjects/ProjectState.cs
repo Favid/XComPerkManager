@@ -45,7 +45,14 @@ namespace XcomPerkManager.DataObjects
 
         public static SoldierClass addClass()
         {
-            SoldierClass newClass = manager.addNewSoldierClass();
+            SoldierClass newClass = manager.addSoldierClass();
+            loadSoldierClasses();
+            return newClass;
+        }
+
+        public static SoldierClass addClass(SoldierClass soldierClass)
+        {
+            SoldierClass newClass = manager.addSoldierClass(soldierClass);
             loadSoldierClasses();
             return newClass;
         }

@@ -17,10 +17,10 @@ namespace XcomPerkManager.DataObjects
             weaponSlot = WeaponSlot.None;
         }
 
-        public Weapon(Weapon original)
+        public Weapon(Weapon other)
         {
-            weaponName = original.weaponName;
-            weaponSlot = original.weaponSlot;
+            weaponName = other.weaponName;
+            weaponSlot = other.weaponSlot;
         }
 
         public string toString()

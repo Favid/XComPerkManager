@@ -55,7 +55,7 @@ namespace XcomPerkManager
         private void bAdd_Click(object sender, EventArgs e)
         {
             SavedSoldiersManager manager = new SavedSoldiersManager();
-            SoldierClass newSoldierClass = manager.addNewSoldierClass();
+            SoldierClass newSoldierClass = manager.addSoldierClass();
 
             updateSoldiers();
             selectSoldier(newSoldierClass.metadata.internalName);

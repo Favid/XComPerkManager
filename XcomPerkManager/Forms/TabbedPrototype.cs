@@ -590,5 +590,17 @@ namespace XcomPerkManager.Forms
             ImportClasses dialog = new ImportClasses();
             dialog.ShowDialog();
         }
+
+        private void copyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SoldierClass classToCopy = ProjectState.getOpenSoldierClass();
+            SoldierClass newClass = new SoldierClass(classToCopy);
+
+            // TODO actually validate the name
+            newClass.metadata.internalName += "New";
+            newClass = ProjectState.addClass(newClass);
+
+            open(newClass);
+        }
     }
 }
