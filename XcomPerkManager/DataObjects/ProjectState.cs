@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace XcomPerkManager.DataObjects
 {
-    public class ProjectState
+    public static class ProjectState
     {
-        private XComAbilityListReader reader;
-        private SavedSoldiersManager manager;
+        private static XComAbilityListReader reader;
+        private static SavedSoldiersManager manager;
 
-        private SoldierClass openSoldierClass;
-        private List<SoldierClass> soldierClasses;
-        private List<Ability> abilities;
+        private static SoldierClass openSoldierClass;
+        private static List<SoldierClass> soldierClasses;
+        private static List<Ability> abilities;
 
-        public ProjectState()
+        static ProjectState()
         {
             reader = new XComAbilityListReader();
             abilities = reader.read();
@@ -25,47 +25,54 @@ namespace XcomPerkManager.DataObjects
 
             setOpenSoldierClass(soldierClasses.FirstOrDefault());
         }
-        
-        public Ability getAbility(string internalName)
+
+        public static List<Ability> reloadAbilities()
+        {
+            reader = new XComAbilityListReader();
+            abilities = reader.read();
+            return abilities;
+        }
+
+        public static Ability getAbility(string internalName)
         {
             return abilities.Where(x => x.internalName.Equals(internalName)).SingleOrDefault();
         }
 
-        public List<Ability> getAbilities()
+        public static List<Ability> getAbilities()
         {
             return abilities;
         }
 
-        public SoldierClass addClass()
+        public static SoldierClass addClass()
         {
             SoldierClass newClass = manager.addNewSoldierClass();
             loadSoldierClasses();
             return newClass;
         }
 
-        public SoldierClass saveClass(SoldierClass soldierClass)
+        public static SoldierClass saveClass(SoldierClass soldierClass)
         {
             return saveClass(getOpenSoldierClassInternalName(), soldierClass);
         }
 
-        private SoldierClass saveClass(string originalInternalName, SoldierClass soldierClass)
+        private static SoldierClass saveClass(string originalInternalName, SoldierClass soldierClass)
         {
             manager.saveSoldierClass(originalInternalName, soldierClass);
             loadSoldierClasses();
             return soldierClass;
         }
 
-        public void deleteClass()
+        public static void deleteClass()
         {
             deleteClass(openSoldierClass);
         }
 
-        private void deleteClass(SoldierClass soldierClass)
+        private static void deleteClass(SoldierClass soldierClass)
         {
             deleteClass(soldierClass.getInternalName());
         }
 
-        private void deleteClass(string soldierClassInternalName)
+        private static void deleteClass(string soldierClassInternalName)
         {
             manager.deleteSoldierClass(soldierClassInternalName);
             loadSoldierClasses();
@@ -76,27 +83,27 @@ namespace XcomPerkManager.DataObjects
             }
         }
 
-        public List<SoldierClass> getSoldierClasses()
+        public static List<SoldierClass> getSoldierClasses()
         {
             return soldierClasses;
         }
 
-        public SoldierClass getSoldierClass(string internalName)
+        public static SoldierClass getSoldierClass(string internalName)
         {
             return soldierClasses.Where(x => x.metadata.internalName.Equals(internalName)).FirstOrDefault();
         }
 
-        public SoldierClass getOpenSoldierClass()
+        public static SoldierClass getOpenSoldierClass()
         {
             return openSoldierClass;
         }
 
-        public string getOpenSoldierClassInternalName()
+        public static string getOpenSoldierClassInternalName()
         {
             return openSoldierClass.getInternalName();
         }
 
-        public SoldierClass setOpenSoldierClass(string soldierClassInternalName)
+        public static SoldierClass setOpenSoldierClass(string soldierClassInternalName)
         {
             SoldierClass soldierClassToOpen = soldierClasses.Where(x => x.metadata.internalName.Equals(soldierClassInternalName)).SingleOrDefault();
 
@@ -108,18 +115,18 @@ namespace XcomPerkManager.DataObjects
             return setOpenSoldierClass(soldierClassToOpen);
         }
 
-        private SoldierClass setOpenSoldierClass(SoldierClass soldierClass)
+        private static SoldierClass setOpenSoldierClass(SoldierClass soldierClass)
         {
             openSoldierClass = soldierClass;
             return openSoldierClass;
         }
 
-        public SoldierClass renameClass(string newInternalName)
+        public static SoldierClass renameClass(string newInternalName)
         {
             return renameClass(getOpenSoldierClassInternalName(), newInternalName);
         }
 
-        private SoldierClass renameClass(string originalInternalName, string newInternalName)
+        private static SoldierClass renameClass(string originalInternalName, string newInternalName)
         {
             // TODO validation
             manager.saveInternalName(originalInternalName, newInternalName);
@@ -133,7 +140,7 @@ namespace XcomPerkManager.DataObjects
             return getSoldierClass(newInternalName);
         }
 
-        private void loadSoldierClasses()
+        private static void loadSoldierClasses()
         {
             soldierClasses = manager.loadAllSoldierClasses();
         }

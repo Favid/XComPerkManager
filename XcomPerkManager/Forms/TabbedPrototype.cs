@@ -13,8 +13,6 @@ namespace XcomPerkManager.Forms
 {
     public partial class TabbedPrototype : Form
     {
-        public ProjectState state;
-
         public TabbedPrototype()
         {
             InitializeComponent();
@@ -22,11 +20,9 @@ namespace XcomPerkManager.Forms
 
         private void TabbedPrototype_Load(object sender, EventArgs e)
         {
-            state = new ProjectState();
-
             initAbilitiesDataSources();
             chDragAndDrop.Checked = false;
-            open(state.getOpenSoldierClass());
+            open(ProjectState.getOpenSoldierClass());
         }
 
         private void initAbilitiesDataSources()
@@ -69,7 +65,7 @@ namespace XcomPerkManager.Forms
 
         private void initAbilityDataSource(ComboBox combo)
         {
-            List<Ability> abilities = new List<Ability>(state.getAbilities());
+            List<Ability> abilities = new List<Ability>(ProjectState.getAbilities());
             abilities.Add(new Ability());
             abilities = abilities.OrderBy(x => x.internalName).ToList();
 
@@ -80,7 +76,7 @@ namespace XcomPerkManager.Forms
         {
             menuItemOpen.DropDownItems.Clear();
 
-            List<SoldierClass> soldierClasses = state.getSoldierClasses();
+            List<SoldierClass> soldierClasses = ProjectState.getSoldierClasses();
             foreach(SoldierClass soldierClass in soldierClasses)
             {
                 ToolStripMenuItem item = new ToolStripMenuItem(soldierClass.metadata.internalName);
@@ -99,7 +95,7 @@ namespace XcomPerkManager.Forms
 
         private void open(SoldierClass soldierClass)
         {
-            SoldierClass openSoldierClass = state.setOpenSoldierClass(soldierClass.getInternalName());
+            SoldierClass openSoldierClass = ProjectState.setOpenSoldierClass(soldierClass.getInternalName());
             setupMenuItemOpen();
 
             tDisplayName.Text = soldierClass.metadata.displayName;
@@ -124,7 +120,7 @@ namespace XcomPerkManager.Forms
         {
             SoldierClass soldierClass = new SoldierClass();
 
-            soldierClass.metadata.internalName = state.getOpenSoldierClass().metadata.internalName;
+            soldierClass.metadata.internalName = ProjectState.getOpenSoldierClass().metadata.internalName;
             soldierClass.metadata.displayName = tDisplayName.Text;
             soldierClass.metadata.description = tDescription.Text;
             soldierClass.metadata.iconString = tIconString.Text;
@@ -308,13 +304,13 @@ namespace XcomPerkManager.Forms
         {
             // TODO make sure rest of data can be saved first
 
-            SoldierClass soldierClass = state.saveClass(buildSoldierClass());
+            SoldierClass soldierClass = ProjectState.saveClass(buildSoldierClass());
             open(soldierClass);
         }
 
         private void renameToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Rename rename = new Rename(state.getOpenSoldierClass().metadata.internalName);
+            Rename rename = new Rename(ProjectState.getOpenSoldierClass().metadata.internalName);
             rename.FormClosing += renameClosingListener;
             rename.ShowDialog(this);
         }
@@ -324,9 +320,9 @@ namespace XcomPerkManager.Forms
             Rename renameForm = sender as Rename;
             if (renameForm != null)
             {
-                if (!renameForm.getNewName().Equals(state.getOpenSoldierClassInternalName()))
+                if (!renameForm.getNewName().Equals(ProjectState.getOpenSoldierClassInternalName()))
                 {
-                    state.renameClass(renameForm.getNewName());
+                    ProjectState.renameClass(renameForm.getNewName());
                     setupMenuItemOpen();
                 }
             }
@@ -339,14 +335,14 @@ namespace XcomPerkManager.Forms
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SoldierClass newClass = state.addClass();
+            SoldierClass newClass = ProjectState.addClass();
             open(newClass);
         }
 
         private void deleteToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            state.deleteClass();
-            open(state.getOpenSoldierClass());
+            ProjectState.deleteClass();
+            open(ProjectState.getOpenSoldierClass());
         }
 
         private void bEditWeapon_Click(object sender, EventArgs e)
@@ -561,13 +557,13 @@ namespace XcomPerkManager.Forms
             
             string temp = comboSender.Text;
 
-            Ability senderAbility = state.getAbility(comboSender.Text);
+            Ability senderAbility = ProjectState.getAbility(comboSender.Text);
             if(senderAbility == null)
             {
                 senderAbility = new Ability();
             }
 
-            Ability draggedAbility = state.getAbility(comboDragged.Text);
+            Ability draggedAbility = ProjectState.getAbility(comboDragged.Text);
             if (draggedAbility == null)
             {
                 draggedAbility = new Ability();
@@ -580,7 +576,7 @@ namespace XcomPerkManager.Forms
         private void abilitiesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Import Abilities
-            ImportAbilities dialog = new ImportAbilities(state.getAbilities());
+            ImportAbilities dialog = new ImportAbilities(ProjectState.getAbilities());
             dialog.ShowDialog();
         }
     }

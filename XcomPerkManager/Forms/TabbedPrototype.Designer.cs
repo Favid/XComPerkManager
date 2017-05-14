@@ -1724,13 +1724,13 @@
             // rangerToolStripMenuItem
             // 
             this.rangerToolStripMenuItem.Name = "rangerToolStripMenuItem";
-            this.rangerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.rangerToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.rangerToolStripMenuItem.Text = "Ranger";
             // 
             // specialistToolStripMenuItem
             // 
             this.specialistToolStripMenuItem.Name = "specialistToolStripMenuItem";
-            this.specialistToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.specialistToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.specialistToolStripMenuItem.Text = "Specialist";
             // 
             // saveToolStripMenuItem
@@ -1798,7 +1798,7 @@
             // abilitiesToolStripMenuItem
             // 
             this.abilitiesToolStripMenuItem.Name = "abilitiesToolStripMenuItem";
-            this.abilitiesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.abilitiesToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.abilitiesToolStripMenuItem.Text = "Abilities";
             this.abilitiesToolStripMenuItem.Click += new System.EventHandler(this.abilitiesToolStripMenuItem_Click);
             // 
