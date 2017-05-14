@@ -66,6 +66,40 @@ namespace XcomPerkManager
             
             return abilities.OrderBy(x => x.internalName).ToList();
         }
+
+        public void addAbility(Ability ability)
+        {
+            List<Ability> singletonList = new List<Ability>();
+            singletonList.Add(ability);
+            addAbilities(singletonList);
+        }
+
+        public void addAbilities(List<Ability> abilities)
+        {
+            ExcelWorksheet workSheet = package.Workbook.Worksheets.First();
+
+            int firstBlankRow = ROW_START;
+            for (int row = ROW_START; row <= workSheet.Dimension.End.Row; row++)
+            {
+                if(string.IsNullOrEmpty(workSheet.Cells[row, COLUMN_INTERNAL_NAME].Value.ToString()))
+                {
+                    firstBlankRow = row;
+                    break;
+                }
+            }
+
+            int insertionRow = firstBlankRow;
+            foreach (Ability ability in abilities)
+            {
+                workSheet.Cells[insertionRow, COLUMN_INTERNAL_NAME].Value = ability.internalName;
+                workSheet.Cells[insertionRow, COLUMN_DISPLAY_NAME].Value = ability.displayName;
+                workSheet.Cells[insertionRow, COLUMN_DESCRIPTION].Value = ability.description;
+                workSheet.Cells[insertionRow, COLUMN_WEAPON_SLOT].Value = ability.weaponSlot.ToString();
+                workSheet.Cells[insertionRow, COLUMN_REQUIRED_MOD].Value = ability.requiredMod;
+
+                insertionRow++;
+            }
+        }
         
         private WeaponSlot getWeaponSlotFromExcel(string excelValue)
         {

@@ -37,6 +37,7 @@
             this.opLongWar2 = new System.Windows.Forms.RadioButton();
             this.opVanilla = new System.Windows.Forms.RadioButton();
             this.bClose = new System.Windows.Forms.Button();
+            this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.gCompatibility.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -158,5 +159,6 @@
         private System.Windows.Forms.RadioButton opLongWar2;
         private System.Windows.Forms.RadioButton opVanilla;
         private System.Windows.Forms.Button bClose;
+        private System.Windows.Forms.FontDialog fontDialog1;
     }
 }

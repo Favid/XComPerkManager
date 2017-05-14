@@ -580,6 +580,8 @@ namespace XcomPerkManager.Forms
         private void abilitiesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Import Abilities
+            ImportAbilities dialog = new ImportAbilities(state.getAbilities());
+            dialog.ShowDialog();
         }
     }
 }
