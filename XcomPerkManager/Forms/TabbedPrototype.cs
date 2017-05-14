@@ -602,5 +602,40 @@ namespace XcomPerkManager.Forms
 
             open(newClass);
         }
+
+        private void cAbility_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ComboBox combo = sender as ComboBox;
+
+            if (combo != null)
+            {
+                Ability ability = combo.SelectedItem as Ability;
+
+                if (ability != null)
+                {
+                    updateHelpText(ability.description);
+                }
+            }
+        }
+
+        private void cAbility_Clicked(object sender, EventArgs e)
+        {
+            ComboBox combo = sender as ComboBox;
+
+            if (combo != null)
+            {
+                Ability ability = combo.SelectedItem as Ability;
+
+                if (ability != null)
+                {
+                    updateHelpText(ability.description);
+                }
+            }
+        }
+
+        private void updateHelpText(string text)
+        {
+            laHelp.Text = text;
+        }
     }
 }
