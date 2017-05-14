@@ -135,6 +135,12 @@
     <Compile Include="Forms\ImportAbilities.Designer.cs">
       <DependentUpon>ImportAbilities.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ImportClasses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ImportClasses.Designer.cs">
+      <DependentUpon>ImportClasses.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Rename.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -205,6 +211,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ImportAbilities.resx">
       <DependentUpon>ImportAbilities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ImportClasses.resx">
+      <DependentUpon>ImportClasses.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MetadataManager.resx">
       <DependentUpon>MetadataManager.cs</DependentUpon>

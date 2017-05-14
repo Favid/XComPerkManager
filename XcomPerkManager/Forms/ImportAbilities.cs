@@ -66,6 +66,7 @@ namespace XcomPerkManager.Forms
 
             file.Close();
 
+            foundAbilities = foundAbilities.OrderBy(x => x.internalName).ToList();
             foreach (Ability foundAbility in foundAbilities)
             {
                 chListClasses.Items.Add(foundAbility);

@@ -138,6 +138,7 @@
             this.label45 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
             this.tabAbilities = new System.Windows.Forms.TabPage();
+            this.chDragAndDrop = new System.Windows.Forms.CheckBox();
             this.cSquaddie6 = new System.Windows.Forms.ComboBox();
             this.cSquaddie5 = new System.Windows.Forms.ComboBox();
             this.cSquaddie4 = new System.Windows.Forms.ComboBox();
@@ -183,13 +184,13 @@
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.importToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.renameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.chDragAndDrop = new System.Windows.Forms.CheckBox();
-            this.importToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.abilitiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.soldierClassAbilityBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.classesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1.SuspendLayout();
             this.tabGeneral.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -1195,6 +1196,16 @@
             this.tabAbilities.Text = "Abilities";
             this.tabAbilities.UseVisualStyleBackColor = true;
             // 
+            // chDragAndDrop
+            // 
+            this.chDragAndDrop.AutoSize = true;
+            this.chDragAndDrop.Location = new System.Drawing.Point(15, 311);
+            this.chDragAndDrop.Name = "chDragAndDrop";
+            this.chDragAndDrop.Size = new System.Drawing.Size(96, 17);
+            this.chDragAndDrop.TabIndex = 107;
+            this.chDragAndDrop.Text = "Drag and Drop";
+            this.chDragAndDrop.UseVisualStyleBackColor = true;
+            // 
             // cSquaddie6
             // 
             this.cSquaddie6.AllowDrop = true;
@@ -1754,6 +1765,15 @@
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
+            // importToolStripMenuItem
+            // 
+            this.importToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.abilitiesToolStripMenuItem,
+            this.classesToolStripMenuItem});
+            this.importToolStripMenuItem.Name = "importToolStripMenuItem";
+            this.importToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.importToolStripMenuItem.Text = "Import";
+            // 
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -1766,45 +1786,34 @@
             // renameToolStripMenuItem
             // 
             this.renameToolStripMenuItem.Name = "renameToolStripMenuItem";
-            this.renameToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.renameToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.renameToolStripMenuItem.Text = "Rename";
             this.renameToolStripMenuItem.Click += new System.EventHandler(this.renameToolStripMenuItem_Click);
             // 
             // deleteToolStripMenuItem1
             // 
             this.deleteToolStripMenuItem1.Name = "deleteToolStripMenuItem1";
-            this.deleteToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.deleteToolStripMenuItem1.Size = new System.Drawing.Size(117, 22);
             this.deleteToolStripMenuItem1.Text = "Delete";
             this.deleteToolStripMenuItem1.Click += new System.EventHandler(this.deleteToolStripMenuItem1_Click);
-            // 
-            // chDragAndDrop
-            // 
-            this.chDragAndDrop.AutoSize = true;
-            this.chDragAndDrop.Location = new System.Drawing.Point(15, 311);
-            this.chDragAndDrop.Name = "chDragAndDrop";
-            this.chDragAndDrop.Size = new System.Drawing.Size(96, 17);
-            this.chDragAndDrop.TabIndex = 107;
-            this.chDragAndDrop.Text = "Drag and Drop";
-            this.chDragAndDrop.UseVisualStyleBackColor = true;
-            // 
-            // importToolStripMenuItem
-            // 
-            this.importToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.abilitiesToolStripMenuItem});
-            this.importToolStripMenuItem.Name = "importToolStripMenuItem";
-            this.importToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.importToolStripMenuItem.Text = "Import";
             // 
             // abilitiesToolStripMenuItem
             // 
             this.abilitiesToolStripMenuItem.Name = "abilitiesToolStripMenuItem";
-            this.abilitiesToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.abilitiesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.abilitiesToolStripMenuItem.Text = "Abilities";
             this.abilitiesToolStripMenuItem.Click += new System.EventHandler(this.abilitiesToolStripMenuItem_Click);
             // 
             // soldierClassAbilityBindingSource
             // 
             this.soldierClassAbilityBindingSource.DataSource = typeof(XcomPerkManager.SoldierClassAbility);
+            // 
+            // classesToolStripMenuItem
+            // 
+            this.classesToolStripMenuItem.Name = "classesToolStripMenuItem";
+            this.classesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.classesToolStripMenuItem.Text = "Classes";
+            this.classesToolStripMenuItem.Click += new System.EventHandler(this.classesToolStripMenuItem_Click);
             // 
             // TabbedPrototype
             // 
@@ -1998,9 +2007,10 @@
         private System.Windows.Forms.Label laLieutenant;
         private System.Windows.Forms.Label laSergeant;
         private System.Windows.Forms.Label laCorporal;
-        private System.Windows.Forms.BindingSource soldierClassAbilityBindingSource;
         private System.Windows.Forms.CheckBox chDragAndDrop;
         private System.Windows.Forms.ToolStripMenuItem importToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem abilitiesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem classesToolStripMenuItem;
+        private System.Windows.Forms.BindingSource soldierClassAbilityBindingSource;
     }
 }

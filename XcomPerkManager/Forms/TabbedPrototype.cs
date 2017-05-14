@@ -22,7 +22,12 @@ namespace XcomPerkManager.Forms
         {
             initAbilitiesDataSources();
             chDragAndDrop.Checked = false;
-            open(ProjectState.getOpenSoldierClass());
+
+            SoldierClass openSoldierCLass = ProjectState.getOpenSoldierClass();
+            if(openSoldierCLass != null)
+            {
+                open(ProjectState.getOpenSoldierClass());
+            }
         }
 
         private void initAbilitiesDataSources()
@@ -577,6 +582,12 @@ namespace XcomPerkManager.Forms
         {
             // Import Abilities
             ImportAbilities dialog = new ImportAbilities(ProjectState.getAbilities());
+            dialog.ShowDialog();
+        }
+
+        private void classesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ImportClasses dialog = new ImportClasses();
             dialog.ShowDialog();
         }
     }
