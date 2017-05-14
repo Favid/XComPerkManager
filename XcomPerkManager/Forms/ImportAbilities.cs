@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using XcomPerkManager.DataObjects;
 
 namespace XcomPerkManager.Forms
 {
@@ -153,7 +154,7 @@ namespace XcomPerkManager.Forms
             tInternalName.Text = selectedAbility.internalName;
             tDisplayName.Text = selectedAbility.displayName;
             tDescription.Text = selectedAbility.description;
-            tRequiredMod.Text = selectedAbility.requiredMod;
+            cWeaponSlot.SelectedItem = selectedAbility.weaponSlot;
         }
 
         private void bClose_Click(object sender, EventArgs e)
@@ -164,12 +165,23 @@ namespace XcomPerkManager.Forms
         private void bSave_Click(object sender, EventArgs e)
         {
             List<Ability> selectedAbilities = chListClasses.CheckedItems.OfType<Ability>().ToList();
+            foreach(Ability ability in selectedAbilities)
+            {
+                ability.requiredMod = tRequiredMod.Text;
+            }
             XComAbilityListReader reader = new XComAbilityListReader();
             reader.addAbilities(selectedAbilities);
+            ProjectState.reloadAbilities();
         }
 
         private void bUpdate_Click(object sender, EventArgs e)
         {
+            Ability selectedAbility = (Ability)chListClasses.SelectedItem;
+            selectedAbility.internalName = tInternalName.Text;
+            selectedAbility.displayName = tDisplayName.Text;
+            selectedAbility.description = tDescription.Text;
+            selectedAbility.weaponSlot = (WeaponSlot)cWeaponSlot.SelectedItem;
+
 
         }
     }

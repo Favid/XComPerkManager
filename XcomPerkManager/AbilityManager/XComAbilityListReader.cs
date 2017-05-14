@@ -77,18 +77,8 @@ namespace XcomPerkManager
         public void addAbilities(List<Ability> abilities)
         {
             ExcelWorksheet workSheet = package.Workbook.Worksheets.First();
-
-            int firstBlankRow = ROW_START;
-            for (int row = ROW_START; row <= workSheet.Dimension.End.Row; row++)
-            {
-                if(string.IsNullOrEmpty(workSheet.Cells[row, COLUMN_INTERNAL_NAME].Value.ToString()))
-                {
-                    firstBlankRow = row;
-                    break;
-                }
-            }
-
-            int insertionRow = firstBlankRow;
+            
+            int insertionRow = workSheet.Dimension.End.Row + 1;
             foreach (Ability ability in abilities)
             {
                 workSheet.Cells[insertionRow, COLUMN_INTERNAL_NAME].Value = ability.internalName;
@@ -96,9 +86,11 @@ namespace XcomPerkManager
                 workSheet.Cells[insertionRow, COLUMN_DESCRIPTION].Value = ability.description;
                 workSheet.Cells[insertionRow, COLUMN_WEAPON_SLOT].Value = ability.weaponSlot.ToString();
                 workSheet.Cells[insertionRow, COLUMN_REQUIRED_MOD].Value = ability.requiredMod;
-
+                
                 insertionRow++;
             }
+
+            package.Save();
         }
         
         private WeaponSlot getWeaponSlotFromExcel(string excelValue)
